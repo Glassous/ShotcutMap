@@ -90,6 +90,7 @@ const categories = computed(() => {
 const getSoftwareByCategory = (category) => {
   return softwareList.filter(software => (software.category || '其他') === category)
 }
+
 </script>
 
 <style scoped>

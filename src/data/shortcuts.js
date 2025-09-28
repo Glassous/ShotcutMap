@@ -18,6 +18,11 @@ import terminalData from './shortcuts/terminal.json';
 import gitData from './shortcuts/git.json';
 import dockerData from './shortcuts/docker.json';
 
+// 使用 import.meta.glob 动态导入所有图标
+const icons = import.meta.glob('../assets/icons/*.svg', { eager: true, as: 'url' });
+const pngIcons = import.meta.glob('../assets/icons/*.png', { eager: true, as: 'url' });
+Object.assign(icons, pngIcons);
+
 // 快捷键数据结构：软件 -> 系统 -> 具体快捷键
 export const shortcutsData = {
   idea: ideaData,
@@ -42,10 +47,15 @@ export const shortcutsData = {
 
 // 获取所有软件列表
 export const getSoftwareList = () => {
-  return Object.keys(shortcutsData).map(key => ({
-    id: key,
-    ...shortcutsData[key]
-  }));
+  return Object.keys(shortcutsData).map(key => {
+    const software = shortcutsData[key];
+    const iconPath = `../assets/icons${software.icon}`;
+    return {
+      id: key,
+      ...software,
+      icon: icons[iconPath]
+    };
+  });
 };
 
 // 根据软件ID获取软件信息

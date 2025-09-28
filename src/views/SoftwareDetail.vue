@@ -32,7 +32,7 @@
       <!-- 软件信息头部 -->
       <div class="text-center mb-8">
         <div class="mb-4">
-          <img :src="software.icon" :alt="software.name" class="w-32 h-32 mx-auto object-contain">
+          <img :src="getIconPath(software.icon)" :alt="software.name" class="w-32 h-32 mx-auto object-contain">
         </div>
         <h1 class="text-4xl font-bold text-base-content mb-2">{{ software.name }}</h1>
         <p class="text-base-content/70 text-lg mb-4">{{ software.description }}</p>
@@ -193,6 +193,20 @@ onMounted(() => {
 watch(() => route.params.id, () => {
   loadSoftware()
 })
+
+// 获取图标路径
+const getIconPath = (iconPath) => {
+  // 检查是否在Electron环境中
+  if (window.electronAPI || window.process?.type === 'renderer') {
+    // 在Electron中，确保路径以 ./ 开头（相对路径）
+    if (iconPath.startsWith('/')) {
+      return '.' + iconPath
+    }
+    return iconPath
+  }
+  // 在浏览器中，直接使用原始路径
+  return iconPath
+}
 </script>
 
 <style scoped>
