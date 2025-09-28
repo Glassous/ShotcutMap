@@ -32,7 +32,7 @@
       <!-- 软件信息头部 -->
       <div class="text-center mb-8">
         <div class="mb-4">
-          <img :src="getSoftwareIcon(route.params.id)" :alt="software.name" class="w-32 h-32 mx-auto object-contain">
+          <img :src="software.icon" :alt="software.name" class="w-32 h-32 mx-auto object-contain">
         </div>
         <h1 class="text-4xl font-bold text-base-content mb-2">{{ software.name }}</h1>
         <p class="text-base-content/70 text-lg mb-4">{{ software.description }}</p>
@@ -79,30 +79,20 @@
               </h3>
               
               <div class="overflow-x-auto">
-                <table class="table table-zebra w-full">
-                  <thead>
-                    <tr>
-                      <th class="text-base-content">快捷键</th>
-                      <th class="text-base-content">功能描述</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr v-for="(shortcut, index) in category.items" :key="index">
-                      <td>
-                        <div class="flex flex-wrap gap-1">
-                          <kbd 
-                            v-for="key in parseKeys(shortcut.keys)" 
-                            :key="key"
-                            class="kbd kbd-sm"
-                          >
-                            {{ key }}
-                          </kbd>
-                        </div>
-                      </td>
-                      <td class="text-base-content">{{ shortcut.description }}</td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  <div v-for="(shortcut, index) in category.items" :key="index" class="shortcut-item bg-base-200 rounded-lg p-4">
+                    <div class="flex flex-wrap gap-2 mb-3">
+                      <article 
+                        v-for="key in parseKeys(shortcut.keys)" 
+                        :key="key"
+                        class="keycap"
+                      >
+                        <aside class="letter">{{ key }}</aside>
+                      </article>
+                    </div>
+                    <div class="text-base-content text-lg font-bold">{{ shortcut.description }}</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -134,16 +124,6 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getSoftwareById } from '../data/shortcuts.js'
-
-// 获取软件图标路径
-const getSoftwareIcon = (softwareId) => {
-  const iconMap = {
-    'idea': '/intellij-idea-1.svg',
-    'vscode': '/visual-studio-code-1.svg',
-    'chrome': '/chrome-modern-.svg'
-  }
-  return iconMap[softwareId] || '/ShortcutMap.png'
-}
 
 const route = useRoute()
 const router = useRouter()
@@ -190,7 +170,14 @@ const loadSoftware = () => {
 }
 
 const parseKeys = (keyString) => {
-  return keyString.split(' + ').map(key => key.trim())
+  return keyString.split(' + ').map(key => {
+    const trimmedKey = key.trim()
+    // 如果当前系统是mac，将cmd替换为⌘符号
+    if (activeSystem.value === 'mac' && trimmedKey.toLowerCase() === 'cmd') {
+      return '⌘'
+    }
+    return trimmedKey
+  })
 }
 
 const goBack = () => {
@@ -209,10 +196,83 @@ watch(() => route.params.id, () => {
 </script>
 
 <style scoped>
-.kbd {
-  background-color: hsl(var(--b3));
-  border: 1px solid hsl(var(--bc) / 0.2);
-  color: hsl(var(--bc));
+.keycap {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #282828, #202020);
+  box-shadow: 
+    inset -8px 0 8px rgba(0, 0, 0, 0.15), 
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25), 
+    0 0 0 2px rgba(0, 0, 0, 0.75), 
+    10px 20px 25px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  transition: 
+    transform 0.1s ease-in-out, 
+    box-shadow 0.1s ease-in;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.keycap .letter {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #e9e9e9;
+  font-size: 16px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.keycap::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  background: linear-gradient(90deg, #232323, #4a4a4a);
+  border-radius: 10px;
+  box-shadow: 
+    -10px -10px 10px rgba(255, 255, 255, 0.25), 
+    10px 5px 10px rgba(0, 0, 0, 0.15);
+  border-left: 1px solid #0004;
+  border-bottom: 1px solid #0004;
+  border-top: 1px solid #0009;
+  transition: all 0.1s ease-in-out;
+}
+
+.keycap:active {
+  transform: translateY(2px);
+  box-shadow: 
+    inset -4px 0 4px rgba(0, 0, 0, 0.1), 
+    inset 0 -4px 4px rgba(0, 0, 0, 0.15), 
+    0 0 0 2px rgba(0, 0, 0, 0.5), 
+    5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.keycap:active::before {
+  top: 5px;
+  left: 5px;
+  bottom: 11px;
+  right: 11px;
+  box-shadow: 
+    -5px -5px 5px rgba(255, 255, 255, 0.15), 
+    5px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.keycap:active .letter {
+  transform: translateY(1px);
+}
+
+.shortcut-item {
+  transition: all 0.2s ease;
+}
+
+.shortcut-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .table th {

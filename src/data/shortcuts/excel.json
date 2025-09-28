@@ -1,0 +1,207 @@
+{
+  "name": "Microsoft Excel",
+  "icon": "/excel-4.svg",
+  "description": "微软电子表格软件",
+  "category": "办公软件",
+  "officialDocs": "https://support.microsoft.com/zh-cn/office/excel-%E4%B8%AD%E7%9A%84%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F-1798d9d5-842a-42b8-9c99-9b7213f0040f",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建工作簿" },
+            { "keys": "Ctrl + O", "description": "打开工作簿" },
+            { "keys": "Ctrl + S", "description": "保存工作簿" },
+            { "keys": "Ctrl + P", "description": "打印" },
+            { "keys": "Ctrl + W", "description": "关闭工作簿" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Y", "description": "重做" },
+            { "keys": "F12", "description": "另存为" },
+            { "keys": "Alt + F4", "description": "退出Excel" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + H", "description": "替换" },
+            { "keys": "Delete", "description": "删除单元格内容" },
+            { "keys": "Ctrl + D", "description": "向下填充" },
+            { "keys": "Ctrl + R", "description": "向右填充" },
+            { "keys": "Ctrl + Shift + +", "description": "插入单元格" },
+            { "keys": "Ctrl + -", "description": "删除单元格" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Ctrl + Home", "description": "转到A1单元格" },
+            { "keys": "Ctrl + End", "description": "转到最后使用的单元格" },
+            { "keys": "Ctrl + ←", "description": "移到行中最左边的单元格" },
+            { "keys": "Ctrl + →", "description": "移到行中最右边的单元格" },
+            { "keys": "Ctrl + ↑", "description": "移到列中最上面的单元格" },
+            { "keys": "Ctrl + ↓", "description": "移到列中最下面的单元格" },
+            { "keys": "Page Up", "description": "向上翻页" },
+            { "keys": "Page Down", "description": "向下翻页" },
+            { "keys": "Ctrl + Page Up", "description": "切换到上一个工作表" },
+            { "keys": "Ctrl + Page Down", "description": "切换到下一个工作表" }
+          ]
+        },
+        {
+          "category": "选择",
+          "items": [
+            { "keys": "Shift + Space", "description": "选择整行" },
+            { "keys": "Ctrl + Space", "description": "选择整列" },
+            { "keys": "Ctrl + Shift + End", "description": "选择到最后使用的单元格" },
+            { "keys": "Ctrl + Shift + Home", "description": "选择到A1单元格" },
+            { "keys": "Ctrl + Shift + ←", "description": "向左扩展选择" },
+            { "keys": "Ctrl + Shift + →", "description": "向右扩展选择" },
+            { "keys": "Ctrl + Shift + ↑", "description": "向上扩展选择" },
+            { "keys": "Ctrl + Shift + ↓", "description": "向下扩展选择" },
+            { "keys": "Ctrl + A", "description": "选择整个工作表" }
+          ]
+        },
+        {
+          "category": "格式设置",
+          "items": [
+            { "keys": "Ctrl + B", "description": "粗体" },
+            { "keys": "Ctrl + I", "description": "斜体" },
+            { "keys": "Ctrl + U", "description": "下划线" },
+            { "keys": "Ctrl + 1", "description": "设置单元格格式" },
+            { "keys": "Ctrl + Shift + $", "description": "应用货币格式" },
+            { "keys": "Ctrl + Shift + %", "description": "应用百分比格式" },
+            { "keys": "Ctrl + Shift + #", "description": "应用日期格式" },
+            { "keys": "Ctrl + Shift + @", "description": "应用时间格式" },
+            { "keys": "Ctrl + Shift + !", "description": "应用数字格式" },
+            { "keys": "Ctrl + Shift + ^", "description": "应用科学记数法格式" }
+          ]
+        },
+        {
+          "category": "公式和函数",
+          "items": [
+            { "keys": "=", "description": "开始输入公式" },
+            { "keys": "F2", "description": "编辑活动单元格" },
+            { "keys": "F4", "description": "重复上一个操作" },
+            { "keys": "Ctrl + Shift + Enter", "description": "输入数组公式" },
+            { "keys": "Ctrl + `", "description": "显示公式" },
+            { "keys": "F9", "description": "计算所有工作表" },
+            { "keys": "Shift + F9", "description": "计算活动工作表" },
+            { "keys": "Ctrl + Alt + F9", "description": "计算所有打开的工作簿" },
+            { "keys": "Alt + =", "description": "自动求和" }
+          ]
+        },
+        {
+          "category": "工作表管理",
+          "items": [
+            { "keys": "Shift + F11", "description": "插入新工作表" },
+            { "keys": "Alt + Shift + Tab", "description": "切换到上一个工作表" },
+            { "keys": "Ctrl + Tab", "description": "切换到下一个工作表" },
+            { "keys": "Ctrl + F6", "description": "切换到下一个工作簿窗口" },
+            { "keys": "Ctrl + Shift + F6", "description": "切换到上一个工作簿窗口" }
+          ]
+        },
+        {
+          "category": "数据操作",
+          "items": [
+            { "keys": "Ctrl + T", "description": "创建表格" },
+            { "keys": "Alt + ↓", "description": "显示自动筛选列表" },
+            { "keys": "Ctrl + Shift + L", "description": "应用自动筛选" },
+            { "keys": "Alt + D + S", "description": "排序" },
+            { "keys": "F11", "description": "创建图表" },
+            { "keys": "Alt + F1", "description": "创建嵌入式图表" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建工作簿" },
+            { "keys": "Cmd + O", "description": "打开工作簿" },
+            { "keys": "Cmd + S", "description": "保存工作簿" },
+            { "keys": "Cmd + P", "description": "打印" },
+            { "keys": "Cmd + W", "description": "关闭工作簿" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Y", "description": "重做" },
+            { "keys": "Cmd + Shift + S", "description": "另存为" },
+            { "keys": "Cmd + Q", "description": "退出Excel" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + F", "description": "查找" },
+            { "keys": "Cmd + Option + F", "description": "替换" },
+            { "keys": "Delete", "description": "删除单元格内容" },
+            { "keys": "Cmd + D", "description": "向下填充" },
+            { "keys": "Cmd + R", "description": "向右填充" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Cmd + Home", "description": "转到A1单元格" },
+            { "keys": "Cmd + End", "description": "转到最后使用的单元格" },
+            { "keys": "Cmd + ←", "description": "移到行中最左边的单元格" },
+            { "keys": "Cmd + →", "description": "移到行中最右边的单元格" },
+            { "keys": "Cmd + ↑", "description": "移到列中最上面的单元格" },
+            { "keys": "Cmd + ↓", "description": "移到列中最下面的单元格" },
+            { "keys": "Page Up", "description": "向上翻页" },
+            { "keys": "Page Down", "description": "向下翻页" },
+            { "keys": "Fn + Ctrl + ↑", "description": "切换到上一个工作表" },
+            { "keys": "Fn + Ctrl + ↓", "description": "切换到下一个工作表" }
+          ]
+        },
+        {
+          "category": "选择",
+          "items": [
+            { "keys": "Shift + Space", "description": "选择整行" },
+            { "keys": "Ctrl + Space", "description": "选择整列" },
+            { "keys": "Cmd + Shift + End", "description": "选择到最后使用的单元格" },
+            { "keys": "Cmd + Shift + Home", "description": "选择到A1单元格" },
+            { "keys": "Cmd + Shift + ←", "description": "向左扩展选择" },
+            { "keys": "Cmd + Shift + →", "description": "向右扩展选择" },
+            { "keys": "Cmd + Shift + ↑", "description": "向上扩展选择" },
+            { "keys": "Cmd + Shift + ↓", "description": "向下扩展选择" }
+          ]
+        },
+        {
+          "category": "格式设置",
+          "items": [
+            { "keys": "Cmd + B", "description": "粗体" },
+            { "keys": "Cmd + I", "description": "斜体" },
+            { "keys": "Cmd + U", "description": "下划线" },
+            { "keys": "Cmd + 1", "description": "设置单元格格式" },
+            { "keys": "Cmd + Shift + $", "description": "应用货币格式" },
+            { "keys": "Cmd + Shift + %", "description": "应用百分比格式" },
+            { "keys": "Cmd + Shift + #", "description": "应用日期格式" },
+            { "keys": "Cmd + Shift + @", "description": "应用时间格式" }
+          ]
+        },
+        {
+          "category": "公式和函数",
+          "items": [
+            { "keys": "=", "description": "开始输入公式" },
+            { "keys": "F2", "description": "编辑活动单元格" },
+            { "keys": "Cmd + Shift + Enter", "description": "输入数组公式" },
+            { "keys": "Ctrl + `", "description": "显示公式" },
+            { "keys": "Cmd + =", "description": "自动求和" }
+          ]
+        }
+      ]
+    }
+  }
+}

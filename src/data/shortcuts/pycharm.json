@@ -1,0 +1,307 @@
+{
+  "name": "PyCharm",
+  "icon": "/jetbrains-pycharm.svg",
+  "description": "JetBrains Python开发环境",
+  "category": "开发类",
+  "officialDocs": "https://www.jetbrains.com/help/pycharm/mastering-keyboard-shortcuts.html",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建文件" },
+            { "keys": "Ctrl + Shift + N", "description": "新建项目" },
+            { "keys": "Ctrl + O", "description": "打开文件" },
+            { "keys": "Ctrl + S", "description": "保存文件" },
+            { "keys": "Ctrl + Shift + S", "description": "保存所有文件" },
+            { "keys": "Ctrl + W", "description": "关闭当前标签" },
+            { "keys": "Ctrl + Shift + W", "description": "关闭所有标签" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Shift + Z", "description": "重做" },
+            { "keys": "Alt + F4", "description": "退出PyCharm" },
+            { "keys": "Ctrl + Alt + S", "description": "打开设置" },
+            { "keys": "Ctrl + Alt + Shift + S", "description": "打开项目结构" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + Shift + V", "description": "从历史粘贴" },
+            { "keys": "Ctrl + D", "description": "复制行" },
+            { "keys": "Ctrl + Y", "description": "删除行" },
+            { "keys": "Ctrl + Shift + U", "description": "切换大小写" },
+            { "keys": "Ctrl + /", "description": "行注释" },
+            { "keys": "Ctrl + Shift + /", "description": "块注释" },
+            { "keys": "Ctrl + Alt + L", "description": "格式化代码" },
+            { "keys": "Ctrl + Alt + O", "description": "优化导入" },
+            { "keys": "Tab", "description": "缩进" },
+            { "keys": "Shift + Tab", "description": "取消缩进" }
+          ]
+        },
+        {
+          "category": "导航操作",
+          "items": [
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + R", "description": "替换" },
+            { "keys": "Ctrl + Shift + F", "description": "在路径中查找" },
+            { "keys": "Ctrl + Shift + R", "description": "在路径中替换" },
+            { "keys": "Ctrl + G", "description": "转到行" },
+            { "keys": "Ctrl + E", "description": "最近文件" },
+            { "keys": "Ctrl + Shift + E", "description": "最近编辑的文件" },
+            { "keys": "Ctrl + B", "description": "转到声明" },
+            { "keys": "Ctrl + Alt + B", "description": "转到实现" },
+            { "keys": "Ctrl + U", "description": "转到父类" },
+            { "keys": "Ctrl + H", "description": "类型层次结构" },
+            { "keys": "Ctrl + Shift + H", "description": "方法层次结构" },
+            { "keys": "Alt + F7", "description": "查找用法" }
+          ]
+        },
+        {
+          "category": "代码生成",
+          "items": [
+            { "keys": "Alt + Insert", "description": "生成代码" },
+            { "keys": "Ctrl + Alt + T", "description": "环绕代码" },
+            { "keys": "Ctrl + J", "description": "插入实时模板" },
+            { "keys": "Ctrl + Shift + Enter", "description": "完成当前语句" },
+            { "keys": "Ctrl + Space", "description": "基本代码完成" },
+            { "keys": "Ctrl + Shift + Space", "description": "智能代码完成" },
+            { "keys": "Ctrl + Alt + Space", "description": "类名完成" },
+            { "keys": "Ctrl + P", "description": "参数信息" },
+            { "keys": "Ctrl + Q", "description": "快速文档" },
+            { "keys": "F2", "description": "下一个错误" },
+            { "keys": "Shift + F2", "description": "上一个错误" }
+          ]
+        },
+        {
+          "category": "重构操作",
+          "items": [
+            { "keys": "Shift + F6", "description": "重命名" },
+            { "keys": "Ctrl + Alt + M", "description": "提取方法" },
+            { "keys": "Ctrl + Alt + V", "description": "提取变量" },
+            { "keys": "Ctrl + Alt + C", "description": "提取常量" },
+            { "keys": "Ctrl + Alt + P", "description": "提取参数" },
+            { "keys": "Ctrl + Alt + F", "description": "提取字段" },
+            { "keys": "F6", "description": "移动" },
+            { "keys": "F5", "description": "复制" },
+            { "keys": "Ctrl + Alt + N", "description": "内联" },
+            { "keys": "Ctrl + Shift + F6", "description": "更改签名" }
+          ]
+        },
+        {
+          "category": "运行和调试",
+          "items": [
+            { "keys": "Shift + F10", "description": "运行" },
+            { "keys": "Shift + F9", "description": "调试" },
+            { "keys": "Ctrl + Shift + F10", "description": "运行上下文配置" },
+            { "keys": "Ctrl + Shift + F9", "description": "调试上下文配置" },
+            { "keys": "F8", "description": "单步跳过" },
+            { "keys": "F7", "description": "单步进入" },
+            { "keys": "Shift + F8", "description": "单步跳出" },
+            { "keys": "Alt + F9", "description": "运行到光标" },
+            { "keys": "F9", "description": "恢复程序" },
+            { "keys": "Ctrl + F8", "description": "切换断点" },
+            { "keys": "Ctrl + Shift + F8", "description": "查看断点" },
+            { "keys": "Alt + F8", "description": "计算表达式" }
+          ]
+        },
+        {
+          "category": "窗口管理",
+          "items": [
+            { "keys": "Alt + 1", "description": "项目工具窗口" },
+            { "keys": "Alt + 2", "description": "收藏夹工具窗口" },
+            { "keys": "Alt + 3", "description": "查找工具窗口" },
+            { "keys": "Alt + 4", "description": "运行工具窗口" },
+            { "keys": "Alt + 5", "description": "调试工具窗口" },
+            { "keys": "Alt + 6", "description": "TODO工具窗口" },
+            { "keys": "Alt + 7", "description": "结构工具窗口" },
+            { "keys": "Alt + 9", "description": "版本控制工具窗口" },
+            { "keys": "Alt + 0", "description": "消息工具窗口" },
+            { "keys": "Ctrl + Shift + F12", "description": "最大化编辑器" },
+            { "keys": "Shift + Esc", "description": "隐藏活动工具窗口" },
+            { "keys": "Ctrl + Shift + A", "description": "查找操作" }
+          ]
+        },
+        {
+          "category": "版本控制",
+          "items": [
+            { "keys": "Ctrl + K", "description": "提交更改" },
+            { "keys": "Ctrl + T", "description": "更新项目" },
+            { "keys": "Ctrl + Alt + Z", "description": "回滚更改" },
+            { "keys": "Alt + Shift + C", "description": "查看最近更改" },
+            { "keys": "Alt + `", "description": "VCS操作弹出窗口" },
+            { "keys": "Ctrl + Alt + A", "description": "添加到VCS" },
+            { "keys": "Ctrl + Alt + Shift + D", "description": "显示差异" },
+            { "keys": "Ctrl + Shift + K", "description": "推送" }
+          ]
+        },
+        {
+          "category": "Python特定",
+          "items": [
+            { "keys": "Ctrl + Shift + F10", "description": "运行Python文件" },
+            { "keys": "Ctrl + Shift + F9", "description": "调试Python文件" },
+            { "keys": "Ctrl + Alt + R", "description": "运行管理控制台" },
+            { "keys": "Ctrl + Alt + S", "description": "Python控制台" },
+            { "keys": "Alt + Shift + E", "description": "执行选择" },
+            { "keys": "Ctrl + Alt + F5", "description": "重新加载模块" },
+            { "keys": "Ctrl + Shift + I", "description": "检查代码" },
+            { "keys": "Ctrl + Alt + Shift + I", "description": "检查当前文件" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建文件" },
+            { "keys": "Cmd + Shift + N", "description": "新建项目" },
+            { "keys": "Cmd + O", "description": "打开文件" },
+            { "keys": "Cmd + S", "description": "保存文件" },
+            { "keys": "Cmd + Shift + S", "description": "保存所有文件" },
+            { "keys": "Cmd + W", "description": "关闭当前标签" },
+            { "keys": "Cmd + Shift + W", "description": "关闭所有标签" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Shift + Z", "description": "重做" },
+            { "keys": "Cmd + Q", "description": "退出PyCharm" },
+            { "keys": "Cmd + ,", "description": "打开设置" },
+            { "keys": "Cmd + ;", "description": "打开项目结构" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + Shift + V", "description": "从历史粘贴" },
+            { "keys": "Cmd + D", "description": "复制行" },
+            { "keys": "Cmd + Backspace", "description": "删除行" },
+            { "keys": "Cmd + Shift + U", "description": "切换大小写" },
+            { "keys": "Cmd + /", "description": "行注释" },
+            { "keys": "Cmd + Option + /", "description": "块注释" },
+            { "keys": "Cmd + Option + L", "description": "格式化代码" },
+            { "keys": "Cmd + Option + O", "description": "优化导入" },
+            { "keys": "Tab", "description": "缩进" },
+            { "keys": "Shift + Tab", "description": "取消缩进" }
+          ]
+        },
+        {
+          "category": "导航操作",
+          "items": [
+            { "keys": "Cmd + F", "description": "查找" },
+            { "keys": "Cmd + R", "description": "替换" },
+            { "keys": "Cmd + Shift + F", "description": "在路径中查找" },
+            { "keys": "Cmd + Shift + R", "description": "在路径中替换" },
+            { "keys": "Cmd + L", "description": "转到行" },
+            { "keys": "Cmd + E", "description": "最近文件" },
+            { "keys": "Cmd + Shift + E", "description": "最近编辑的文件" },
+            { "keys": "Cmd + B", "description": "转到声明" },
+            { "keys": "Cmd + Option + B", "description": "转到实现" },
+            { "keys": "Cmd + U", "description": "转到父类" },
+            { "keys": "Ctrl + H", "description": "类型层次结构" },
+            { "keys": "Cmd + Shift + H", "description": "方法层次结构" },
+            { "keys": "Option + F7", "description": "查找用法" }
+          ]
+        },
+        {
+          "category": "代码生成",
+          "items": [
+            { "keys": "Cmd + N", "description": "生成代码" },
+            { "keys": "Cmd + Option + T", "description": "环绕代码" },
+            { "keys": "Cmd + J", "description": "插入实时模板" },
+            { "keys": "Cmd + Shift + Return", "description": "完成当前语句" },
+            { "keys": "Ctrl + Space", "description": "基本代码完成" },
+            { "keys": "Ctrl + Shift + Space", "description": "智能代码完成" },
+            { "keys": "Ctrl + Option + Space", "description": "类名完成" },
+            { "keys": "Cmd + P", "description": "参数信息" },
+            { "keys": "F1", "description": "快速文档" },
+            { "keys": "F2", "description": "下一个错误" },
+            { "keys": "Shift + F2", "description": "上一个错误" }
+          ]
+        },
+        {
+          "category": "重构操作",
+          "items": [
+            { "keys": "Shift + F6", "description": "重命名" },
+            { "keys": "Cmd + Option + M", "description": "提取方法" },
+            { "keys": "Cmd + Option + V", "description": "提取变量" },
+            { "keys": "Cmd + Option + C", "description": "提取常量" },
+            { "keys": "Cmd + Option + P", "description": "提取参数" },
+            { "keys": "Cmd + Option + F", "description": "提取字段" },
+            { "keys": "F6", "description": "移动" },
+            { "keys": "F5", "description": "复制" },
+            { "keys": "Cmd + Option + N", "description": "内联" },
+            { "keys": "Cmd + F6", "description": "更改签名" }
+          ]
+        },
+        {
+          "category": "运行和调试",
+          "items": [
+            { "keys": "Ctrl + R", "description": "运行" },
+            { "keys": "Ctrl + D", "description": "调试" },
+            { "keys": "Ctrl + Shift + R", "description": "运行上下文配置" },
+            { "keys": "Ctrl + Shift + D", "description": "调试上下文配置" },
+            { "keys": "F8", "description": "单步跳过" },
+            { "keys": "F7", "description": "单步进入" },
+            { "keys": "Shift + F8", "description": "单步跳出" },
+            { "keys": "Option + F9", "description": "运行到光标" },
+            { "keys": "Cmd + Option + R", "description": "恢复程序" },
+            { "keys": "Cmd + F8", "description": "切换断点" },
+            { "keys": "Cmd + Shift + F8", "description": "查看断点" },
+            { "keys": "Option + F8", "description": "计算表达式" }
+          ]
+        },
+        {
+          "category": "窗口管理",
+          "items": [
+            { "keys": "Cmd + 1", "description": "项目工具窗口" },
+            { "keys": "Cmd + 2", "description": "收藏夹工具窗口" },
+            { "keys": "Cmd + 3", "description": "查找工具窗口" },
+            { "keys": "Cmd + 4", "description": "运行工具窗口" },
+            { "keys": "Cmd + 5", "description": "调试工具窗口" },
+            { "keys": "Cmd + 6", "description": "TODO工具窗口" },
+            { "keys": "Cmd + 7", "description": "结构工具窗口" },
+            { "keys": "Cmd + 9", "description": "版本控制工具窗口" },
+            { "keys": "Cmd + 0", "description": "消息工具窗口" },
+            { "keys": "Cmd + Shift + F12", "description": "最大化编辑器" },
+            { "keys": "Shift + Esc", "description": "隐藏活动工具窗口" },
+            { "keys": "Cmd + Shift + A", "description": "查找操作" }
+          ]
+        },
+        {
+          "category": "版本控制",
+          "items": [
+            { "keys": "Cmd + K", "description": "提交更改" },
+            { "keys": "Cmd + T", "description": "更新项目" },
+            { "keys": "Cmd + Option + Z", "description": "回滚更改" },
+            { "keys": "Option + Shift + C", "description": "查看最近更改" },
+            { "keys": "Ctrl + V", "description": "VCS操作弹出窗口" },
+            { "keys": "Cmd + Option + A", "description": "添加到VCS" },
+            { "keys": "Cmd + D", "description": "显示差异" },
+            { "keys": "Cmd + Shift + K", "description": "推送" }
+          ]
+        },
+        {
+          "category": "Python特定",
+          "items": [
+            { "keys": "Ctrl + Shift + R", "description": "运行Python文件" },
+            { "keys": "Ctrl + Shift + D", "description": "调试Python文件" },
+            { "keys": "Option + Shift + R", "description": "运行管理控制台" },
+            { "keys": "Option + Shift + C", "description": "Python控制台" },
+            { "keys": "Option + Shift + E", "description": "执行选择" },
+            { "keys": "Cmd + Option + F5", "description": "重新加载模块" },
+            { "keys": "Cmd + Option + Shift + I", "description": "检查代码" },
+            { "keys": "Cmd + Shift + I", "description": "检查当前文件" }
+          ]
+        }
+      ]
+    }
+  }
+}

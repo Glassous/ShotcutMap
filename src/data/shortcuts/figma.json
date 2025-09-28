@@ -1,0 +1,317 @@
+{
+  "name": "Figma",
+  "icon": "/figma-icon.svg",
+  "description": "在线设计协作工具",
+  "category": "设计类",
+  "officialDocs": "https://help.figma.com/hc/en-us/articles/360040328653-Use-keyboard-shortcuts",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建文件" },
+            { "keys": "Ctrl + O", "description": "打开文件浏览器" },
+            { "keys": "Ctrl + S", "description": "保存到版本历史" },
+            { "keys": "Ctrl + Shift + S", "description": "显示版本历史" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Shift + Z", "description": "重做" },
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴到此处" },
+            { "keys": "Ctrl + D", "description": "复制选择" },
+            { "keys": "Delete", "description": "删除" }
+          ]
+        },
+        {
+          "category": "工具选择",
+          "items": [
+            { "keys": "V", "description": "移动工具" },
+            { "keys": "F", "description": "框架工具" },
+            { "keys": "R", "description": "矩形工具" },
+            { "keys": "O", "description": "椭圆工具" },
+            { "keys": "L", "description": "直线工具" },
+            { "keys": "Shift + L", "description": "箭头工具" },
+            { "keys": "P", "description": "钢笔工具" },
+            { "keys": "Shift + P", "description": "铅笔工具" },
+            { "keys": "T", "description": "文本工具" },
+            { "keys": "H", "description": "手形工具" },
+            { "keys": "C", "description": "评论工具" },
+            { "keys": "I", "description": "吸管工具" },
+            { "keys": "K", "description": "缩放工具" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Space + Drag", "description": "平移画布" },
+            { "keys": "Ctrl + Scroll", "description": "缩放" },
+            { "keys": "Ctrl + 0", "description": "缩放到适合" },
+            { "keys": "Ctrl + 1", "description": "缩放到100%" },
+            { "keys": "Ctrl + 2", "description": "缩放到选择" },
+            { "keys": "Shift + 1", "description": "缩放到所有对象" },
+            { "keys": "Shift + 2", "description": "缩放到选择" },
+            { "keys": "Shift + N", "description": "缩放到上一帧" },
+            { "keys": "N", "description": "缩放到下一帧" },
+            { "keys": "Page Up", "description": "上一页" },
+            { "keys": "Page Down", "description": "下一页" },
+            { "keys": "Home", "description": "查找上一帧" },
+            { "keys": "End", "description": "查找下一帧" }
+          ]
+        },
+        {
+          "category": "选择操作",
+          "items": [
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + Shift + A", "description": "反选" },
+            { "keys": "Esc", "description": "取消选择" },
+            { "keys": "Ctrl + Click", "description": "深度选择" },
+            { "keys": "Ctrl + Right Click", "description": "选择菜单" },
+            { "keys": "Enter", "description": "编辑选中对象" },
+            { "keys": "Shift + Enter", "description": "编辑选中对象（新标签）" },
+            { "keys": "Tab", "description": "选择子级" },
+            { "keys": "Shift + Tab", "description": "选择父级" },
+            { "keys": "Ctrl + G", "description": "编组选择" },
+            { "keys": "Ctrl + Shift + G", "description": "取消编组" }
+          ]
+        },
+        {
+          "category": "对象操作",
+          "items": [
+            { "keys": "Ctrl + ]", "description": "置于顶层" },
+            { "keys": "Ctrl + [", "description": "置于底层" },
+            { "keys": "Ctrl + Shift + ]", "description": "上移一层" },
+            { "keys": "Ctrl + Shift + [", "description": "下移一层" },
+            { "keys": "Ctrl + Alt + C", "description": "复制属性" },
+            { "keys": "Ctrl + Alt + V", "description": "粘贴属性" },
+            { "keys": "Ctrl + Shift + O", "description": "轮廓化描边" },
+            { "keys": "Ctrl + Shift + K", "description": "创建组件" },
+            { "keys": "Ctrl + Alt + K", "description": "分离实例" },
+            { "keys": "Alt + Drag", "description": "复制拖拽" },
+            { "keys": "Ctrl + R", "description": "重命名图层" }
+          ]
+        },
+        {
+          "category": "变换操作",
+          "items": [
+            { "keys": "Ctrl + Shift + H", "description": "水平翻转" },
+            { "keys": "Ctrl + Shift + V", "description": "垂直翻转" },
+            { "keys": "Ctrl + Alt + T", "description": "使用变换" },
+            { "keys": "Shift + Drag", "description": "等比例缩放" },
+            { "keys": "Alt + Resize", "description": "从中心调整大小" },
+            { "keys": "Ctrl + Drag", "description": "忽略约束" },
+            { "keys": "Shift + R", "description": "切换标尺" },
+            { "keys": "Ctrl + Shift + 4", "description": "切换像素网格" },
+            { "keys": "Ctrl + '", "description": "切换布局网格" },
+            { "keys": "Ctrl + E", "description": "使用作为蒙版" },
+            { "keys": "Ctrl + Shift + M", "description": "切换蒙版" }
+          ]
+        },
+        {
+          "category": "文本操作",
+          "items": [
+            { "keys": "Ctrl + B", "description": "粗体" },
+            { "keys": "Ctrl + I", "description": "斜体" },
+            { "keys": "Ctrl + U", "description": "下划线" },
+            { "keys": "Ctrl + Shift + X", "description": "删除线" },
+            { "keys": "Ctrl + Alt + L", "description": "文本左对齐" },
+            { "keys": "Ctrl + Alt + T", "description": "文本居中对齐" },
+            { "keys": "Ctrl + Alt + R", "description": "文本右对齐" },
+            { "keys": "Ctrl + Alt + J", "description": "文本两端对齐" },
+            { "keys": "Ctrl + Shift + <", "description": "减小字体大小" },
+            { "keys": "Ctrl + Shift + >", "description": "增大字体大小" },
+            { "keys": "Alt + <", "description": "减小字符间距" },
+            { "keys": "Alt + >", "description": "增大字符间距" }
+          ]
+        },
+        {
+          "category": "面板和界面",
+          "items": [
+            { "keys": "Ctrl + \\", "description": "显示/隐藏UI" },
+            { "keys": "Ctrl + Alt + \\", "description": "显示/隐藏图层面板" },
+            { "keys": "Ctrl + .", "description": "显示/隐藏库" },
+            { "keys": "Ctrl + /", "description": "快速操作" },
+            { "keys": "Ctrl + P", "description": "快速操作" },
+            { "keys": "Ctrl + Shift + ?", "description": "键盘快捷键" },
+            { "keys": "Alt + 1", "description": "显示图层" },
+            { "keys": "Alt + 2", "description": "显示组件" },
+            { "keys": "Alt + 3", "description": "显示团队库" },
+            { "keys": "F", "description": "全屏" },
+            { "keys": "Shift + F", "description": "显示像素" },
+            { "keys": "Ctrl + Y", "description": "显示轮廓" }
+          ]
+        },
+        {
+          "category": "原型制作",
+          "items": [
+            { "keys": "Shift + E", "description": "切换到原型模式" },
+            { "keys": "R", "description": "重启原型" },
+            { "keys": "G", "description": "流程起点" },
+            { "keys": "Ctrl + Enter", "description": "播放原型" },
+            { "keys": "Shift + Space", "description": "播放原型（全屏）" },
+            { "keys": "Esc", "description": "关闭原型" },
+            { "keys": "Ctrl + F", "description": "搜索" },
+            { "keys": "Ctrl + Shift + C", "description": "复制链接" },
+            { "keys": "?", "description": "显示热点" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建文件" },
+            { "keys": "Cmd + O", "description": "打开文件浏览器" },
+            { "keys": "Cmd + S", "description": "保存到版本历史" },
+            { "keys": "Cmd + Shift + S", "description": "显示版本历史" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Shift + Z", "description": "重做" },
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + Shift + V", "description": "粘贴到此处" },
+            { "keys": "Cmd + D", "description": "复制选择" },
+            { "keys": "Delete", "description": "删除" }
+          ]
+        },
+        {
+          "category": "工具选择",
+          "items": [
+            { "keys": "V", "description": "移动工具" },
+            { "keys": "F", "description": "框架工具" },
+            { "keys": "R", "description": "矩形工具" },
+            { "keys": "O", "description": "椭圆工具" },
+            { "keys": "L", "description": "直线工具" },
+            { "keys": "Shift + L", "description": "箭头工具" },
+            { "keys": "P", "description": "钢笔工具" },
+            { "keys": "Shift + P", "description": "铅笔工具" },
+            { "keys": "T", "description": "文本工具" },
+            { "keys": "H", "description": "手形工具" },
+            { "keys": "C", "description": "评论工具" },
+            { "keys": "I", "description": "吸管工具" },
+            { "keys": "K", "description": "缩放工具" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Space + Drag", "description": "平移画布" },
+            { "keys": "Cmd + Scroll", "description": "缩放" },
+            { "keys": "Cmd + 0", "description": "缩放到适合" },
+            { "keys": "Cmd + 1", "description": "缩放到100%" },
+            { "keys": "Cmd + 2", "description": "缩放到选择" },
+            { "keys": "Shift + 1", "description": "缩放到所有对象" },
+            { "keys": "Shift + 2", "description": "缩放到选择" },
+            { "keys": "Shift + N", "description": "缩放到上一帧" },
+            { "keys": "N", "description": "缩放到下一帧" },
+            { "keys": "Page Up", "description": "上一页" },
+            { "keys": "Page Down", "description": "下一页" },
+            { "keys": "Home", "description": "查找上一帧" },
+            { "keys": "End", "description": "查找下一帧" }
+          ]
+        },
+        {
+          "category": "选择操作",
+          "items": [
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + Shift + A", "description": "反选" },
+            { "keys": "Esc", "description": "取消选择" },
+            { "keys": "Cmd + Click", "description": "深度选择" },
+            { "keys": "Cmd + Right Click", "description": "选择菜单" },
+            { "keys": "Return", "description": "编辑选中对象" },
+            { "keys": "Shift + Return", "description": "编辑选中对象（新标签）" },
+            { "keys": "Tab", "description": "选择子级" },
+            { "keys": "Shift + Tab", "description": "选择父级" },
+            { "keys": "Cmd + G", "description": "编组选择" },
+            { "keys": "Cmd + Shift + G", "description": "取消编组" }
+          ]
+        },
+        {
+          "category": "对象操作",
+          "items": [
+            { "keys": "Cmd + ]", "description": "置于顶层" },
+            { "keys": "Cmd + [", "description": "置于底层" },
+            { "keys": "Cmd + Shift + ]", "description": "上移一层" },
+            { "keys": "Cmd + Shift + [", "description": "下移一层" },
+            { "keys": "Cmd + Option + C", "description": "复制属性" },
+            { "keys": "Cmd + Option + V", "description": "粘贴属性" },
+            { "keys": "Cmd + Shift + O", "description": "轮廓化描边" },
+            { "keys": "Cmd + Shift + K", "description": "创建组件" },
+            { "keys": "Cmd + Option + K", "description": "分离实例" },
+            { "keys": "Option + Drag", "description": "复制拖拽" },
+            { "keys": "Cmd + R", "description": "重命名图层" }
+          ]
+        },
+        {
+          "category": "变换操作",
+          "items": [
+            { "keys": "Cmd + Shift + H", "description": "水平翻转" },
+            { "keys": "Cmd + Shift + V", "description": "垂直翻转" },
+            { "keys": "Cmd + Option + T", "description": "使用变换" },
+            { "keys": "Shift + Drag", "description": "等比例缩放" },
+            { "keys": "Option + Resize", "description": "从中心调整大小" },
+            { "keys": "Cmd + Drag", "description": "忽略约束" },
+            { "keys": "Shift + R", "description": "切换标尺" },
+            { "keys": "Cmd + Shift + 4", "description": "切换像素网格" },
+            { "keys": "Cmd + '", "description": "切换布局网格" },
+            { "keys": "Cmd + E", "description": "使用作为蒙版" },
+            { "keys": "Cmd + Shift + M", "description": "切换蒙版" }
+          ]
+        },
+        {
+          "category": "文本操作",
+          "items": [
+            { "keys": "Cmd + B", "description": "粗体" },
+            { "keys": "Cmd + I", "description": "斜体" },
+            { "keys": "Cmd + U", "description": "下划线" },
+            { "keys": "Cmd + Shift + X", "description": "删除线" },
+            { "keys": "Cmd + Option + L", "description": "文本左对齐" },
+            { "keys": "Cmd + Option + T", "description": "文本居中对齐" },
+            { "keys": "Cmd + Option + R", "description": "文本右对齐" },
+            { "keys": "Cmd + Option + J", "description": "文本两端对齐" },
+            { "keys": "Cmd + Shift + <", "description": "减小字体大小" },
+            { "keys": "Cmd + Shift + >", "description": "增大字体大小" },
+            { "keys": "Option + <", "description": "减小字符间距" },
+            { "keys": "Option + >", "description": "增大字符间距" }
+          ]
+        },
+        {
+          "category": "面板和界面",
+          "items": [
+            { "keys": "Cmd + \\", "description": "显示/隐藏UI" },
+            { "keys": "Cmd + Option + \\", "description": "显示/隐藏图层面板" },
+            { "keys": "Cmd + .", "description": "显示/隐藏库" },
+            { "keys": "Cmd + /", "description": "快速操作" },
+            { "keys": "Cmd + P", "description": "快速操作" },
+            { "keys": "Cmd + Shift + ?", "description": "键盘快捷键" },
+            { "keys": "Option + 1", "description": "显示图层" },
+            { "keys": "Option + 2", "description": "显示组件" },
+            { "keys": "Option + 3", "description": "显示团队库" },
+            { "keys": "F", "description": "全屏" },
+            { "keys": "Shift + F", "description": "显示像素" },
+            { "keys": "Cmd + Y", "description": "显示轮廓" }
+          ]
+        },
+        {
+          "category": "原型制作",
+          "items": [
+            { "keys": "Shift + E", "description": "切换到原型模式" },
+            { "keys": "R", "description": "重启原型" },
+            { "keys": "G", "description": "流程起点" },
+            { "keys": "Cmd + Return", "description": "播放原型" },
+            { "keys": "Shift + Space", "description": "播放原型（全屏）" },
+            { "keys": "Esc", "description": "关闭原型" },
+            { "keys": "Cmd + F", "description": "搜索" },
+            { "keys": "Cmd + Shift + C", "description": "复制链接" },
+            { "keys": "?", "description": "显示热点" }
+          ]
+        }
+      ]
+    }
+  }
+}

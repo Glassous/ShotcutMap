@@ -1,0 +1,271 @@
+{
+  "name": "Adobe Premiere Pro",
+  "icon": "/premiere-pro-cc.svg",
+  "description": "视频编辑软件",
+  "category": "设计类",
+  "officialDocs": "https://helpx.adobe.com/premiere-pro/using/keyboard-shortcuts.html",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建项目" },
+            { "keys": "Ctrl + O", "description": "打开项目" },
+            { "keys": "Ctrl + S", "description": "保存项目" },
+            { "keys": "Ctrl + Shift + S", "description": "另存为" },
+            { "keys": "Ctrl + W", "description": "关闭项目" },
+            { "keys": "Ctrl + Q", "description": "退出" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Shift + Z", "description": "重做" },
+            { "keys": "Ctrl + I", "description": "导入媒体" },
+            { "keys": "Ctrl + M", "description": "导出媒体" }
+          ]
+        },
+        {
+          "category": "播放控制",
+          "items": [
+            { "keys": "Space", "description": "播放/暂停" },
+            { "keys": "L", "description": "快进播放" },
+            { "keys": "J", "description": "倒退播放" },
+            { "keys": "K", "description": "暂停" },
+            { "keys": "←", "description": "后退一帧" },
+            { "keys": "→", "description": "前进一帧" },
+            { "keys": "Shift + ←", "description": "后退5帧" },
+            { "keys": "Shift + →", "description": "前进5帧" },
+            { "keys": "Page Up", "description": "转到上一个编辑点" },
+            { "keys": "Page Down", "description": "转到下一个编辑点" },
+            { "keys": "Home", "description": "转到序列开头" },
+            { "keys": "End", "description": "转到序列结尾" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴插入" },
+            { "keys": "Ctrl + Alt + V", "description": "粘贴属性" },
+            { "keys": "Delete", "description": "删除" },
+            { "keys": "Backspace", "description": "波纹删除" },
+            { "keys": "Ctrl + K", "description": "剃刀工具切割" },
+            { "keys": "C", "description": "剃刀工具" },
+            { "keys": "V", "description": "选择工具" },
+            { "keys": "A", "description": "轨道选择工具" },
+            { "keys": "B", "description": "波纹编辑工具" },
+            { "keys": "N", "description": "滑移工具" },
+            { "keys": "U", "description": "滑动工具" }
+          ]
+        },
+        {
+          "category": "标记和剪辑",
+          "items": [
+            { "keys": "I", "description": "标记入点" },
+            { "keys": "O", "description": "标记出点" },
+            { "keys": "X", "description": "标记剪辑" },
+            { "keys": "M", "description": "添加标记" },
+            { "keys": "Shift + M", "description": "转到下一个标记" },
+            { "keys": "Ctrl + Shift + M", "description": "转到上一个标记" },
+            { "keys": "Alt + I", "description": "清除入点" },
+            { "keys": "Alt + O", "description": "清除出点" },
+            { "keys": "Alt + X", "description": "清除入点和出点" },
+            { "keys": "Q", "description": "波纹修整到播放头" },
+            { "keys": "W", "description": "波纹修整到播放头" }
+          ]
+        },
+        {
+          "category": "轨道操作",
+          "items": [
+            { "keys": "Shift + Delete", "description": "提取" },
+            { "keys": "Alt + Delete", "description": "提升" },
+            { "keys": ".", "description": "插入" },
+            { "keys": ",", "description": "覆盖" },
+            { "keys": "Ctrl + Shift + D", "description": "复制" },
+            { "keys": "Ctrl + L", "description": "链接/取消链接" },
+            { "keys": "Ctrl + G", "description": "编组" },
+            { "keys": "Ctrl + Shift + G", "description": "取消编组" },
+            { "keys": "Ctrl + R", "description": "速度/持续时间" },
+            { "keys": "Alt + R", "description": "反向速度" }
+          ]
+        },
+        {
+          "category": "视图和窗口",
+          "items": [
+            { "keys": "Ctrl + +", "description": "放大时间轴" },
+            { "keys": "Ctrl + -", "description": "缩小时间轴" },
+            { "keys": "\\", "description": "适合时间轴" },
+            { "keys": "Shift + ?", "description": "最大化面板" },
+            { "keys": "~", "description": "最大化帧" },
+            { "keys": "Ctrl + `", "description": "在源监视器和节目监视器间切换" },
+            { "keys": "Shift + 1", "description": "切换到项目面板" },
+            { "keys": "Shift + 2", "description": "切换到源监视器" },
+            { "keys": "Shift + 3", "description": "切换到时间轴" },
+            { "keys": "Shift + 4", "description": "切换到节目监视器" },
+            { "keys": "Shift + 5", "description": "切换到效果控件" },
+            { "keys": "Shift + 6", "description": "切换到音频混合器" },
+            { "keys": "Shift + 7", "description": "切换到效果" }
+          ]
+        },
+        {
+          "category": "效果和颜色",
+          "items": [
+            { "keys": "Ctrl + D", "description": "应用默认转场" },
+            { "keys": "Ctrl + Shift + D", "description": "应用默认音频转场" },
+            { "keys": "Alt + D", "description": "清除选定的效果" },
+            { "keys": "Ctrl + U", "description": "启用/禁用剪辑" },
+            { "keys": "Shift + T", "description": "默认标题" },
+            { "keys": "F", "description": "匹配帧" },
+            { "keys": "Shift + R", "description": "同步设置" },
+            { "keys": "Shift + G", "description": "音频增益" }
+          ]
+        },
+        {
+          "category": "音频操作",
+          "items": [
+            { "keys": "Shift + A", "description": "音频轨道混合器" },
+            { "keys": "Ctrl + Shift + A", "description": "音频剪辑混合器" },
+            { "keys": "Alt + ↑", "description": "增加音频增益" },
+            { "keys": "Alt + ↓", "description": "减少音频增益" },
+            { "keys": "S", "description": "独奏" },
+            { "keys": "Shift + S", "description": "静音" },
+            { "keys": "Alt + L", "description": "音频电平" },
+            { "keys": "Shift + E", "description": "启用音频轨道" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建项目" },
+            { "keys": "Cmd + O", "description": "打开项目" },
+            { "keys": "Cmd + S", "description": "保存项目" },
+            { "keys": "Cmd + Shift + S", "description": "另存为" },
+            { "keys": "Cmd + W", "description": "关闭项目" },
+            { "keys": "Cmd + Q", "description": "退出" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Shift + Z", "description": "重做" },
+            { "keys": "Cmd + I", "description": "导入媒体" },
+            { "keys": "Cmd + M", "description": "导出媒体" }
+          ]
+        },
+        {
+          "category": "播放控制",
+          "items": [
+            { "keys": "Space", "description": "播放/暂停" },
+            { "keys": "L", "description": "快进播放" },
+            { "keys": "J", "description": "倒退播放" },
+            { "keys": "K", "description": "暂停" },
+            { "keys": "←", "description": "后退一帧" },
+            { "keys": "→", "description": "前进一帧" },
+            { "keys": "Shift + ←", "description": "后退5帧" },
+            { "keys": "Shift + →", "description": "前进5帧" },
+            { "keys": "Page Up", "description": "转到上一个编辑点" },
+            { "keys": "Page Down", "description": "转到下一个编辑点" },
+            { "keys": "Home", "description": "转到序列开头" },
+            { "keys": "End", "description": "转到序列结尾" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + Shift + V", "description": "粘贴插入" },
+            { "keys": "Cmd + Option + V", "description": "粘贴属性" },
+            { "keys": "Delete", "description": "删除" },
+            { "keys": "Backspace", "description": "波纹删除" },
+            { "keys": "Cmd + K", "description": "剃刀工具切割" },
+            { "keys": "C", "description": "剃刀工具" },
+            { "keys": "V", "description": "选择工具" },
+            { "keys": "A", "description": "轨道选择工具" },
+            { "keys": "B", "description": "波纹编辑工具" },
+            { "keys": "N", "description": "滑移工具" },
+            { "keys": "U", "description": "滑动工具" }
+          ]
+        },
+        {
+          "category": "标记和剪辑",
+          "items": [
+            { "keys": "I", "description": "标记入点" },
+            { "keys": "O", "description": "标记出点" },
+            { "keys": "X", "description": "标记剪辑" },
+            { "keys": "M", "description": "添加标记" },
+            { "keys": "Shift + M", "description": "转到下一个标记" },
+            { "keys": "Cmd + Shift + M", "description": "转到上一个标记" },
+            { "keys": "Option + I", "description": "清除入点" },
+            { "keys": "Option + O", "description": "清除出点" },
+            { "keys": "Option + X", "description": "清除入点和出点" },
+            { "keys": "Q", "description": "波纹修整到播放头" },
+            { "keys": "W", "description": "波纹修整到播放头" }
+          ]
+        },
+        {
+          "category": "轨道操作",
+          "items": [
+            { "keys": "Shift + Delete", "description": "提取" },
+            { "keys": "Option + Delete", "description": "提升" },
+            { "keys": ".", "description": "插入" },
+            { "keys": ",", "description": "覆盖" },
+            { "keys": "Cmd + Shift + D", "description": "复制" },
+            { "keys": "Cmd + L", "description": "链接/取消链接" },
+            { "keys": "Cmd + G", "description": "编组" },
+            { "keys": "Cmd + Shift + G", "description": "取消编组" },
+            { "keys": "Cmd + R", "description": "速度/持续时间" },
+            { "keys": "Option + R", "description": "反向速度" }
+          ]
+        },
+        {
+          "category": "视图和窗口",
+          "items": [
+            { "keys": "Cmd + +", "description": "放大时间轴" },
+            { "keys": "Cmd + -", "description": "缩小时间轴" },
+            { "keys": "\\", "description": "适合时间轴" },
+            { "keys": "Shift + ?", "description": "最大化面板" },
+            { "keys": "~", "description": "最大化帧" },
+            { "keys": "Cmd + `", "description": "在源监视器和节目监视器间切换" },
+            { "keys": "Shift + 1", "description": "切换到项目面板" },
+            { "keys": "Shift + 2", "description": "切换到源监视器" },
+            { "keys": "Shift + 3", "description": "切换到时间轴" },
+            { "keys": "Shift + 4", "description": "切换到节目监视器" },
+            { "keys": "Shift + 5", "description": "切换到效果控件" },
+            { "keys": "Shift + 6", "description": "切换到音频混合器" },
+            { "keys": "Shift + 7", "description": "切换到效果" }
+          ]
+        },
+        {
+          "category": "效果和颜色",
+          "items": [
+            { "keys": "Cmd + D", "description": "应用默认转场" },
+            { "keys": "Cmd + Shift + D", "description": "应用默认音频转场" },
+            { "keys": "Option + D", "description": "清除选定的效果" },
+            { "keys": "Cmd + U", "description": "启用/禁用剪辑" },
+            { "keys": "Shift + T", "description": "默认标题" },
+            { "keys": "F", "description": "匹配帧" },
+            { "keys": "Shift + R", "description": "同步设置" },
+            { "keys": "Shift + G", "description": "音频增益" }
+          ]
+        },
+        {
+          "category": "音频操作",
+          "items": [
+            { "keys": "Shift + A", "description": "音频轨道混合器" },
+            { "keys": "Cmd + Shift + A", "description": "音频剪辑混合器" },
+            { "keys": "Option + ↑", "description": "增加音频增益" },
+            { "keys": "Option + ↓", "description": "减少音频增益" },
+            { "keys": "S", "description": "独奏" },
+            { "keys": "Shift + S", "description": "静音" },
+            { "keys": "Option + L", "description": "音频电平" },
+            { "keys": "Shift + E", "description": "启用音频轨道" }
+          ]
+        }
+      ]
+    }
+  }
+}

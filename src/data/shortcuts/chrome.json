@@ -1,7 +1,8 @@
 {
   "name": "Google Chrome",
-  "icon": "🌐",
+  "icon": "/chrome-modern-.svg",
   "description": "谷歌浏览器",
+  "category": "办公软件",
   "officialDocs": "https://support.google.com/chrome/answer/157179",
   "systems": {
     "windows": {

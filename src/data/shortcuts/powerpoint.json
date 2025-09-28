@@ -1,0 +1,198 @@
+{
+  "name": "Microsoft PowerPoint",
+  "icon": "/powerpoint-2.svg",
+  "description": "微软演示文稿软件",
+  "category": "办公软件",
+  "officialDocs": "https://support.microsoft.com/zh-cn/office/powerpoint-%E4%B8%AD%E7%9A%84%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F-ebb3d20e-dcd4-444f-a38e-bb5c5ed180f4",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建演示文稿" },
+            { "keys": "Ctrl + O", "description": "打开演示文稿" },
+            { "keys": "Ctrl + S", "description": "保存演示文稿" },
+            { "keys": "Ctrl + P", "description": "打印演示文稿" },
+            { "keys": "Ctrl + W", "description": "关闭演示文稿" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Y", "description": "重做" },
+            { "keys": "F12", "description": "另存为" },
+            { "keys": "Alt + F4", "description": "退出PowerPoint" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + H", "description": "替换" },
+            { "keys": "Ctrl + D", "description": "复制幻灯片" },
+            { "keys": "Delete", "description": "删除选定的幻灯片或对象" },
+            { "keys": "Ctrl + Shift + C", "description": "复制格式" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴格式" }
+          ]
+        },
+        {
+          "category": "幻灯片操作",
+          "items": [
+            { "keys": "Ctrl + M", "description": "新建幻灯片" },
+            { "keys": "Ctrl + Shift + D", "description": "复制幻灯片" },
+            { "keys": "Page Up", "description": "转到上一张幻灯片" },
+            { "keys": "Page Down", "description": "转到下一张幻灯片" },
+            { "keys": "Home", "description": "转到第一张幻灯片" },
+            { "keys": "End", "description": "转到最后一张幻灯片" },
+            { "keys": "Ctrl + G", "description": "转到特定幻灯片" }
+          ]
+        },
+        {
+          "category": "格式设置",
+          "items": [
+            { "keys": "Ctrl + B", "description": "粗体" },
+            { "keys": "Ctrl + I", "description": "斜体" },
+            { "keys": "Ctrl + U", "description": "下划线" },
+            { "keys": "Ctrl + E", "description": "居中对齐" },
+            { "keys": "Ctrl + L", "description": "左对齐" },
+            { "keys": "Ctrl + R", "description": "右对齐" },
+            { "keys": "Ctrl + J", "description": "两端对齐" },
+            { "keys": "Ctrl + Shift + >", "description": "增大字体" },
+            { "keys": "Ctrl + Shift + <", "description": "减小字体" },
+            { "keys": "Ctrl + T", "description": "打开字体对话框" }
+          ]
+        },
+        {
+          "category": "对象操作",
+          "items": [
+            { "keys": "Ctrl + G", "description": "组合对象" },
+            { "keys": "Ctrl + Shift + G", "description": "取消组合对象" },
+            { "keys": "Ctrl + Shift + F", "description": "置于顶层" },
+            { "keys": "Ctrl + Shift + B", "description": "置于底层" },
+            { "keys": "F4", "description": "重复上一个操作" },
+            { "keys": "Shift + F10", "description": "显示快捷菜单" },
+            { "keys": "Alt + Shift + ←", "description": "将对象向左旋转" },
+            { "keys": "Alt + Shift + →", "description": "将对象向右旋转" }
+          ]
+        },
+        {
+          "category": "演示文稿播放",
+          "items": [
+            { "keys": "F5", "description": "从头开始播放幻灯片" },
+            { "keys": "Shift + F5", "description": "从当前幻灯片开始播放" },
+            { "keys": "Esc", "description": "结束幻灯片播放" },
+            { "keys": "N", "description": "播放时转到下一张幻灯片" },
+            { "keys": "P", "description": "播放时转到上一张幻灯片" },
+            { "keys": "B", "description": "播放时显示黑屏" },
+            { "keys": "W", "description": "播放时显示白屏" },
+            { "keys": "S", "description": "播放时停止或重新开始自动播放" }
+          ]
+        },
+        {
+          "category": "视图切换",
+          "items": [
+            { "keys": "Alt + W + N", "description": "普通视图" },
+            { "keys": "Alt + W + O", "description": "大纲视图" },
+            { "keys": "Alt + W + S", "description": "幻灯片浏览视图" },
+            { "keys": "Alt + W + M", "description": "备注页视图" },
+            { "keys": "Alt + W + R", "description": "阅读视图" },
+            { "keys": "Alt + W + L", "description": "幻灯片母版视图" }
+          ]
+        },
+        {
+          "category": "选择和导航",
+          "items": [
+            { "keys": "Tab", "description": "选择下一个对象" },
+            { "keys": "Shift + Tab", "description": "选择上一个对象" },
+            { "keys": "Ctrl + A", "description": "选择所有对象" },
+            { "keys": "Ctrl + Shift + Home", "description": "选择到文本开头" },
+            { "keys": "Ctrl + Shift + End", "description": "选择到文本结尾" },
+            { "keys": "Ctrl + ←", "description": "向左移动一个单词" },
+            { "keys": "Ctrl + →", "description": "向右移动一个单词" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建演示文稿" },
+            { "keys": "Cmd + O", "description": "打开演示文稿" },
+            { "keys": "Cmd + S", "description": "保存演示文稿" },
+            { "keys": "Cmd + P", "description": "打印演示文稿" },
+            { "keys": "Cmd + W", "description": "关闭演示文稿" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Y", "description": "重做" },
+            { "keys": "Cmd + Shift + S", "description": "另存为" },
+            { "keys": "Cmd + Q", "description": "退出PowerPoint" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + F", "description": "查找" },
+            { "keys": "Cmd + Option + F", "description": "替换" },
+            { "keys": "Cmd + D", "description": "复制幻灯片" },
+            { "keys": "Delete", "description": "删除选定的幻灯片或对象" }
+          ]
+        },
+        {
+          "category": "幻灯片操作",
+          "items": [
+            { "keys": "Cmd + Shift + N", "description": "新建幻灯片" },
+            { "keys": "Cmd + Shift + D", "description": "复制幻灯片" },
+            { "keys": "Page Up", "description": "转到上一张幻灯片" },
+            { "keys": "Page Down", "description": "转到下一张幻灯片" },
+            { "keys": "Home", "description": "转到第一张幻灯片" },
+            { "keys": "End", "description": "转到最后一张幻灯片" }
+          ]
+        },
+        {
+          "category": "格式设置",
+          "items": [
+            { "keys": "Cmd + B", "description": "粗体" },
+            { "keys": "Cmd + I", "description": "斜体" },
+            { "keys": "Cmd + U", "description": "下划线" },
+            { "keys": "Cmd + E", "description": "居中对齐" },
+            { "keys": "Cmd + L", "description": "左对齐" },
+            { "keys": "Cmd + R", "description": "右对齐" },
+            { "keys": "Cmd + J", "description": "两端对齐" },
+            { "keys": "Cmd + Shift + >", "description": "增大字体" },
+            { "keys": "Cmd + Shift + <", "description": "减小字体" }
+          ]
+        },
+        {
+          "category": "演示文稿播放",
+          "items": [
+            { "keys": "Cmd + Shift + Return", "description": "从头开始播放幻灯片" },
+            { "keys": "Cmd + Return", "description": "从当前幻灯片开始播放" },
+            { "keys": "Esc", "description": "结束幻灯片播放" },
+            { "keys": "N", "description": "播放时转到下一张幻灯片" },
+            { "keys": "P", "description": "播放时转到上一张幻灯片" },
+            { "keys": "B", "description": "播放时显示黑屏" },
+            { "keys": "W", "description": "播放时显示白屏" }
+          ]
+        },
+        {
+          "category": "选择和导航",
+          "items": [
+            { "keys": "Tab", "description": "选择下一个对象" },
+            { "keys": "Shift + Tab", "description": "选择上一个对象" },
+            { "keys": "Cmd + A", "description": "选择所有对象" },
+            { "keys": "Option + ←", "description": "向左移动一个单词" },
+            { "keys": "Option + →", "description": "向右移动一个单词" }
+          ]
+        }
+      ]
+    }
+  }
+}

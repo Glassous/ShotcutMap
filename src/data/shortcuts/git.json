@@ -1,0 +1,426 @@
+{
+  "name": "Git",
+  "icon": "/git-bash.svg",
+  "description": "版本控制系统",
+  "category": "开发类",
+  "officialDocs": "https://git-scm.com/docs",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "git status", "description": "查看仓库状态" },
+            { "keys": "git add .", "description": "添加所有更改到暂存区" },
+            { "keys": "git add <file>", "description": "添加指定文件到暂存区" },
+            { "keys": "git commit -m \"message\"", "description": "提交更改" },
+            { "keys": "git commit -am \"message\"", "description": "添加并提交所有更改" },
+            { "keys": "git push", "description": "推送到远程仓库" },
+            { "keys": "git pull", "description": "从远程仓库拉取" },
+            { "keys": "git clone <url>", "description": "克隆远程仓库" },
+            { "keys": "git init", "description": "初始化新仓库" },
+            { "keys": "git remote -v", "description": "查看远程仓库" }
+          ]
+        },
+        {
+          "category": "分支操作",
+          "items": [
+            { "keys": "git branch", "description": "列出所有分支" },
+            { "keys": "git branch <name>", "description": "创建新分支" },
+            { "keys": "git checkout <branch>", "description": "切换分支" },
+            { "keys": "git checkout -b <name>", "description": "创建并切换到新分支" },
+            { "keys": "git switch <branch>", "description": "切换分支（新语法）" },
+            { "keys": "git switch -c <name>", "description": "创建并切换到新分支（新语法）" },
+            { "keys": "git merge <branch>", "description": "合并分支" },
+            { "keys": "git branch -d <name>", "description": "删除分支" },
+            { "keys": "git branch -D <name>", "description": "强制删除分支" },
+            { "keys": "git push -u origin <branch>", "description": "推送新分支到远程" }
+          ]
+        },
+        {
+          "category": "历史记录",
+          "items": [
+            { "keys": "git log", "description": "查看提交历史" },
+            { "keys": "git log --oneline", "description": "查看简化的提交历史" },
+            { "keys": "git log --graph", "description": "查看图形化提交历史" },
+            { "keys": "git log -p", "description": "查看详细的提交差异" },
+            { "keys": "git log -n <number>", "description": "查看最近n次提交" },
+            { "keys": "git show <commit>", "description": "查看指定提交的详情" },
+            { "keys": "git diff", "description": "查看工作区与暂存区的差异" },
+            { "keys": "git diff --staged", "description": "查看暂存区与最后提交的差异" },
+            { "keys": "git diff <commit1> <commit2>", "description": "比较两个提交" },
+            { "keys": "git blame <file>", "description": "查看文件的每行修改历史" }
+          ]
+        },
+        {
+          "category": "撤销操作",
+          "items": [
+            { "keys": "git reset HEAD <file>", "description": "取消暂存文件" },
+            { "keys": "git reset --soft HEAD~1", "description": "撤销最后一次提交（保留更改）" },
+            { "keys": "git reset --hard HEAD~1", "description": "撤销最后一次提交（丢弃更改）" },
+            { "keys": "git checkout -- <file>", "description": "撤销工作区文件的更改" },
+            { "keys": "git restore <file>", "description": "恢复工作区文件（新语法）" },
+            { "keys": "git restore --staged <file>", "description": "取消暂存文件（新语法）" },
+            { "keys": "git revert <commit>", "description": "创建反向提交" },
+            { "keys": "git clean -fd", "description": "删除未跟踪的文件和目录" },
+            { "keys": "git stash", "description": "暂存当前更改" },
+            { "keys": "git stash pop", "description": "恢复最近的暂存" }
+          ]
+        },
+        {
+          "category": "远程操作",
+          "items": [
+            { "keys": "git remote add origin <url>", "description": "添加远程仓库" },
+            { "keys": "git remote remove <name>", "description": "删除远程仓库" },
+            { "keys": "git fetch", "description": "获取远程更新" },
+            { "keys": "git fetch --all", "description": "获取所有远程分支" },
+            { "keys": "git push origin <branch>", "description": "推送分支到远程" },
+            { "keys": "git push --force", "description": "强制推送" },
+            { "keys": "git push --tags", "description": "推送标签" },
+            { "keys": "git pull origin <branch>", "description": "从远程分支拉取" },
+            { "keys": "git pull --rebase", "description": "使用rebase方式拉取" },
+            { "keys": "git push -d origin <branch>", "description": "删除远程分支" }
+          ]
+        },
+        {
+          "category": "标签操作",
+          "items": [
+            { "keys": "git tag", "description": "列出所有标签" },
+            { "keys": "git tag <name>", "description": "创建轻量标签" },
+            { "keys": "git tag -a <name> -m \"message\"", "description": "创建注释标签" },
+            { "keys": "git tag -d <name>", "description": "删除本地标签" },
+            { "keys": "git push origin <tag>", "description": "推送标签到远程" },
+            { "keys": "git push origin --tags", "description": "推送所有标签" },
+            { "keys": "git push origin :refs/tags/<tag>", "description": "删除远程标签" },
+            { "keys": "git checkout <tag>", "description": "检出标签" },
+            { "keys": "git show <tag>", "description": "查看标签信息" }
+          ]
+        },
+        {
+          "category": "配置操作",
+          "items": [
+            { "keys": "git config --global user.name \"name\"", "description": "设置全局用户名" },
+            { "keys": "git config --global user.email \"email\"", "description": "设置全局邮箱" },
+            { "keys": "git config --list", "description": "查看所有配置" },
+            { "keys": "git config --global --list", "description": "查看全局配置" },
+            { "keys": "git config --local --list", "description": "查看本地配置" },
+            { "keys": "git config --global init.defaultBranch main", "description": "设置默认分支名" },
+            { "keys": "git config --global core.editor \"code --wait\"", "description": "设置默认编辑器" },
+            { "keys": "git config --global alias.st status", "description": "设置命令别名" },
+            { "keys": "git config --global alias.co checkout", "description": "设置checkout别名" },
+            { "keys": "git config --global alias.br branch", "description": "设置branch别名" }
+          ]
+        },
+        {
+          "category": "常用别名",
+          "items": [
+            { "keys": "git st", "description": "status的别名" },
+            { "keys": "git co", "description": "checkout的别名" },
+            { "keys": "git br", "description": "branch的别名" },
+            { "keys": "git ci", "description": "commit的别名" },
+            { "keys": "git unstage", "description": "reset HEAD --的别名" },
+            { "keys": "git last", "description": "log -1 HEAD的别名" },
+            { "keys": "git visual", "description": "!gitk的别名" },
+            { "keys": "git lg", "description": "log --oneline --graph的别名" },
+            { "keys": "git undo", "description": "reset --soft HEAD~1的别名" },
+            { "keys": "git amend", "description": "commit --amend的别名" }
+          ]
+        },
+        {
+          "category": "高级操作",
+          "items": [
+            { "keys": "git rebase <branch>", "description": "变基操作" },
+            { "keys": "git rebase -i HEAD~n", "description": "交互式变基" },
+            { "keys": "git cherry-pick <commit>", "description": "挑选提交" },
+            { "keys": "git bisect start", "description": "开始二分查找" },
+            { "keys": "git worktree add <path> <branch>", "description": "添加工作树" },
+            { "keys": "git submodule add <url>", "description": "添加子模块" },
+            { "keys": "git archive --format=zip HEAD", "description": "创建归档" },
+            { "keys": "git reflog", "description": "查看引用日志" },
+            { "keys": "git fsck", "description": "检查仓库完整性" },
+            { "keys": "git gc", "description": "垃圾回收" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "git status", "description": "查看仓库状态" },
+            { "keys": "git add .", "description": "添加所有更改到暂存区" },
+            { "keys": "git add <file>", "description": "添加指定文件到暂存区" },
+            { "keys": "git commit -m \"message\"", "description": "提交更改" },
+            { "keys": "git commit -am \"message\"", "description": "添加并提交所有更改" },
+            { "keys": "git push", "description": "推送到远程仓库" },
+            { "keys": "git pull", "description": "从远程仓库拉取" },
+            { "keys": "git clone <url>", "description": "克隆远程仓库" },
+            { "keys": "git init", "description": "初始化新仓库" },
+            { "keys": "git remote -v", "description": "查看远程仓库" }
+          ]
+        },
+        {
+          "category": "分支操作",
+          "items": [
+            { "keys": "git branch", "description": "列出所有分支" },
+            { "keys": "git branch <name>", "description": "创建新分支" },
+            { "keys": "git checkout <branch>", "description": "切换分支" },
+            { "keys": "git checkout -b <name>", "description": "创建并切换到新分支" },
+            { "keys": "git switch <branch>", "description": "切换分支（新语法）" },
+            { "keys": "git switch -c <name>", "description": "创建并切换到新分支（新语法）" },
+            { "keys": "git merge <branch>", "description": "合并分支" },
+            { "keys": "git branch -d <name>", "description": "删除分支" },
+            { "keys": "git branch -D <name>", "description": "强制删除分支" },
+            { "keys": "git push -u origin <branch>", "description": "推送新分支到远程" }
+          ]
+        },
+        {
+          "category": "历史记录",
+          "items": [
+            { "keys": "git log", "description": "查看提交历史" },
+            { "keys": "git log --oneline", "description": "查看简化的提交历史" },
+            { "keys": "git log --graph", "description": "查看图形化提交历史" },
+            { "keys": "git log -p", "description": "查看详细的提交差异" },
+            { "keys": "git log -n <number>", "description": "查看最近n次提交" },
+            { "keys": "git show <commit>", "description": "查看指定提交的详情" },
+            { "keys": "git diff", "description": "查看工作区与暂存区的差异" },
+            { "keys": "git diff --staged", "description": "查看暂存区与最后提交的差异" },
+            { "keys": "git diff <commit1> <commit2>", "description": "比较两个提交" },
+            { "keys": "git blame <file>", "description": "查看文件的每行修改历史" }
+          ]
+        },
+        {
+          "category": "撤销操作",
+          "items": [
+            { "keys": "git reset HEAD <file>", "description": "取消暂存文件" },
+            { "keys": "git reset --soft HEAD~1", "description": "撤销最后一次提交（保留更改）" },
+            { "keys": "git reset --hard HEAD~1", "description": "撤销最后一次提交（丢弃更改）" },
+            { "keys": "git checkout -- <file>", "description": "撤销工作区文件的更改" },
+            { "keys": "git restore <file>", "description": "恢复工作区文件（新语法）" },
+            { "keys": "git restore --staged <file>", "description": "取消暂存文件（新语法）" },
+            { "keys": "git revert <commit>", "description": "创建反向提交" },
+            { "keys": "git clean -fd", "description": "删除未跟踪的文件和目录" },
+            { "keys": "git stash", "description": "暂存当前更改" },
+            { "keys": "git stash pop", "description": "恢复最近的暂存" }
+          ]
+        },
+        {
+          "category": "远程操作",
+          "items": [
+            { "keys": "git remote add origin <url>", "description": "添加远程仓库" },
+            { "keys": "git remote remove <name>", "description": "删除远程仓库" },
+            { "keys": "git fetch", "description": "获取远程更新" },
+            { "keys": "git fetch --all", "description": "获取所有远程分支" },
+            { "keys": "git push origin <branch>", "description": "推送分支到远程" },
+            { "keys": "git push --force", "description": "强制推送" },
+            { "keys": "git push --tags", "description": "推送标签" },
+            { "keys": "git pull origin <branch>", "description": "从远程分支拉取" },
+            { "keys": "git pull --rebase", "description": "使用rebase方式拉取" },
+            { "keys": "git push -d origin <branch>", "description": "删除远程分支" }
+          ]
+        },
+        {
+          "category": "标签操作",
+          "items": [
+            { "keys": "git tag", "description": "列出所有标签" },
+            { "keys": "git tag <name>", "description": "创建轻量标签" },
+            { "keys": "git tag -a <name> -m \"message\"", "description": "创建注释标签" },
+            { "keys": "git tag -d <name>", "description": "删除本地标签" },
+            { "keys": "git push origin <tag>", "description": "推送标签到远程" },
+            { "keys": "git push origin --tags", "description": "推送所有标签" },
+            { "keys": "git push origin :refs/tags/<tag>", "description": "删除远程标签" },
+            { "keys": "git checkout <tag>", "description": "检出标签" },
+            { "keys": "git show <tag>", "description": "查看标签信息" }
+          ]
+        },
+        {
+          "category": "配置操作",
+          "items": [
+            { "keys": "git config --global user.name \"name\"", "description": "设置全局用户名" },
+            { "keys": "git config --global user.email \"email\"", "description": "设置全局邮箱" },
+            { "keys": "git config --list", "description": "查看所有配置" },
+            { "keys": "git config --global --list", "description": "查看全局配置" },
+            { "keys": "git config --local --list", "description": "查看本地配置" },
+            { "keys": "git config --global init.defaultBranch main", "description": "设置默认分支名" },
+            { "keys": "git config --global core.editor \"code --wait\"", "description": "设置默认编辑器" },
+            { "keys": "git config --global alias.st status", "description": "设置命令别名" },
+            { "keys": "git config --global alias.co checkout", "description": "设置checkout别名" },
+            { "keys": "git config --global alias.br branch", "description": "设置branch别名" }
+          ]
+        },
+        {
+          "category": "常用别名",
+          "items": [
+            { "keys": "git st", "description": "status的别名" },
+            { "keys": "git co", "description": "checkout的别名" },
+            { "keys": "git br", "description": "branch的别名" },
+            { "keys": "git ci", "description": "commit的别名" },
+            { "keys": "git unstage", "description": "reset HEAD --的别名" },
+            { "keys": "git last", "description": "log -1 HEAD的别名" },
+            { "keys": "git visual", "description": "!gitk的别名" },
+            { "keys": "git lg", "description": "log --oneline --graph的别名" },
+            { "keys": "git undo", "description": "reset --soft HEAD~1的别名" },
+            { "keys": "git amend", "description": "commit --amend的别名" }
+          ]
+        },
+        {
+          "category": "高级操作",
+          "items": [
+            { "keys": "git rebase <branch>", "description": "变基操作" },
+            { "keys": "git rebase -i HEAD~n", "description": "交互式变基" },
+            { "keys": "git cherry-pick <commit>", "description": "挑选提交" },
+            { "keys": "git bisect start", "description": "开始二分查找" },
+            { "keys": "git worktree add <path> <branch>", "description": "添加工作树" },
+            { "keys": "git submodule add <url>", "description": "添加子模块" },
+            { "keys": "git archive --format=zip HEAD", "description": "创建归档" },
+            { "keys": "git reflog", "description": "查看引用日志" },
+            { "keys": "git fsck", "description": "检查仓库完整性" },
+            { "keys": "git gc", "description": "垃圾回收" }
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "name": "Linux",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "git status", "description": "查看仓库状态" },
+            { "keys": "git add .", "description": "添加所有更改到暂存区" },
+            { "keys": "git add <file>", "description": "添加指定文件到暂存区" },
+            { "keys": "git commit -m \"message\"", "description": "提交更改" },
+            { "keys": "git commit -am \"message\"", "description": "添加并提交所有更改" },
+            { "keys": "git push", "description": "推送到远程仓库" },
+            { "keys": "git pull", "description": "从远程仓库拉取" },
+            { "keys": "git clone <url>", "description": "克隆远程仓库" },
+            { "keys": "git init", "description": "初始化新仓库" },
+            { "keys": "git remote -v", "description": "查看远程仓库" }
+          ]
+        },
+        {
+          "category": "分支操作",
+          "items": [
+            { "keys": "git branch", "description": "列出所有分支" },
+            { "keys": "git branch <name>", "description": "创建新分支" },
+            { "keys": "git checkout <branch>", "description": "切换分支" },
+            { "keys": "git checkout -b <name>", "description": "创建并切换到新分支" },
+            { "keys": "git switch <branch>", "description": "切换分支（新语法）" },
+            { "keys": "git switch -c <name>", "description": "创建并切换到新分支（新语法）" },
+            { "keys": "git merge <branch>", "description": "合并分支" },
+            { "keys": "git branch -d <name>", "description": "删除分支" },
+            { "keys": "git branch -D <name>", "description": "强制删除分支" },
+            { "keys": "git push -u origin <branch>", "description": "推送新分支到远程" }
+          ]
+        },
+        {
+          "category": "历史记录",
+          "items": [
+            { "keys": "git log", "description": "查看提交历史" },
+            { "keys": "git log --oneline", "description": "查看简化的提交历史" },
+            { "keys": "git log --graph", "description": "查看图形化提交历史" },
+            { "keys": "git log -p", "description": "查看详细的提交差异" },
+            { "keys": "git log -n <number>", "description": "查看最近n次提交" },
+            { "keys": "git show <commit>", "description": "查看指定提交的详情" },
+            { "keys": "git diff", "description": "查看工作区与暂存区的差异" },
+            { "keys": "git diff --staged", "description": "查看暂存区与最后提交的差异" },
+            { "keys": "git diff <commit1> <commit2>", "description": "比较两个提交" },
+            { "keys": "git blame <file>", "description": "查看文件的每行修改历史" }
+          ]
+        },
+        {
+          "category": "撤销操作",
+          "items": [
+            { "keys": "git reset HEAD <file>", "description": "取消暂存文件" },
+            { "keys": "git reset --soft HEAD~1", "description": "撤销最后一次提交（保留更改）" },
+            { "keys": "git reset --hard HEAD~1", "description": "撤销最后一次提交（丢弃更改）" },
+            { "keys": "git checkout -- <file>", "description": "撤销工作区文件的更改" },
+            { "keys": "git restore <file>", "description": "恢复工作区文件（新语法）" },
+            { "keys": "git restore --staged <file>", "description": "取消暂存文件（新语法）" },
+            { "keys": "git revert <commit>", "description": "创建反向提交" },
+            { "keys": "git clean -fd", "description": "删除未跟踪的文件和目录" },
+            { "keys": "git stash", "description": "暂存当前更改" },
+            { "keys": "git stash pop", "description": "恢复最近的暂存" }
+          ]
+        },
+        {
+          "category": "远程操作",
+          "items": [
+            { "keys": "git remote add origin <url>", "description": "添加远程仓库" },
+            { "keys": "git remote remove <name>", "description": "删除远程仓库" },
+            { "keys": "git fetch", "description": "获取远程更新" },
+            { "keys": "git fetch --all", "description": "获取所有远程分支" },
+            { "keys": "git push origin <branch>", "description": "推送分支到远程" },
+            { "keys": "git push --force", "description": "强制推送" },
+            { "keys": "git push --tags", "description": "推送标签" },
+            { "keys": "git pull origin <branch>", "description": "从远程分支拉取" },
+            { "keys": "git pull --rebase", "description": "使用rebase方式拉取" },
+            { "keys": "git push -d origin <branch>", "description": "删除远程分支" }
+          ]
+        },
+        {
+          "category": "标签操作",
+          "items": [
+            { "keys": "git tag", "description": "列出所有标签" },
+            { "keys": "git tag <name>", "description": "创建轻量标签" },
+            { "keys": "git tag -a <name> -m \"message\"", "description": "创建注释标签" },
+            { "keys": "git tag -d <name>", "description": "删除本地标签" },
+            { "keys": "git push origin <tag>", "description": "推送标签到远程" },
+            { "keys": "git push origin --tags", "description": "推送所有标签" },
+            { "keys": "git push origin :refs/tags/<tag>", "description": "删除远程标签" },
+            { "keys": "git checkout <tag>", "description": "检出标签" },
+            { "keys": "git show <tag>", "description": "查看标签信息" }
+          ]
+        },
+        {
+          "category": "配置操作",
+          "items": [
+            { "keys": "git config --global user.name \"name\"", "description": "设置全局用户名" },
+            { "keys": "git config --global user.email \"email\"", "description": "设置全局邮箱" },
+            { "keys": "git config --list", "description": "查看所有配置" },
+            { "keys": "git config --global --list", "description": "查看全局配置" },
+            { "keys": "git config --local --list", "description": "查看本地配置" },
+            { "keys": "git config --global init.defaultBranch main", "description": "设置默认分支名" },
+            { "keys": "git config --global core.editor \"vim\"", "description": "设置默认编辑器" },
+            { "keys": "git config --global alias.st status", "description": "设置命令别名" },
+            { "keys": "git config --global alias.co checkout", "description": "设置checkout别名" },
+            { "keys": "git config --global alias.br branch", "description": "设置branch别名" }
+          ]
+        },
+        {
+          "category": "常用别名",
+          "items": [
+            { "keys": "git st", "description": "status的别名" },
+            { "keys": "git co", "description": "checkout的别名" },
+            { "keys": "git br", "description": "branch的别名" },
+            { "keys": "git ci", "description": "commit的别名" },
+            { "keys": "git unstage", "description": "reset HEAD --的别名" },
+            { "keys": "git last", "description": "log -1 HEAD的别名" },
+            { "keys": "git visual", "description": "!gitk的别名" },
+            { "keys": "git lg", "description": "log --oneline --graph的别名" },
+            { "keys": "git undo", "description": "reset --soft HEAD~1的别名" },
+            { "keys": "git amend", "description": "commit --amend的别名" }
+          ]
+        },
+        {
+          "category": "高级操作",
+          "items": [
+            { "keys": "git rebase <branch>", "description": "变基操作" },
+            { "keys": "git rebase -i HEAD~n", "description": "交互式变基" },
+            { "keys": "git cherry-pick <commit>", "description": "挑选提交" },
+            { "keys": "git bisect start", "description": "开始二分查找" },
+            { "keys": "git worktree add <path> <branch>", "description": "添加工作树" },
+            { "keys": "git submodule add <url>", "description": "添加子模块" },
+            { "keys": "git archive --format=zip HEAD", "description": "创建归档" },
+            { "keys": "git reflog", "description": "查看引用日志" },
+            { "keys": "git fsck", "description": "检查仓库完整性" },
+            { "keys": "git gc", "description": "垃圾回收" }
+          ]
+        }
+      ]
+    }
+  }
+}

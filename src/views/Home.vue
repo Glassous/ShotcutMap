@@ -50,12 +50,30 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
 import WelcomeSection from '../components/WelcomeSection.vue'
 import SoftwareGrid from '../components/SoftwareGrid.vue'
 
 const router = useRouter()
+
+// 滚动位置管理
+const scrollPosition = ref(0)
+
+const saveScrollPosition = () => {
+  scrollPosition.value = window.scrollY
+  sessionStorage.setItem('homeScrollPosition', scrollPosition.value.toString())
+}
+
+const restoreScrollPosition = () => {
+  const savedPosition = sessionStorage.getItem('homeScrollPosition')
+  if (savedPosition) {
+    // 使用 nextTick 确保DOM已渲染完成
+    setTimeout(() => {
+      window.scrollTo(0, parseInt(savedPosition))
+    }, 100)
+  }
+}
 
 // 主题管理
 const currentTheme = ref('auto')
@@ -82,14 +100,27 @@ const setTheme = (theme) => {
 
 // 处理软件选择
 const handleSoftwareSelect = (softwareId) => {
+  // 保存当前滚动位置
+  saveScrollPosition()
   // 跳转到软件详情页
   router.push(`/software/${softwareId}`)
 }
 
-// 初始化主题
+// 初始化
 onMounted(() => {
   const savedTheme = localStorage.getItem('theme') || 'auto'
   setTheme(savedTheme)
+  
+  // 恢复滚动位置
+  restoreScrollPosition()
+  
+  // 监听滚动事件，定期保存位置
+  window.addEventListener('scroll', saveScrollPosition)
+})
+
+onBeforeUnmount(() => {
+  // 清理事件监听器
+  window.removeEventListener('scroll', saveScrollPosition)
 })
 </script>
 

@@ -1,0 +1,204 @@
+{
+  "name": "系统快捷键",
+  "icon": "/ShortcutMap.png",
+  "description": "Windows、macOS、Linux系统级快捷键",
+  "category": "系统级",
+  "officialDocs": "https://support.microsoft.com/zh-cn/windows/windows-11-%E4%B8%AD%E7%9A%84%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F-83acae6d-437a-4e1d-8dc1-99f311150663",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Y", "description": "重做" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + S", "description": "保存" },
+            { "keys": "Ctrl + P", "description": "打印" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + H", "description": "替换" }
+          ]
+        },
+        {
+          "category": "窗口管理",
+          "items": [
+            { "keys": "Alt + Tab", "description": "切换应用程序" },
+            { "keys": "Alt + F4", "description": "关闭当前窗口" },
+            { "keys": "Win + D", "description": "显示桌面" },
+            { "keys": "Win + L", "description": "锁定计算机" },
+            { "keys": "Win + M", "description": "最小化所有窗口" },
+            { "keys": "Win + R", "description": "打开运行对话框" },
+            { "keys": "Win + E", "description": "打开文件资源管理器" },
+            { "keys": "Win + I", "description": "打开设置" },
+            { "keys": "Win + X", "description": "打开快速链接菜单" },
+            { "keys": "Win + Tab", "description": "打开任务视图" }
+          ]
+        },
+        {
+          "category": "虚拟桌面",
+          "items": [
+            { "keys": "Win + Ctrl + D", "description": "创建新的虚拟桌面" },
+            { "keys": "Win + Ctrl + F4", "description": "关闭当前虚拟桌面" },
+            { "keys": "Win + Ctrl + ←", "description": "切换到左侧虚拟桌面" },
+            { "keys": "Win + Ctrl + →", "description": "切换到右侧虚拟桌面" }
+          ]
+        },
+        {
+          "category": "截图",
+          "items": [
+            { "keys": "PrtScn", "description": "截取整个屏幕" },
+            { "keys": "Alt + PrtScn", "description": "截取当前窗口" },
+            { "keys": "Win + Shift + S", "description": "打开截图工具" },
+            { "keys": "Win + PrtScn", "description": "截图并保存到图片文件夹" }
+          ]
+        },
+        {
+          "category": "系统功能",
+          "items": [
+            { "keys": "Ctrl + Shift + Esc", "description": "打开任务管理器" },
+            { "keys": "Win + Pause", "description": "打开系统属性" },
+            { "keys": "Win + U", "description": "打开轻松使用设置中心" },
+            { "keys": "Win + K", "description": "打开连接快速操作" },
+            { "keys": "Win + A", "description": "打开操作中心" },
+            { "keys": "Win + S", "description": "打开搜索" },
+            { "keys": "Win + V", "description": "打开剪贴板历史记录" },
+            { "keys": "Win + .", "description": "打开表情符号面板" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Shift + Z", "description": "重做" },
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + S", "description": "保存" },
+            { "keys": "Cmd + P", "description": "打印" },
+            { "keys": "Cmd + F", "description": "查找" },
+            { "keys": "Cmd + Option + F", "description": "替换" }
+          ]
+        },
+        {
+          "category": "应用程序管理",
+          "items": [
+            { "keys": "Cmd + Tab", "description": "切换应用程序" },
+            { "keys": "Cmd + Q", "description": "退出应用程序" },
+            { "keys": "Cmd + W", "description": "关闭窗口" },
+            { "keys": "Cmd + M", "description": "最小化窗口" },
+            { "keys": "Cmd + H", "description": "隐藏应用程序" },
+            { "keys": "Cmd + Option + H", "description": "隐藏其他应用程序" },
+            { "keys": "Cmd + Space", "description": "打开聚焦搜索" },
+            { "keys": "Cmd + Option + Esc", "description": "强制退出应用程序" }
+          ]
+        },
+        {
+          "category": "Finder",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建Finder窗口" },
+            { "keys": "Cmd + Shift + N", "description": "新建文件夹" },
+            { "keys": "Cmd + Delete", "description": "移到废纸篓" },
+            { "keys": "Cmd + Shift + Delete", "description": "清空废纸篓" },
+            { "keys": "Cmd + D", "description": "复制所选项目" },
+            { "keys": "Cmd + L", "description": "为所选项目制作替身" },
+            { "keys": "Cmd + R", "description": "显示原身" },
+            { "keys": "Cmd + I", "description": "显示简介" }
+          ]
+        },
+        {
+          "category": "截图",
+          "items": [
+            { "keys": "Cmd + Shift + 3", "description": "截取整个屏幕" },
+            { "keys": "Cmd + Shift + 4", "description": "截取屏幕的一部分" },
+            { "keys": "Cmd + Shift + 4 + Space", "description": "截取窗口" },
+            { "keys": "Cmd + Shift + 5", "description": "打开截屏工具" }
+          ]
+        },
+        {
+          "category": "系统功能",
+          "items": [
+            { "keys": "Control + Power", "description": "显示重新启动/睡眠/关机对话框" },
+            { "keys": "Cmd + Control + Power", "description": "强制重新启动" },
+            { "keys": "Cmd + Option + Power", "description": "睡眠" },
+            { "keys": "Cmd + Control + Q", "description": "立即锁定屏幕" },
+            { "keys": "Cmd + Shift + Q", "description": "注销用户帐户" },
+            { "keys": "Cmd + Option + D", "description": "显示或隐藏Dock" }
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "name": "Linux",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Y", "description": "重做" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + S", "description": "保存" },
+            { "keys": "Ctrl + P", "description": "打印" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + H", "description": "替换" }
+          ]
+        },
+        {
+          "category": "窗口管理 (GNOME)",
+          "items": [
+            { "keys": "Alt + Tab", "description": "切换应用程序" },
+            { "keys": "Alt + F4", "description": "关闭窗口" },
+            { "keys": "Super + D", "description": "显示桌面" },
+            { "keys": "Super + L", "description": "锁定屏幕" },
+            { "keys": "Super + M", "description": "打开通知托盘" },
+            { "keys": "Super + A", "description": "显示应用程序" },
+            { "keys": "Super + S", "description": "显示概览" },
+            { "keys": "Alt + F2", "description": "运行命令" }
+          ]
+        },
+        {
+          "category": "工作区管理",
+          "items": [
+            { "keys": "Ctrl + Alt + ←", "description": "切换到左侧工作区" },
+            { "keys": "Ctrl + Alt + →", "description": "切换到右侧工作区" },
+            { "keys": "Ctrl + Alt + ↑", "description": "切换到上方工作区" },
+            { "keys": "Ctrl + Alt + ↓", "description": "切换到下方工作区" },
+            { "keys": "Ctrl + Alt + Shift + ←", "description": "将窗口移到左侧工作区" },
+            { "keys": "Ctrl + Alt + Shift + →", "description": "将窗口移到右侧工作区" }
+          ]
+        },
+        {
+          "category": "终端",
+          "items": [
+            { "keys": "Ctrl + Alt + T", "description": "打开终端" },
+            { "keys": "Ctrl + Shift + T", "description": "在终端中新建标签页" },
+            { "keys": "Ctrl + Shift + W", "description": "关闭终端标签页" },
+            { "keys": "Ctrl + Shift + C", "description": "在终端中复制" },
+            { "keys": "Ctrl + Shift + V", "description": "在终端中粘贴" }
+          ]
+        },
+        {
+          "category": "截图",
+          "items": [
+            { "keys": "PrtScn", "description": "截取整个屏幕" },
+            { "keys": "Alt + PrtScn", "description": "截取当前窗口" },
+            { "keys": "Shift + PrtScn", "description": "截取选定区域" },
+            { "keys": "Ctrl + Alt + Shift + R", "description": "开始/停止屏幕录制" }
+          ]
+        }
+      ]
+    }
+  }
+}

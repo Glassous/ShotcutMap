@@ -1,7 +1,8 @@
 {
   "name": "IntelliJ IDEA",
-  "icon": "💡",
-  "description": "强大的Java集成开发环境",
+  "icon": "/intellij-idea-1.svg",
+  "description": "JetBrains集成开发环境",
+  "category": "开发类",
   "officialDocs": "https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html",
   "systems": {
     "windows": {

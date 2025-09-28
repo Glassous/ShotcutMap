@@ -1,0 +1,429 @@
+{
+  "name": "Docker",
+  "icon": "/docker-4.svg",
+  "description": "容器化平台",
+  "category": "开发类",
+  "officialDocs": "https://docs.docker.com/engine/reference/commandline/cli/",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "docker --version", "description": "查看Docker版本" },
+            { "keys": "docker info", "description": "查看Docker系统信息" },
+            { "keys": "docker help", "description": "查看帮助信息" },
+            { "keys": "docker help <command>", "description": "查看特定命令帮助" },
+            { "keys": "docker system df", "description": "查看磁盘使用情况" },
+            { "keys": "docker system prune", "description": "清理未使用的资源" },
+            { "keys": "docker system prune -a", "description": "清理所有未使用的资源" },
+            { "keys": "docker stats", "description": "查看容器资源使用情况" },
+            { "keys": "docker events", "description": "查看Docker事件" },
+            { "keys": "docker login", "description": "登录Docker Hub" }
+          ]
+        },
+        {
+          "category": "镜像操作",
+          "items": [
+            { "keys": "docker images", "description": "列出本地镜像" },
+            { "keys": "docker pull <image>", "description": "拉取镜像" },
+            { "keys": "docker push <image>", "description": "推送镜像" },
+            { "keys": "docker build -t <name> .", "description": "构建镜像" },
+            { "keys": "docker build --no-cache -t <name> .", "description": "无缓存构建镜像" },
+            { "keys": "docker rmi <image>", "description": "删除镜像" },
+            { "keys": "docker rmi $(docker images -q)", "description": "删除所有镜像" },
+            { "keys": "docker tag <source> <target>", "description": "标记镜像" },
+            { "keys": "docker history <image>", "description": "查看镜像历史" },
+            { "keys": "docker inspect <image>", "description": "查看镜像详细信息" },
+            { "keys": "docker save -o <file> <image>", "description": "导出镜像" },
+            { "keys": "docker load -i <file>", "description": "导入镜像" }
+          ]
+        },
+        {
+          "category": "容器操作",
+          "items": [
+            { "keys": "docker ps", "description": "列出运行中的容器" },
+            { "keys": "docker ps -a", "description": "列出所有容器" },
+            { "keys": "docker run <image>", "description": "运行容器" },
+            { "keys": "docker run -d <image>", "description": "后台运行容器" },
+            { "keys": "docker run -it <image>", "description": "交互式运行容器" },
+            { "keys": "docker run -p <host>:<container> <image>", "description": "端口映射运行容器" },
+            { "keys": "docker run -v <host>:<container> <image>", "description": "挂载卷运行容器" },
+            { "keys": "docker start <container>", "description": "启动容器" },
+            { "keys": "docker stop <container>", "description": "停止容器" },
+            { "keys": "docker restart <container>", "description": "重启容器" },
+            { "keys": "docker rm <container>", "description": "删除容器" },
+            { "keys": "docker rm $(docker ps -aq)", "description": "删除所有容器" }
+          ]
+        },
+        {
+          "category": "容器管理",
+          "items": [
+            { "keys": "docker exec -it <container> bash", "description": "进入容器" },
+            { "keys": "docker exec -it <container> sh", "description": "进入容器（sh）" },
+            { "keys": "docker logs <container>", "description": "查看容器日志" },
+            { "keys": "docker logs -f <container>", "description": "实时查看容器日志" },
+            { "keys": "docker logs --tail 100 <container>", "description": "查看最后100行日志" },
+            { "keys": "docker inspect <container>", "description": "查看容器详细信息" },
+            { "keys": "docker top <container>", "description": "查看容器进程" },
+            { "keys": "docker port <container>", "description": "查看容器端口映射" },
+            { "keys": "docker diff <container>", "description": "查看容器文件变化" },
+            { "keys": "docker commit <container> <image>", "description": "提交容器为镜像" },
+            { "keys": "docker cp <container>:<path> <host>", "description": "从容器复制文件" },
+            { "keys": "docker cp <host> <container>:<path>", "description": "复制文件到容器" }
+          ]
+        },
+        {
+          "category": "网络操作",
+          "items": [
+            { "keys": "docker network ls", "description": "列出网络" },
+            { "keys": "docker network create <name>", "description": "创建网络" },
+            { "keys": "docker network rm <name>", "description": "删除网络" },
+            { "keys": "docker network inspect <name>", "description": "查看网络详情" },
+            { "keys": "docker network connect <network> <container>", "description": "连接容器到网络" },
+            { "keys": "docker network disconnect <network> <container>", "description": "断开容器网络连接" },
+            { "keys": "docker network prune", "description": "清理未使用的网络" }
+          ]
+        },
+        {
+          "category": "卷操作",
+          "items": [
+            { "keys": "docker volume ls", "description": "列出卷" },
+            { "keys": "docker volume create <name>", "description": "创建卷" },
+            { "keys": "docker volume rm <name>", "description": "删除卷" },
+            { "keys": "docker volume inspect <name>", "description": "查看卷详情" },
+            { "keys": "docker volume prune", "description": "清理未使用的卷" }
+          ]
+        },
+        {
+          "category": "Docker Compose",
+          "items": [
+            { "keys": "docker-compose up", "description": "启动服务" },
+            { "keys": "docker-compose up -d", "description": "后台启动服务" },
+            { "keys": "docker-compose down", "description": "停止并删除服务" },
+            { "keys": "docker-compose ps", "description": "查看服务状态" },
+            { "keys": "docker-compose logs", "description": "查看服务日志" },
+            { "keys": "docker-compose logs -f", "description": "实时查看服务日志" },
+            { "keys": "docker-compose build", "description": "构建服务" },
+            { "keys": "docker-compose pull", "description": "拉取服务镜像" },
+            { "keys": "docker-compose restart", "description": "重启服务" },
+            { "keys": "docker-compose exec <service> bash", "description": "进入服务容器" },
+            { "keys": "docker-compose scale <service>=<num>", "description": "扩展服务" },
+            { "keys": "docker-compose config", "description": "验证配置文件" }
+          ]
+        },
+        {
+          "category": "常用组合命令",
+          "items": [
+            { "keys": "docker stop $(docker ps -q)", "description": "停止所有运行的容器" },
+            { "keys": "docker rm $(docker ps -aq)", "description": "删除所有容器" },
+            { "keys": "docker rmi $(docker images -q)", "description": "删除所有镜像" },
+            { "keys": "docker system prune -a --volumes", "description": "清理所有未使用资源" },
+            { "keys": "docker run --rm -it <image>", "description": "运行后自动删除容器" },
+            { "keys": "docker run -d --restart=always <image>", "description": "自动重启容器" },
+            { "keys": "docker logs --since 1h <container>", "description": "查看最近1小时日志" },
+            { "keys": "docker exec -u root -it <container> bash", "description": "以root用户进入容器" }
+          ]
+        },
+        {
+          "category": "Dockerfile常用指令",
+          "items": [
+            { "keys": "FROM <image>", "description": "指定基础镜像" },
+            { "keys": "RUN <command>", "description": "执行命令" },
+            { "keys": "COPY <src> <dest>", "description": "复制文件" },
+            { "keys": "ADD <src> <dest>", "description": "添加文件（支持URL和压缩包）" },
+            { "keys": "WORKDIR <path>", "description": "设置工作目录" },
+            { "keys": "EXPOSE <port>", "description": "暴露端口" },
+            { "keys": "ENV <key>=<value>", "description": "设置环境变量" },
+            { "keys": "CMD [\"command\"]", "description": "默认执行命令" },
+            { "keys": "ENTRYPOINT [\"command\"]", "description": "入口点命令" },
+            { "keys": "VOLUME [\"path\"]", "description": "创建挂载点" },
+            { "keys": "USER <user>", "description": "设置用户" },
+            { "keys": "ARG <name>=<value>", "description": "构建参数" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "docker --version", "description": "查看Docker版本" },
+            { "keys": "docker info", "description": "查看Docker系统信息" },
+            { "keys": "docker help", "description": "查看帮助信息" },
+            { "keys": "docker help <command>", "description": "查看特定命令帮助" },
+            { "keys": "docker system df", "description": "查看磁盘使用情况" },
+            { "keys": "docker system prune", "description": "清理未使用的资源" },
+            { "keys": "docker system prune -a", "description": "清理所有未使用的资源" },
+            { "keys": "docker stats", "description": "查看容器资源使用情况" },
+            { "keys": "docker events", "description": "查看Docker事件" },
+            { "keys": "docker login", "description": "登录Docker Hub" }
+          ]
+        },
+        {
+          "category": "镜像操作",
+          "items": [
+            { "keys": "docker images", "description": "列出本地镜像" },
+            { "keys": "docker pull <image>", "description": "拉取镜像" },
+            { "keys": "docker push <image>", "description": "推送镜像" },
+            { "keys": "docker build -t <name> .", "description": "构建镜像" },
+            { "keys": "docker build --no-cache -t <name> .", "description": "无缓存构建镜像" },
+            { "keys": "docker rmi <image>", "description": "删除镜像" },
+            { "keys": "docker rmi $(docker images -q)", "description": "删除所有镜像" },
+            { "keys": "docker tag <source> <target>", "description": "标记镜像" },
+            { "keys": "docker history <image>", "description": "查看镜像历史" },
+            { "keys": "docker inspect <image>", "description": "查看镜像详细信息" },
+            { "keys": "docker save -o <file> <image>", "description": "导出镜像" },
+            { "keys": "docker load -i <file>", "description": "导入镜像" }
+          ]
+        },
+        {
+          "category": "容器操作",
+          "items": [
+            { "keys": "docker ps", "description": "列出运行中的容器" },
+            { "keys": "docker ps -a", "description": "列出所有容器" },
+            { "keys": "docker run <image>", "description": "运行容器" },
+            { "keys": "docker run -d <image>", "description": "后台运行容器" },
+            { "keys": "docker run -it <image>", "description": "交互式运行容器" },
+            { "keys": "docker run -p <host>:<container> <image>", "description": "端口映射运行容器" },
+            { "keys": "docker run -v <host>:<container> <image>", "description": "挂载卷运行容器" },
+            { "keys": "docker start <container>", "description": "启动容器" },
+            { "keys": "docker stop <container>", "description": "停止容器" },
+            { "keys": "docker restart <container>", "description": "重启容器" },
+            { "keys": "docker rm <container>", "description": "删除容器" },
+            { "keys": "docker rm $(docker ps -aq)", "description": "删除所有容器" }
+          ]
+        },
+        {
+          "category": "容器管理",
+          "items": [
+            { "keys": "docker exec -it <container> bash", "description": "进入容器" },
+            { "keys": "docker exec -it <container> sh", "description": "进入容器（sh）" },
+            { "keys": "docker logs <container>", "description": "查看容器日志" },
+            { "keys": "docker logs -f <container>", "description": "实时查看容器日志" },
+            { "keys": "docker logs --tail 100 <container>", "description": "查看最后100行日志" },
+            { "keys": "docker inspect <container>", "description": "查看容器详细信息" },
+            { "keys": "docker top <container>", "description": "查看容器进程" },
+            { "keys": "docker port <container>", "description": "查看容器端口映射" },
+            { "keys": "docker diff <container>", "description": "查看容器文件变化" },
+            { "keys": "docker commit <container> <image>", "description": "提交容器为镜像" },
+            { "keys": "docker cp <container>:<path> <host>", "description": "从容器复制文件" },
+            { "keys": "docker cp <host> <container>:<path>", "description": "复制文件到容器" }
+          ]
+        },
+        {
+          "category": "网络操作",
+          "items": [
+            { "keys": "docker network ls", "description": "列出网络" },
+            { "keys": "docker network create <name>", "description": "创建网络" },
+            { "keys": "docker network rm <name>", "description": "删除网络" },
+            { "keys": "docker network inspect <name>", "description": "查看网络详情" },
+            { "keys": "docker network connect <network> <container>", "description": "连接容器到网络" },
+            { "keys": "docker network disconnect <network> <container>", "description": "断开容器网络连接" },
+            { "keys": "docker network prune", "description": "清理未使用的网络" }
+          ]
+        },
+        {
+          "category": "卷操作",
+          "items": [
+            { "keys": "docker volume ls", "description": "列出卷" },
+            { "keys": "docker volume create <name>", "description": "创建卷" },
+            { "keys": "docker volume rm <name>", "description": "删除卷" },
+            { "keys": "docker volume inspect <name>", "description": "查看卷详情" },
+            { "keys": "docker volume prune", "description": "清理未使用的卷" }
+          ]
+        },
+        {
+          "category": "Docker Compose",
+          "items": [
+            { "keys": "docker-compose up", "description": "启动服务" },
+            { "keys": "docker-compose up -d", "description": "后台启动服务" },
+            { "keys": "docker-compose down", "description": "停止并删除服务" },
+            { "keys": "docker-compose ps", "description": "查看服务状态" },
+            { "keys": "docker-compose logs", "description": "查看服务日志" },
+            { "keys": "docker-compose logs -f", "description": "实时查看服务日志" },
+            { "keys": "docker-compose build", "description": "构建服务" },
+            { "keys": "docker-compose pull", "description": "拉取服务镜像" },
+            { "keys": "docker-compose restart", "description": "重启服务" },
+            { "keys": "docker-compose exec <service> bash", "description": "进入服务容器" },
+            { "keys": "docker-compose scale <service>=<num>", "description": "扩展服务" },
+            { "keys": "docker-compose config", "description": "验证配置文件" }
+          ]
+        },
+        {
+          "category": "常用组合命令",
+          "items": [
+            { "keys": "docker stop $(docker ps -q)", "description": "停止所有运行的容器" },
+            { "keys": "docker rm $(docker ps -aq)", "description": "删除所有容器" },
+            { "keys": "docker rmi $(docker images -q)", "description": "删除所有镜像" },
+            { "keys": "docker system prune -a --volumes", "description": "清理所有未使用资源" },
+            { "keys": "docker run --rm -it <image>", "description": "运行后自动删除容器" },
+            { "keys": "docker run -d --restart=always <image>", "description": "自动重启容器" },
+            { "keys": "docker logs --since 1h <container>", "description": "查看最近1小时日志" },
+            { "keys": "docker exec -u root -it <container> bash", "description": "以root用户进入容器" }
+          ]
+        },
+        {
+          "category": "Dockerfile常用指令",
+          "items": [
+            { "keys": "FROM <image>", "description": "指定基础镜像" },
+            { "keys": "RUN <command>", "description": "执行命令" },
+            { "keys": "COPY <src> <dest>", "description": "复制文件" },
+            { "keys": "ADD <src> <dest>", "description": "添加文件（支持URL和压缩包）" },
+            { "keys": "WORKDIR <path>", "description": "设置工作目录" },
+            { "keys": "EXPOSE <port>", "description": "暴露端口" },
+            { "keys": "ENV <key>=<value>", "description": "设置环境变量" },
+            { "keys": "CMD [\"command\"]", "description": "默认执行命令" },
+            { "keys": "ENTRYPOINT [\"command\"]", "description": "入口点命令" },
+            { "keys": "VOLUME [\"path\"]", "description": "创建挂载点" },
+            { "keys": "USER <user>", "description": "设置用户" },
+            { "keys": "ARG <name>=<value>", "description": "构建参数" }
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "name": "Linux",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "docker --version", "description": "查看Docker版本" },
+            { "keys": "docker info", "description": "查看Docker系统信息" },
+            { "keys": "docker help", "description": "查看帮助信息" },
+            { "keys": "docker help <command>", "description": "查看特定命令帮助" },
+            { "keys": "docker system df", "description": "查看磁盘使用情况" },
+            { "keys": "docker system prune", "description": "清理未使用的资源" },
+            { "keys": "docker system prune -a", "description": "清理所有未使用的资源" },
+            { "keys": "docker stats", "description": "查看容器资源使用情况" },
+            { "keys": "docker events", "description": "查看Docker事件" },
+            { "keys": "docker login", "description": "登录Docker Hub" }
+          ]
+        },
+        {
+          "category": "镜像操作",
+          "items": [
+            { "keys": "docker images", "description": "列出本地镜像" },
+            { "keys": "docker pull <image>", "description": "拉取镜像" },
+            { "keys": "docker push <image>", "description": "推送镜像" },
+            { "keys": "docker build -t <name> .", "description": "构建镜像" },
+            { "keys": "docker build --no-cache -t <name> .", "description": "无缓存构建镜像" },
+            { "keys": "docker rmi <image>", "description": "删除镜像" },
+            { "keys": "docker rmi $(docker images -q)", "description": "删除所有镜像" },
+            { "keys": "docker tag <source> <target>", "description": "标记镜像" },
+            { "keys": "docker history <image>", "description": "查看镜像历史" },
+            { "keys": "docker inspect <image>", "description": "查看镜像详细信息" },
+            { "keys": "docker save -o <file> <image>", "description": "导出镜像" },
+            { "keys": "docker load -i <file>", "description": "导入镜像" }
+          ]
+        },
+        {
+          "category": "容器操作",
+          "items": [
+            { "keys": "docker ps", "description": "列出运行中的容器" },
+            { "keys": "docker ps -a", "description": "列出所有容器" },
+            { "keys": "docker run <image>", "description": "运行容器" },
+            { "keys": "docker run -d <image>", "description": "后台运行容器" },
+            { "keys": "docker run -it <image>", "description": "交互式运行容器" },
+            { "keys": "docker run -p <host>:<container> <image>", "description": "端口映射运行容器" },
+            { "keys": "docker run -v <host>:<container> <image>", "description": "挂载卷运行容器" },
+            { "keys": "docker start <container>", "description": "启动容器" },
+            { "keys": "docker stop <container>", "description": "停止容器" },
+            { "keys": "docker restart <container>", "description": "重启容器" },
+            { "keys": "docker rm <container>", "description": "删除容器" },
+            { "keys": "docker rm $(docker ps -aq)", "description": "删除所有容器" }
+          ]
+        },
+        {
+          "category": "容器管理",
+          "items": [
+            { "keys": "docker exec -it <container> bash", "description": "进入容器" },
+            { "keys": "docker exec -it <container> sh", "description": "进入容器（sh）" },
+            { "keys": "docker logs <container>", "description": "查看容器日志" },
+            { "keys": "docker logs -f <container>", "description": "实时查看容器日志" },
+            { "keys": "docker logs --tail 100 <container>", "description": "查看最后100行日志" },
+            { "keys": "docker inspect <container>", "description": "查看容器详细信息" },
+            { "keys": "docker top <container>", "description": "查看容器进程" },
+            { "keys": "docker port <container>", "description": "查看容器端口映射" },
+            { "keys": "docker diff <container>", "description": "查看容器文件变化" },
+            { "keys": "docker commit <container> <image>", "description": "提交容器为镜像" },
+            { "keys": "docker cp <container>:<path> <host>", "description": "从容器复制文件" },
+            { "keys": "docker cp <host> <container>:<path>", "description": "复制文件到容器" }
+          ]
+        },
+        {
+          "category": "网络操作",
+          "items": [
+            { "keys": "docker network ls", "description": "列出网络" },
+            { "keys": "docker network create <name>", "description": "创建网络" },
+            { "keys": "docker network rm <name>", "description": "删除网络" },
+            { "keys": "docker network inspect <name>", "description": "查看网络详情" },
+            { "keys": "docker network connect <network> <container>", "description": "连接容器到网络" },
+            { "keys": "docker network disconnect <network> <container>", "description": "断开容器网络连接" },
+            { "keys": "docker network prune", "description": "清理未使用的网络" }
+          ]
+        },
+        {
+          "category": "卷操作",
+          "items": [
+            { "keys": "docker volume ls", "description": "列出卷" },
+            { "keys": "docker volume create <name>", "description": "创建卷" },
+            { "keys": "docker volume rm <name>", "description": "删除卷" },
+            { "keys": "docker volume inspect <name>", "description": "查看卷详情" },
+            { "keys": "docker volume prune", "description": "清理未使用的卷" }
+          ]
+        },
+        {
+          "category": "Docker Compose",
+          "items": [
+            { "keys": "docker-compose up", "description": "启动服务" },
+            { "keys": "docker-compose up -d", "description": "后台启动服务" },
+            { "keys": "docker-compose down", "description": "停止并删除服务" },
+            { "keys": "docker-compose ps", "description": "查看服务状态" },
+            { "keys": "docker-compose logs", "description": "查看服务日志" },
+            { "keys": "docker-compose logs -f", "description": "实时查看服务日志" },
+            { "keys": "docker-compose build", "description": "构建服务" },
+            { "keys": "docker-compose pull", "description": "拉取服务镜像" },
+            { "keys": "docker-compose restart", "description": "重启服务" },
+            { "keys": "docker-compose exec <service> bash", "description": "进入服务容器" },
+            { "keys": "docker-compose scale <service>=<num>", "description": "扩展服务" },
+            { "keys": "docker-compose config", "description": "验证配置文件" }
+          ]
+        },
+        {
+          "category": "常用组合命令",
+          "items": [
+            { "keys": "docker stop $(docker ps -q)", "description": "停止所有运行的容器" },
+            { "keys": "docker rm $(docker ps -aq)", "description": "删除所有容器" },
+            { "keys": "docker rmi $(docker images -q)", "description": "删除所有镜像" },
+            { "keys": "docker system prune -a --volumes", "description": "清理所有未使用资源" },
+            { "keys": "docker run --rm -it <image>", "description": "运行后自动删除容器" },
+            { "keys": "docker run -d --restart=always <image>", "description": "自动重启容器" },
+            { "keys": "docker logs --since 1h <container>", "description": "查看最近1小时日志" },
+            { "keys": "docker exec -u root -it <container> bash", "description": "以root用户进入容器" }
+          ]
+        },
+        {
+          "category": "Dockerfile常用指令",
+          "items": [
+            { "keys": "FROM <image>", "description": "指定基础镜像" },
+            { "keys": "RUN <command>", "description": "执行命令" },
+            { "keys": "COPY <src> <dest>", "description": "复制文件" },
+            { "keys": "ADD <src> <dest>", "description": "添加文件（支持URL和压缩包）" },
+            { "keys": "WORKDIR <path>", "description": "设置工作目录" },
+            { "keys": "EXPOSE <port>", "description": "暴露端口" },
+            { "keys": "ENV <key>=<value>", "description": "设置环境变量" },
+            { "keys": "CMD [\"command\"]", "description": "默认执行命令" },
+            { "keys": "ENTRYPOINT [\"command\"]", "description": "入口点命令" },
+            { "keys": "VOLUME [\"path\"]", "description": "创建挂载点" },
+            { "keys": "USER <user>", "description": "设置用户" },
+            { "keys": "ARG <name>=<value>", "description": "构建参数" }
+          ]
+        }
+      ]
+    }
+  }
+}

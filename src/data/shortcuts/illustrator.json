@@ -1,0 +1,331 @@
+{
+  "name": "Adobe Illustrator",
+  "icon": "/adobe-illustrator-cc-3.svg",
+  "description": "矢量图形设计软件",
+  "category": "设计类",
+  "officialDocs": "https://helpx.adobe.com/illustrator/using/default-keyboard-shortcuts.html",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建文档" },
+            { "keys": "Ctrl + O", "description": "打开文档" },
+            { "keys": "Ctrl + S", "description": "保存" },
+            { "keys": "Ctrl + Shift + S", "description": "另存为" },
+            { "keys": "Ctrl + Alt + S", "description": "存储为Web所用格式" },
+            { "keys": "Ctrl + W", "description": "关闭" },
+            { "keys": "Ctrl + Q", "description": "退出" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Shift + Z", "description": "重做" },
+            { "keys": "Ctrl + P", "description": "打印" }
+          ]
+        },
+        {
+          "category": "选择工具",
+          "items": [
+            { "keys": "V", "description": "选择工具" },
+            { "keys": "A", "description": "直接选择工具" },
+            { "keys": "Y", "description": "魔棒工具" },
+            { "keys": "Q", "description": "套索工具" },
+            { "keys": "P", "description": "钢笔工具" },
+            { "keys": "T", "description": "文字工具" },
+            { "keys": "L", "description": "直线段工具" },
+            { "keys": "M", "description": "矩形工具" },
+            { "keys": "B", "description": "画笔工具" },
+            { "keys": "N", "description": "铅笔工具" },
+            { "keys": "O", "description": "反射工具" },
+            { "keys": "R", "description": "旋转工具" },
+            { "keys": "S", "description": "缩放工具" },
+            { "keys": "E", "description": "自由变换工具" },
+            { "keys": "Shift + O", "description": "画板工具" },
+            { "keys": "U", "description": "网格工具" },
+            { "keys": "G", "description": "渐变工具" },
+            { "keys": "I", "description": "吸管工具" },
+            { "keys": "K", "description": "实时上色桶工具" },
+            { "keys": "H", "description": "抓手工具" },
+            { "keys": "Z", "description": "缩放工具" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + F", "description": "贴在前面" },
+            { "keys": "Ctrl + B", "description": "贴在后面" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + D", "description": "取消选择" },
+            { "keys": "Ctrl + Shift + A", "description": "重新选择" },
+            { "keys": "Ctrl + G", "description": "编组" },
+            { "keys": "Ctrl + Shift + G", "description": "取消编组" },
+            { "keys": "Ctrl + 2", "description": "锁定" },
+            { "keys": "Ctrl + Alt + 2", "description": "解锁全部" },
+            { "keys": "Ctrl + 3", "description": "隐藏" },
+            { "keys": "Ctrl + Alt + 3", "description": "显示全部" }
+          ]
+        },
+        {
+          "category": "对象操作",
+          "items": [
+            { "keys": "Ctrl + ]", "description": "置于顶层" },
+            { "keys": "Ctrl + [", "description": "置于底层" },
+            { "keys": "Ctrl + Shift + ]", "description": "前移一层" },
+            { "keys": "Ctrl + Shift + [", "description": "后移一层" },
+            { "keys": "Ctrl + 7", "description": "建立剪切蒙版" },
+            { "keys": "Ctrl + Alt + 7", "description": "释放剪切蒙版" },
+            { "keys": "Ctrl + 8", "description": "建立复合路径" },
+            { "keys": "Ctrl + Alt + 8", "description": "释放复合路径" },
+            { "keys": "Ctrl + J", "description": "连接" },
+            { "keys": "Ctrl + Alt + J", "description": "平均" },
+            { "keys": "Ctrl + Alt + Shift + J", "description": "连接并平均" }
+          ]
+        },
+        {
+          "category": "变换操作",
+          "items": [
+            { "keys": "Ctrl + T", "description": "自由变换" },
+            { "keys": "Ctrl + Shift + M", "description": "移动" },
+            { "keys": "Ctrl + R", "description": "旋转" },
+            { "keys": "Ctrl + Shift + R", "description": "反射" },
+            { "keys": "Ctrl + Shift + S", "description": "缩放" },
+            { "keys": "Ctrl + Shift + D", "description": "切变" },
+            { "keys": "Ctrl + Alt + D", "description": "变换每个" },
+            { "keys": "Ctrl + D", "description": "再次变换" },
+            { "keys": "Ctrl + Alt + Shift + D", "description": "移动副本" }
+          ]
+        },
+        {
+          "category": "路径操作",
+          "items": [
+            { "keys": "Ctrl + Shift + Alt + 1", "description": "联集" },
+            { "keys": "Ctrl + Shift + Alt + 2", "description": "减去顶层" },
+            { "keys": "Ctrl + Shift + Alt + 3", "description": "交集" },
+            { "keys": "Ctrl + Shift + Alt + 4", "description": "排除" },
+            { "keys": "Ctrl + Shift + Alt + 5", "description": "分割" },
+            { "keys": "Ctrl + Shift + Alt + 6", "description": "轮廓" },
+            { "keys": "Ctrl + Shift + Alt + 7", "description": "减去后方对象" },
+            { "keys": "Ctrl + Shift + Alt + 8", "description": "合并" },
+            { "keys": "Ctrl + Shift + Alt + 9", "description": "裁剪" },
+            { "keys": "Ctrl + Shift + Alt + 0", "description": "分割下方对象" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Ctrl + +", "description": "放大" },
+            { "keys": "Ctrl + -", "description": "缩小" },
+            { "keys": "Ctrl + 0", "description": "适合画板" },
+            { "keys": "Ctrl + 1", "description": "实际大小" },
+            { "keys": "Ctrl + Alt + 0", "description": "适合窗口" },
+            { "keys": "Ctrl + Y", "description": "轮廓" },
+            { "keys": "Ctrl + Alt + Y", "description": "像素预览" },
+            { "keys": "Ctrl + H", "description": "显示/隐藏边缘" },
+            { "keys": "Ctrl + ;", "description": "显示/隐藏参考线" },
+            { "keys": "Ctrl + Shift + ;", "description": "锁定参考线" },
+            { "keys": "Ctrl + Alt + ;", "description": "建立参考线" },
+            { "keys": "Ctrl + '", "description": "显示/隐藏网格" },
+            { "keys": "Ctrl + Shift + '", "description": "对齐网格" }
+          ]
+        },
+        {
+          "category": "文字工具",
+          "items": [
+            { "keys": "Ctrl + Shift + >", "description": "增大字体" },
+            { "keys": "Ctrl + Shift + <", "description": "减小字体" },
+            { "keys": "Alt + ←", "description": "减小字符间距" },
+            { "keys": "Alt + →", "description": "增大字符间距" },
+            { "keys": "Alt + ↑", "description": "减小行距" },
+            { "keys": "Alt + ↓", "description": "增大行距" },
+            { "keys": "Ctrl + Shift + L", "description": "左对齐" },
+            { "keys": "Ctrl + Shift + C", "description": "居中对齐" },
+            { "keys": "Ctrl + Shift + R", "description": "右对齐" },
+            { "keys": "Ctrl + Shift + J", "description": "两端对齐" },
+            { "keys": "Ctrl + Shift + O", "description": "创建轮廓" }
+          ]
+        },
+        {
+          "category": "面板和窗口",
+          "items": [
+            { "keys": "F9", "description": "路径查找器" },
+            { "keys": "Shift + F9", "description": "渐变" },
+            { "keys": "F6", "description": "颜色" },
+            { "keys": "Shift + F6", "description": "外观" },
+            { "keys": "F7", "description": "图层" },
+            { "keys": "Ctrl + F9", "description": "信息" },
+            { "keys": "Ctrl + Shift + F9", "description": "变换" },
+            { "keys": "F5", "description": "画笔" },
+            { "keys": "Shift + Ctrl + F11", "description": "符号" },
+            { "keys": "Tab", "description": "显示/隐藏工具箱和面板" },
+            { "keys": "Shift + Tab", "description": "显示/隐藏面板" },
+            { "keys": "F", "description": "切换屏幕模式" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建文档" },
+            { "keys": "Cmd + O", "description": "打开文档" },
+            { "keys": "Cmd + S", "description": "保存" },
+            { "keys": "Cmd + Shift + S", "description": "另存为" },
+            { "keys": "Cmd + Option + S", "description": "存储为Web所用格式" },
+            { "keys": "Cmd + W", "description": "关闭" },
+            { "keys": "Cmd + Q", "description": "退出" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Shift + Z", "description": "重做" },
+            { "keys": "Cmd + P", "description": "打印" }
+          ]
+        },
+        {
+          "category": "选择工具",
+          "items": [
+            { "keys": "V", "description": "选择工具" },
+            { "keys": "A", "description": "直接选择工具" },
+            { "keys": "Y", "description": "魔棒工具" },
+            { "keys": "Q", "description": "套索工具" },
+            { "keys": "P", "description": "钢笔工具" },
+            { "keys": "T", "description": "文字工具" },
+            { "keys": "L", "description": "直线段工具" },
+            { "keys": "M", "description": "矩形工具" },
+            { "keys": "B", "description": "画笔工具" },
+            { "keys": "N", "description": "铅笔工具" },
+            { "keys": "O", "description": "反射工具" },
+            { "keys": "R", "description": "旋转工具" },
+            { "keys": "S", "description": "缩放工具" },
+            { "keys": "E", "description": "自由变换工具" },
+            { "keys": "Shift + O", "description": "画板工具" },
+            { "keys": "U", "description": "网格工具" },
+            { "keys": "G", "description": "渐变工具" },
+            { "keys": "I", "description": "吸管工具" },
+            { "keys": "K", "description": "实时上色桶工具" },
+            { "keys": "H", "description": "抓手工具" },
+            { "keys": "Z", "description": "缩放工具" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + F", "description": "贴在前面" },
+            { "keys": "Cmd + B", "description": "贴在后面" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + D", "description": "取消选择" },
+            { "keys": "Cmd + Shift + A", "description": "重新选择" },
+            { "keys": "Cmd + G", "description": "编组" },
+            { "keys": "Cmd + Shift + G", "description": "取消编组" },
+            { "keys": "Cmd + 2", "description": "锁定" },
+            { "keys": "Cmd + Option + 2", "description": "解锁全部" },
+            { "keys": "Cmd + 3", "description": "隐藏" },
+            { "keys": "Cmd + Option + 3", "description": "显示全部" }
+          ]
+        },
+        {
+          "category": "对象操作",
+          "items": [
+            { "keys": "Cmd + ]", "description": "置于顶层" },
+            { "keys": "Cmd + [", "description": "置于底层" },
+            { "keys": "Cmd + Shift + ]", "description": "前移一层" },
+            { "keys": "Cmd + Shift + [", "description": "后移一层" },
+            { "keys": "Cmd + 7", "description": "建立剪切蒙版" },
+            { "keys": "Cmd + Option + 7", "description": "释放剪切蒙版" },
+            { "keys": "Cmd + 8", "description": "建立复合路径" },
+            { "keys": "Cmd + Option + 8", "description": "释放复合路径" },
+            { "keys": "Cmd + J", "description": "连接" },
+            { "keys": "Cmd + Option + J", "description": "平均" },
+            { "keys": "Cmd + Option + Shift + J", "description": "连接并平均" }
+          ]
+        },
+        {
+          "category": "变换操作",
+          "items": [
+            { "keys": "Cmd + T", "description": "自由变换" },
+            { "keys": "Cmd + Shift + M", "description": "移动" },
+            { "keys": "Cmd + R", "description": "旋转" },
+            { "keys": "Cmd + Shift + R", "description": "反射" },
+            { "keys": "Cmd + Shift + S", "description": "缩放" },
+            { "keys": "Cmd + Shift + D", "description": "切变" },
+            { "keys": "Cmd + Option + D", "description": "变换每个" },
+            { "keys": "Cmd + D", "description": "再次变换" },
+            { "keys": "Cmd + Option + Shift + D", "description": "移动副本" }
+          ]
+        },
+        {
+          "category": "路径操作",
+          "items": [
+            { "keys": "Cmd + Shift + Option + 1", "description": "联集" },
+            { "keys": "Cmd + Shift + Option + 2", "description": "减去顶层" },
+            { "keys": "Cmd + Shift + Option + 3", "description": "交集" },
+            { "keys": "Cmd + Shift + Option + 4", "description": "排除" },
+            { "keys": "Cmd + Shift + Option + 5", "description": "分割" },
+            { "keys": "Cmd + Shift + Option + 6", "description": "轮廓" },
+            { "keys": "Cmd + Shift + Option + 7", "description": "减去后方对象" },
+            { "keys": "Cmd + Shift + Option + 8", "description": "合并" },
+            { "keys": "Cmd + Shift + Option + 9", "description": "裁剪" },
+            { "keys": "Cmd + Shift + Option + 0", "description": "分割下方对象" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Cmd + +", "description": "放大" },
+            { "keys": "Cmd + -", "description": "缩小" },
+            { "keys": "Cmd + 0", "description": "适合画板" },
+            { "keys": "Cmd + 1", "description": "实际大小" },
+            { "keys": "Cmd + Option + 0", "description": "适合窗口" },
+            { "keys": "Cmd + Y", "description": "轮廓" },
+            { "keys": "Cmd + Option + Y", "description": "像素预览" },
+            { "keys": "Cmd + H", "description": "显示/隐藏边缘" },
+            { "keys": "Cmd + ;", "description": "显示/隐藏参考线" },
+            { "keys": "Cmd + Shift + ;", "description": "锁定参考线" },
+            { "keys": "Cmd + Option + ;", "description": "建立参考线" },
+            { "keys": "Cmd + '", "description": "显示/隐藏网格" },
+            { "keys": "Cmd + Shift + '", "description": "对齐网格" }
+          ]
+        },
+        {
+          "category": "文字工具",
+          "items": [
+            { "keys": "Cmd + Shift + >", "description": "增大字体" },
+            { "keys": "Cmd + Shift + <", "description": "减小字体" },
+            { "keys": "Option + ←", "description": "减小字符间距" },
+            { "keys": "Option + →", "description": "增大字符间距" },
+            { "keys": "Option + ↑", "description": "减小行距" },
+            { "keys": "Option + ↓", "description": "增大行距" },
+            { "keys": "Cmd + Shift + L", "description": "左对齐" },
+            { "keys": "Cmd + Shift + C", "description": "居中对齐" },
+            { "keys": "Cmd + Shift + R", "description": "右对齐" },
+            { "keys": "Cmd + Shift + J", "description": "两端对齐" },
+            { "keys": "Cmd + Shift + O", "description": "创建轮廓" }
+          ]
+        },
+        {
+          "category": "面板和窗口",
+          "items": [
+            { "keys": "F9", "description": "路径查找器" },
+            { "keys": "Shift + F9", "description": "渐变" },
+            { "keys": "F6", "description": "颜色" },
+            { "keys": "Shift + F6", "description": "外观" },
+            { "keys": "F7", "description": "图层" },
+            { "keys": "Cmd + F9", "description": "信息" },
+            { "keys": "Cmd + Shift + F9", "description": "变换" },
+            { "keys": "F5", "description": "画笔" },
+            { "keys": "Shift + Cmd + F11", "description": "符号" },
+            { "keys": "Tab", "description": "显示/隐藏工具箱和面板" },
+            { "keys": "Shift + Tab", "description": "显示/隐藏面板" },
+            { "keys": "F", "description": "切换屏幕模式" }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,257 @@
+{
+  "name": "Terminal/PowerShell",
+  "icon": "/windows-terminal.svg",
+  "description": "命令行终端",
+  "category": "开发类",
+  "officialDocs": "https://docs.microsoft.com/zh-cn/windows/terminal/customize-settings/actions",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "Terminal基本操作",
+          "items": [
+            { "keys": "Ctrl + Shift + T", "description": "打开新标签页" },
+            { "keys": "Ctrl + Shift + N", "description": "打开新窗口" },
+            { "keys": "Ctrl + Shift + D", "description": "复制当前标签页" },
+            { "keys": "Ctrl + Shift + W", "description": "关闭当前标签页" },
+            { "keys": "Alt + F4", "description": "关闭窗口" },
+            { "keys": "Ctrl + ,", "description": "打开设置" },
+            { "keys": "Ctrl + Shift + P", "description": "打开命令面板" },
+            { "keys": "F11", "description": "切换全屏模式" },
+            { "keys": "Alt + Enter", "description": "切换全屏模式" },
+            { "keys": "Ctrl + =", "description": "增大字体" },
+            { "keys": "Ctrl + -", "description": "减小字体" },
+            { "keys": "Ctrl + 0", "description": "重置字体大小" }
+          ]
+        },
+        {
+          "category": "标签页管理",
+          "items": [
+            { "keys": "Ctrl + Tab", "description": "切换到下一个标签页" },
+            { "keys": "Ctrl + Shift + Tab", "description": "切换到上一个标签页" },
+            { "keys": "Ctrl + Alt + 1", "description": "切换到标签页1" },
+            { "keys": "Ctrl + Alt + 2", "description": "切换到标签页2" },
+            { "keys": "Ctrl + Alt + 3", "description": "切换到标签页3" },
+            { "keys": "Ctrl + Alt + 4", "description": "切换到标签页4" },
+            { "keys": "Ctrl + Alt + 5", "description": "切换到标签页5" },
+            { "keys": "Ctrl + Alt + 6", "description": "切换到标签页6" },
+            { "keys": "Ctrl + Alt + 7", "description": "切换到标签页7" },
+            { "keys": "Ctrl + Alt + 8", "description": "切换到标签页8" },
+            { "keys": "Ctrl + Alt + 9", "description": "切换到最后一个标签页" }
+          ]
+        },
+        {
+          "category": "窗格管理",
+          "items": [
+            { "keys": "Alt + Shift + D", "description": "垂直分割窗格" },
+            { "keys": "Alt + Shift + -", "description": "水平分割窗格" },
+            { "keys": "Alt + ←", "description": "移动到左侧窗格" },
+            { "keys": "Alt + →", "description": "移动到右侧窗格" },
+            { "keys": "Alt + ↑", "description": "移动到上方窗格" },
+            { "keys": "Alt + ↓", "description": "移动到下方窗格" },
+            { "keys": "Alt + Shift + ←", "description": "调整窗格大小（左）" },
+            { "keys": "Alt + Shift + →", "description": "调整窗格大小（右）" },
+            { "keys": "Alt + Shift + ↑", "description": "调整窗格大小（上）" },
+            { "keys": "Alt + Shift + ↓", "description": "调整窗格大小（下）" },
+            { "keys": "Ctrl + Shift + W", "description": "关闭当前窗格" }
+          ]
+        },
+        {
+          "category": "文本操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制选中文本" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + Shift + C", "description": "复制选中文本" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + Shift + F", "description": "查找" },
+            { "keys": "Shift + Click", "description": "选择文本" },
+            { "keys": "Ctrl + Shift + ←", "description": "选择左侧单词" },
+            { "keys": "Ctrl + Shift + →", "description": "选择右侧单词" },
+            { "keys": "Shift + ↑", "description": "向上选择行" },
+            { "keys": "Shift + ↓", "description": "向下选择行" }
+          ]
+        },
+        {
+          "category": "PowerShell命令行编辑",
+          "items": [
+            { "keys": "Ctrl + C", "description": "中断当前命令" },
+            { "keys": "Ctrl + L", "description": "清屏" },
+            { "keys": "Ctrl + R", "description": "反向搜索历史" },
+            { "keys": "Ctrl + S", "description": "正向搜索历史" },
+            { "keys": "Tab", "description": "自动完成" },
+            { "keys": "Shift + Tab", "description": "反向自动完成" },
+            { "keys": "↑", "description": "上一个命令" },
+            { "keys": "↓", "description": "下一个命令" },
+            { "keys": "Ctrl + ←", "description": "移动到上一个单词" },
+            { "keys": "Ctrl + →", "description": "移动到下一个单词" },
+            { "keys": "Home", "description": "移动到行首" },
+            { "keys": "End", "description": "移动到行尾" }
+          ]
+        },
+        {
+          "category": "PowerShell文本编辑",
+          "items": [
+            { "keys": "Ctrl + A", "description": "选择所有文本" },
+            { "keys": "Ctrl + E", "description": "移动到行尾" },
+            { "keys": "Ctrl + U", "description": "删除从光标到行首的文本" },
+            { "keys": "Ctrl + K", "description": "删除从光标到行尾的文本" },
+            { "keys": "Ctrl + W", "description": "删除前一个单词" },
+            { "keys": "Ctrl + Backspace", "description": "删除前一个单词" },
+            { "keys": "Ctrl + Delete", "description": "删除后一个单词" },
+            { "keys": "Alt + D", "description": "删除后一个单词" },
+            { "keys": "Ctrl + Y", "description": "粘贴最后删除的文本" },
+            { "keys": "Alt + .", "description": "插入上一个命令的最后参数" },
+            { "keys": "Alt + _", "description": "插入上一个命令的最后参数" },
+            { "keys": "Esc", "description": "清除当前行" }
+          ]
+        },
+        {
+          "category": "历史记录",
+          "items": [
+            { "keys": "F7", "description": "显示命令历史" },
+            { "keys": "F8", "description": "搜索历史（向前）" },
+            { "keys": "Shift + F8", "description": "搜索历史（向后）" },
+            { "keys": "F9", "description": "按编号选择历史命令" },
+            { "keys": "Alt + F7", "description": "清除命令历史" },
+            { "keys": "Page Up", "description": "第一个命令" },
+            { "keys": "Page Down", "description": "最后一个命令" },
+            { "keys": "Ctrl + Alt + ?", "description": "显示所有键绑定" }
+          ]
+        },
+        {
+          "category": "滚动操作",
+          "items": [
+            { "keys": "Ctrl + Shift + ↑", "description": "向上滚动一行" },
+            { "keys": "Ctrl + Shift + ↓", "description": "向下滚动一行" },
+            { "keys": "Ctrl + Shift + Page Up", "description": "向上滚动一页" },
+            { "keys": "Ctrl + Shift + Page Down", "description": "向下滚动一页" },
+            { "keys": "Ctrl + Shift + Home", "description": "滚动到顶部" },
+            { "keys": "Ctrl + Shift + End", "description": "滚动到底部" },
+            { "keys": "Ctrl + Mouse Wheel", "description": "缩放字体" }
+          ]
+        },
+        {
+          "category": "配置文件",
+          "items": [
+            { "keys": "Ctrl + Shift + 1", "description": "打开配置文件1" },
+            { "keys": "Ctrl + Shift + 2", "description": "打开配置文件2" },
+            { "keys": "Ctrl + Shift + 3", "description": "打开配置文件3" },
+            { "keys": "Ctrl + Shift + 4", "description": "打开配置文件4" },
+            { "keys": "Ctrl + Shift + 5", "description": "打开配置文件5" },
+            { "keys": "Ctrl + Shift + 6", "description": "打开配置文件6" },
+            { "keys": "Ctrl + Shift + 7", "description": "打开配置文件7" },
+            { "keys": "Ctrl + Shift + 8", "description": "打开配置文件8" },
+            { "keys": "Ctrl + Shift + 9", "description": "打开配置文件9" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "Terminal基本操作",
+          "items": [
+            { "keys": "Cmd + T", "description": "打开新标签页" },
+            { "keys": "Cmd + N", "description": "打开新窗口" },
+            { "keys": "Cmd + D", "description": "复制当前标签页" },
+            { "keys": "Cmd + W", "description": "关闭当前标签页" },
+            { "keys": "Cmd + Q", "description": "关闭应用程序" },
+            { "keys": "Cmd + ,", "description": "打开偏好设置" },
+            { "keys": "Cmd + Shift + P", "description": "打开命令面板" },
+            { "keys": "Cmd + Ctrl + F", "description": "切换全屏模式" },
+            { "keys": "Cmd + =", "description": "增大字体" },
+            { "keys": "Cmd + -", "description": "减小字体" },
+            { "keys": "Cmd + 0", "description": "重置字体大小" }
+          ]
+        },
+        {
+          "category": "标签页管理",
+          "items": [
+            { "keys": "Cmd + Shift + ]", "description": "切换到下一个标签页" },
+            { "keys": "Cmd + Shift + [", "description": "切换到上一个标签页" },
+            { "keys": "Cmd + 1", "description": "切换到标签页1" },
+            { "keys": "Cmd + 2", "description": "切换到标签页2" },
+            { "keys": "Cmd + 3", "description": "切换到标签页3" },
+            { "keys": "Cmd + 4", "description": "切换到标签页4" },
+            { "keys": "Cmd + 5", "description": "切换到标签页5" },
+            { "keys": "Cmd + 6", "description": "切换到标签页6" },
+            { "keys": "Cmd + 7", "description": "切换到标签页7" },
+            { "keys": "Cmd + 8", "description": "切换到标签页8" },
+            { "keys": "Cmd + 9", "description": "切换到最后一个标签页" }
+          ]
+        },
+        {
+          "category": "窗格管理",
+          "items": [
+            { "keys": "Cmd + D", "description": "垂直分割窗格" },
+            { "keys": "Cmd + Shift + D", "description": "水平分割窗格" },
+            { "keys": "Cmd + Option + ←", "description": "移动到左侧窗格" },
+            { "keys": "Cmd + Option + →", "description": "移动到右侧窗格" },
+            { "keys": "Cmd + Option + ↑", "description": "移动到上方窗格" },
+            { "keys": "Cmd + Option + ↓", "description": "移动到下方窗格" },
+            { "keys": "Cmd + W", "description": "关闭当前窗格" }
+          ]
+        },
+        {
+          "category": "文本操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制选中文本" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + F", "description": "查找" },
+            { "keys": "Shift + Click", "description": "选择文本" },
+            { "keys": "Option + Shift + ←", "description": "选择左侧单词" },
+            { "keys": "Option + Shift + →", "description": "选择右侧单词" },
+            { "keys": "Shift + ↑", "description": "向上选择行" },
+            { "keys": "Shift + ↓", "description": "向下选择行" }
+          ]
+        },
+        {
+          "category": "命令行编辑",
+          "items": [
+            { "keys": "Ctrl + C", "description": "中断当前命令" },
+            { "keys": "Ctrl + L", "description": "清屏" },
+            { "keys": "Ctrl + R", "description": "反向搜索历史" },
+            { "keys": "Ctrl + S", "description": "正向搜索历史" },
+            { "keys": "Tab", "description": "自动完成" },
+            { "keys": "Shift + Tab", "description": "反向自动完成" },
+            { "keys": "↑", "description": "上一个命令" },
+            { "keys": "↓", "description": "下一个命令" },
+            { "keys": "Option + ←", "description": "移动到上一个单词" },
+            { "keys": "Option + →", "description": "移动到下一个单词" },
+            { "keys": "Ctrl + A", "description": "移动到行首" },
+            { "keys": "Ctrl + E", "description": "移动到行尾" }
+          ]
+        },
+        {
+          "category": "文本编辑",
+          "items": [
+            { "keys": "Ctrl + U", "description": "删除从光标到行首的文本" },
+            { "keys": "Ctrl + K", "description": "删除从光标到行尾的文本" },
+            { "keys": "Ctrl + W", "description": "删除前一个单词" },
+            { "keys": "Option + Backspace", "description": "删除前一个单词" },
+            { "keys": "Option + Delete", "description": "删除后一个单词" },
+            { "keys": "Ctrl + Y", "description": "粘贴最后删除的文本" },
+            { "keys": "Option + .", "description": "插入上一个命令的最后参数" },
+            { "keys": "Ctrl + _", "description": "撤销" }
+          ]
+        },
+        {
+          "category": "滚动操作",
+          "items": [
+            { "keys": "Cmd + ↑", "description": "向上滚动一行" },
+            { "keys": "Cmd + ↓", "description": "向下滚动一行" },
+            { "keys": "Cmd + Page Up", "description": "向上滚动一页" },
+            { "keys": "Cmd + Page Down", "description": "向下滚动一页" },
+            { "keys": "Cmd + Home", "description": "滚动到顶部" },
+            { "keys": "Cmd + End", "description": "滚动到底部" }
+          ]
+        }
+      ]
+    }
+  }
+}

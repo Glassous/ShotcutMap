@@ -1,0 +1,285 @@
+{
+  "name": "Adobe Photoshop",
+  "icon": "/adobe-photoshop-2.svg",
+  "description": "图像编辑软件",
+  "category": "设计类",
+  "officialDocs": "https://helpx.adobe.com/photoshop/using/default-keyboard-shortcuts.html",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建文档" },
+            { "keys": "Ctrl + O", "description": "打开文档" },
+            { "keys": "Ctrl + S", "description": "保存" },
+            { "keys": "Ctrl + Shift + S", "description": "另存为" },
+            { "keys": "Ctrl + Alt + S", "description": "存储为Web所用格式" },
+            { "keys": "Ctrl + W", "description": "关闭" },
+            { "keys": "Ctrl + Q", "description": "退出" },
+            { "keys": "Ctrl + Z", "description": "撤销/重做" },
+            { "keys": "Ctrl + Alt + Z", "description": "后退一步" },
+            { "keys": "Ctrl + Shift + Z", "description": "前进一步" }
+          ]
+        },
+        {
+          "category": "选择工具",
+          "items": [
+            { "keys": "V", "description": "移动工具" },
+            { "keys": "M", "description": "选框工具" },
+            { "keys": "L", "description": "套索工具" },
+            { "keys": "W", "description": "快速选择工具" },
+            { "keys": "C", "description": "裁剪工具" },
+            { "keys": "I", "description": "吸管工具" },
+            { "keys": "J", "description": "修复画笔工具" },
+            { "keys": "B", "description": "画笔工具" },
+            { "keys": "S", "description": "仿制图章工具" },
+            { "keys": "Y", "description": "历史记录画笔工具" },
+            { "keys": "E", "description": "橡皮擦工具" },
+            { "keys": "G", "description": "渐变工具" },
+            { "keys": "O", "description": "减淡工具" },
+            { "keys": "P", "description": "钢笔工具" },
+            { "keys": "T", "description": "文字工具" },
+            { "keys": "A", "description": "路径选择工具" },
+            { "keys": "U", "description": "矩形工具" },
+            { "keys": "H", "description": "抓手工具" },
+            { "keys": "R", "description": "旋转视图工具" },
+            { "keys": "Z", "description": "缩放工具" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "拷贝" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + Shift + V", "description": "贴入" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + D", "description": "取消选择" },
+            { "keys": "Ctrl + Shift + I", "description": "反选" },
+            { "keys": "Ctrl + T", "description": "自由变换" },
+            { "keys": "Ctrl + Shift + T", "description": "再次变换" },
+            { "keys": "Ctrl + Alt + T", "description": "复制变换" }
+          ]
+        },
+        {
+          "category": "图层操作",
+          "items": [
+            { "keys": "Ctrl + Shift + N", "description": "新建图层" },
+            { "keys": "Ctrl + J", "description": "通过拷贝新建图层" },
+            { "keys": "Ctrl + Shift + J", "description": "通过剪切新建图层" },
+            { "keys": "Ctrl + G", "description": "创建图层组" },
+            { "keys": "Ctrl + Shift + G", "description": "取消图层组" },
+            { "keys": "Ctrl + E", "description": "向下合并" },
+            { "keys": "Ctrl + Shift + E", "description": "合并可见图层" },
+            { "keys": "Ctrl + Alt + E", "description": "盖印图层" },
+            { "keys": "Ctrl + Shift + Alt + E", "description": "盖印可见图层" },
+            { "keys": "Ctrl + [", "description": "下移图层" },
+            { "keys": "Ctrl + ]", "description": "上移图层" },
+            { "keys": "Ctrl + Shift + [", "description": "移至底层" },
+            { "keys": "Ctrl + Shift + ]", "description": "移至顶层" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Ctrl + +", "description": "放大" },
+            { "keys": "Ctrl + -", "description": "缩小" },
+            { "keys": "Ctrl + 0", "description": "适合屏幕" },
+            { "keys": "Ctrl + 1", "description": "实际像素" },
+            { "keys": "Ctrl + Alt + 0", "description": "适合屏幕" },
+            { "keys": "F", "description": "切换屏幕模式" },
+            { "keys": "Tab", "description": "显示/隐藏面板" },
+            { "keys": "Shift + Tab", "description": "显示/隐藏工具箱和面板" },
+            { "keys": "Ctrl + R", "description": "显示/隐藏标尺" },
+            { "keys": "Ctrl + ;", "description": "显示/隐藏参考线" },
+            { "keys": "Ctrl + '", "description": "显示/隐藏网格" }
+          ]
+        },
+        {
+          "category": "调整和滤镜",
+          "items": [
+            { "keys": "Ctrl + L", "description": "色阶" },
+            { "keys": "Ctrl + M", "description": "曲线" },
+            { "keys": "Ctrl + U", "description": "色相/饱和度" },
+            { "keys": "Ctrl + B", "description": "色彩平衡" },
+            { "keys": "Ctrl + Shift + U", "description": "去色" },
+            { "keys": "Ctrl + I", "description": "反相" },
+            { "keys": "Ctrl + Alt + I", "description": "图像大小" },
+            { "keys": "Ctrl + Alt + C", "description": "画布大小" },
+            { "keys": "Ctrl + F", "description": "重复上次滤镜" },
+            { "keys": "Ctrl + Shift + F", "description": "渐隐" }
+          ]
+        },
+        {
+          "category": "文字工具",
+          "items": [
+            { "keys": "Ctrl + Shift + >", "description": "增大字体" },
+            { "keys": "Ctrl + Shift + <", "description": "减小字体" },
+            { "keys": "Alt + ←", "description": "减小字符间距" },
+            { "keys": "Alt + →", "description": "增大字符间距" },
+            { "keys": "Alt + ↑", "description": "减小行距" },
+            { "keys": "Alt + ↓", "description": "增大行距" },
+            { "keys": "Ctrl + Shift + L", "description": "左对齐" },
+            { "keys": "Ctrl + Shift + C", "description": "居中对齐" },
+            { "keys": "Ctrl + Shift + R", "description": "右对齐" }
+          ]
+        },
+        {
+          "category": "快速键",
+          "items": [
+            { "keys": "Space", "description": "临时切换到抓手工具" },
+            { "keys": "Ctrl + Space", "description": "临时切换到放大镜" },
+            { "keys": "Alt + Space", "description": "临时切换到缩小镜" },
+            { "keys": "X", "description": "切换前景色和背景色" },
+            { "keys": "D", "description": "恢复默认前景色和背景色" },
+            { "keys": "[", "description": "减小画笔大小" },
+            { "keys": "]", "description": "增大画笔大小" },
+            { "keys": "Shift + [", "description": "减小画笔硬度" },
+            { "keys": "Shift + ]", "description": "增大画笔硬度" },
+            { "keys": "数字键 1-0", "description": "设置画笔不透明度" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建文档" },
+            { "keys": "Cmd + O", "description": "打开文档" },
+            { "keys": "Cmd + S", "description": "保存" },
+            { "keys": "Cmd + Shift + S", "description": "另存为" },
+            { "keys": "Cmd + Option + S", "description": "存储为Web所用格式" },
+            { "keys": "Cmd + W", "description": "关闭" },
+            { "keys": "Cmd + Q", "description": "退出" },
+            { "keys": "Cmd + Z", "description": "撤销/重做" },
+            { "keys": "Cmd + Option + Z", "description": "后退一步" },
+            { "keys": "Cmd + Shift + Z", "description": "前进一步" }
+          ]
+        },
+        {
+          "category": "选择工具",
+          "items": [
+            { "keys": "V", "description": "移动工具" },
+            { "keys": "M", "description": "选框工具" },
+            { "keys": "L", "description": "套索工具" },
+            { "keys": "W", "description": "快速选择工具" },
+            { "keys": "C", "description": "裁剪工具" },
+            { "keys": "I", "description": "吸管工具" },
+            { "keys": "J", "description": "修复画笔工具" },
+            { "keys": "B", "description": "画笔工具" },
+            { "keys": "S", "description": "仿制图章工具" },
+            { "keys": "Y", "description": "历史记录画笔工具" },
+            { "keys": "E", "description": "橡皮擦工具" },
+            { "keys": "G", "description": "渐变工具" },
+            { "keys": "O", "description": "减淡工具" },
+            { "keys": "P", "description": "钢笔工具" },
+            { "keys": "T", "description": "文字工具" },
+            { "keys": "A", "description": "路径选择工具" },
+            { "keys": "U", "description": "矩形工具" },
+            { "keys": "H", "description": "抓手工具" },
+            { "keys": "R", "description": "旋转视图工具" },
+            { "keys": "Z", "description": "缩放工具" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "拷贝" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + Shift + V", "description": "贴入" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + D", "description": "取消选择" },
+            { "keys": "Cmd + Shift + I", "description": "反选" },
+            { "keys": "Cmd + T", "description": "自由变换" },
+            { "keys": "Cmd + Shift + T", "description": "再次变换" },
+            { "keys": "Cmd + Option + T", "description": "复制变换" }
+          ]
+        },
+        {
+          "category": "图层操作",
+          "items": [
+            { "keys": "Cmd + Shift + N", "description": "新建图层" },
+            { "keys": "Cmd + J", "description": "通过拷贝新建图层" },
+            { "keys": "Cmd + Shift + J", "description": "通过剪切新建图层" },
+            { "keys": "Cmd + G", "description": "创建图层组" },
+            { "keys": "Cmd + Shift + G", "description": "取消图层组" },
+            { "keys": "Cmd + E", "description": "向下合并" },
+            { "keys": "Cmd + Shift + E", "description": "合并可见图层" },
+            { "keys": "Cmd + Option + E", "description": "盖印图层" },
+            { "keys": "Cmd + Shift + Option + E", "description": "盖印可见图层" },
+            { "keys": "Cmd + [", "description": "下移图层" },
+            { "keys": "Cmd + ]", "description": "上移图层" },
+            { "keys": "Cmd + Shift + [", "description": "移至底层" },
+            { "keys": "Cmd + Shift + ]", "description": "移至顶层" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Cmd + +", "description": "放大" },
+            { "keys": "Cmd + -", "description": "缩小" },
+            { "keys": "Cmd + 0", "description": "适合屏幕" },
+            { "keys": "Cmd + 1", "description": "实际像素" },
+            { "keys": "Cmd + Option + 0", "description": "适合屏幕" },
+            { "keys": "F", "description": "切换屏幕模式" },
+            { "keys": "Tab", "description": "显示/隐藏面板" },
+            { "keys": "Shift + Tab", "description": "显示/隐藏工具箱和面板" },
+            { "keys": "Cmd + R", "description": "显示/隐藏标尺" },
+            { "keys": "Cmd + ;", "description": "显示/隐藏参考线" },
+            { "keys": "Cmd + '", "description": "显示/隐藏网格" }
+          ]
+        },
+        {
+          "category": "调整和滤镜",
+          "items": [
+            { "keys": "Cmd + L", "description": "色阶" },
+            { "keys": "Cmd + M", "description": "曲线" },
+            { "keys": "Cmd + U", "description": "色相/饱和度" },
+            { "keys": "Cmd + B", "description": "色彩平衡" },
+            { "keys": "Cmd + Shift + U", "description": "去色" },
+            { "keys": "Cmd + I", "description": "反相" },
+            { "keys": "Cmd + Option + I", "description": "图像大小" },
+            { "keys": "Cmd + Option + C", "description": "画布大小" },
+            { "keys": "Cmd + F", "description": "重复上次滤镜" },
+            { "keys": "Cmd + Shift + F", "description": "渐隐" }
+          ]
+        },
+        {
+          "category": "文字工具",
+          "items": [
+            { "keys": "Cmd + Shift + >", "description": "增大字体" },
+            { "keys": "Cmd + Shift + <", "description": "减小字体" },
+            { "keys": "Option + ←", "description": "减小字符间距" },
+            { "keys": "Option + →", "description": "增大字符间距" },
+            { "keys": "Option + ↑", "description": "减小行距" },
+            { "keys": "Option + ↓", "description": "增大行距" },
+            { "keys": "Cmd + Shift + L", "description": "左对齐" },
+            { "keys": "Cmd + Shift + C", "description": "居中对齐" },
+            { "keys": "Cmd + Shift + R", "description": "右对齐" }
+          ]
+        },
+        {
+          "category": "快速键",
+          "items": [
+            { "keys": "Space", "description": "临时切换到抓手工具" },
+            { "keys": "Cmd + Space", "description": "临时切换到放大镜" },
+            { "keys": "Option + Space", "description": "临时切换到缩小镜" },
+            { "keys": "X", "description": "切换前景色和背景色" },
+            { "keys": "D", "description": "恢复默认前景色和背景色" },
+            { "keys": "[", "description": "减小画笔大小" },
+            { "keys": "]", "description": "增大画笔大小" },
+            { "keys": "Shift + [", "description": "减小画笔硬度" },
+            { "keys": "Shift + ]", "description": "增大画笔硬度" },
+            { "keys": "数字键 1-0", "description": "设置画笔不透明度" }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "name": "Adobe After Effects",
+  "icon": "/after-effects-1.svg",
+  "description": "动画和视觉效果软件",
+  "category": "设计类",
+  "officialDocs": "https://helpx.adobe.com/after-effects/using/keyboard-shortcuts-reference.html",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建合成" },
+            { "keys": "Ctrl + O", "description": "打开项目" },
+            { "keys": "Ctrl + S", "description": "保存项目" },
+            { "keys": "Ctrl + Alt + S", "description": "另存为" },
+            { "keys": "Ctrl + W", "description": "关闭项目" },
+            { "keys": "Ctrl + Q", "description": "退出" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Shift + Z", "description": "重做" },
+            { "keys": "Ctrl + I", "description": "导入文件" },
+            { "keys": "Ctrl + Alt + I", "description": "导入多个文件" }
+          ]
+        },
+        {
+          "category": "播放控制",
+          "items": [
+            { "keys": "Space", "description": "播放/暂停" },
+            { "keys": "Ctrl + Space", "description": "预览" },
+            { "keys": "Shift + Space", "description": "仅音频预览" },
+            { "keys": ".", "description": "仅视频预览" },
+            { "keys": "Alt + .", "description": "音频预览" },
+            { "keys": "Page Down", "description": "前进一帧" },
+            { "keys": "Page Up", "description": "后退一帧" },
+            { "keys": "Shift + Page Down", "description": "前进10帧" },
+            { "keys": "Shift + Page Up", "description": "后退10帧" },
+            { "keys": "Home", "description": "转到开头" },
+            { "keys": "End", "description": "转到结尾" },
+            { "keys": "Ctrl + Home", "description": "转到工作区域开头" },
+            { "keys": "Ctrl + End", "description": "转到工作区域结尾" }
+          ]
+        },
+        {
+          "category": "图层操作",
+          "items": [
+            { "keys": "Ctrl + Y", "description": "新建纯色图层" },
+            { "keys": "Ctrl + Alt + Y", "description": "新建调整图层" },
+            { "keys": "Ctrl + Shift + Y", "description": "新建文本图层" },
+            { "keys": "Ctrl + Alt + Shift + Y", "description": "新建摄像机图层" },
+            { "keys": "Ctrl + Alt + Shift + L", "description": "新建灯光图层" },
+            { "keys": "Ctrl + Shift + C", "description": "预合成" },
+            { "keys": "Ctrl + D", "description": "复制图层" },
+            { "keys": "Ctrl + Shift + D", "description": "分割图层" },
+            { "keys": "Delete", "description": "删除图层" },
+            { "keys": "Ctrl + L", "description": "锁定/解锁图层" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴" },
+            { "keys": "Ctrl + Alt + V", "description": "选择性粘贴" }
+          ]
+        },
+        {
+          "category": "关键帧动画",
+          "items": [
+            { "keys": "Alt + Shift + P", "description": "添加位置关键帧" },
+            { "keys": "Alt + Shift + R", "description": "添加旋转关键帧" },
+            { "keys": "Alt + Shift + S", "description": "添加缩放关键帧" },
+            { "keys": "Alt + Shift + T", "description": "添加不透明度关键帧" },
+            { "keys": "Alt + Shift + A", "description": "添加锚点关键帧" },
+            { "keys": "J", "description": "转到上一个关键帧" },
+            { "keys": "K", "description": "转到下一个关键帧" },
+            { "keys": "F9", "description": "缓动关键帧" },
+            { "keys": "Ctrl + Alt + H", "description": "自动关键帧" },
+            { "keys": "U", "description": "显示修改的属性" },
+            { "keys": "UU", "description": "显示所有修改的属性" }
+          ]
+        },
+        {
+          "category": "变换工具",
+          "items": [
+            { "keys": "V", "description": "选择工具" },
+            { "keys": "W", "description": "旋转工具" },
+            { "keys": "Y", "description": "平移工具" },
+            { "keys": "G", "description": "钢笔工具" },
+            { "keys": "Q", "description": "形状工具" },
+            { "keys": "Ctrl + T", "description": "文字工具" },
+            { "keys": "H", "description": "手形工具" },
+            { "keys": "Z", "description": "缩放工具" },
+            { "keys": "C", "description": "摄像机工具" },
+            { "keys": "Ctrl + Alt + Shift + T", "description": "自由变换点" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Ctrl + 0", "description": "适合合成窗口" },
+            { "keys": "Alt + /", "description": "适合时间轴窗口" },
+            { "keys": "Shift + /", "description": "适合所有图层到时间轴" },
+            { "keys": ".", "description": "放大" },
+            { "keys": ",", "description": "缩小" },
+            { "keys": "Ctrl + Alt + F", "description": "全屏预览" },
+            { "keys": "Caps Lock", "description": "切换分辨率" },
+            { "keys": "Ctrl + Shift + ;", "description": "显示网格" },
+            { "keys": "Ctrl + '", "description": "显示标尺" },
+            { "keys": "Ctrl + ;", "description": "显示参考线" },
+            { "keys": "Ctrl + Shift + H", "description": "显示图层控制" }
+          ]
+        },
+        {
+          "category": "效果和预设",
+          "items": [
+            { "keys": "Ctrl + Shift + E", "description": "应用上次效果" },
+            { "keys": "Ctrl + Alt + Shift + E", "description": "应用上次效果设置" },
+            { "keys": "Delete", "description": "删除效果" },
+            { "keys": "Ctrl + Shift + T", "description": "应用动态模糊" },
+            { "keys": "Ctrl + Shift + X", "description": "时间重映射" },
+            { "keys": "Ctrl + Shift + Y", "description": "应用表达式" },
+            { "keys": "Alt + Click", "description": "添加表达式" },
+            { "keys": "Ctrl + Enter", "description": "添加到渲染队列" }
+          ]
+        },
+        {
+          "category": "面板和工作区",
+          "items": [
+            { "keys": "Ctrl + 1", "description": "项目面板" },
+            { "keys": "Ctrl + 2", "description": "合成面板" },
+            { "keys": "Ctrl + 3", "description": "时间轴面板" },
+            { "keys": "Ctrl + 4", "description": "效果控制面板" },
+            { "keys": "Ctrl + 5", "description": "音频面板" },
+            { "keys": "Ctrl + 6", "description": "信息面板" },
+            { "keys": "Ctrl + 7", "description": "预览面板" },
+            { "keys": "Ctrl + 8", "description": "绘画面板" },
+            { "keys": "Ctrl + 9", "description": "笔刷面板" },
+            { "keys": "F1", "description": "标准工作区" },
+            { "keys": "F2", "description": "文本工作区" },
+            { "keys": "F3", "description": "绘画工作区" }
+          ]
+        },
+        {
+          "category": "渲染和输出",
+          "items": [
+            { "keys": "Ctrl + M", "description": "添加到渲染队列" },
+            { "keys": "Ctrl + Alt + M", "description": "添加到Adobe Media Encoder队列" },
+            { "keys": "Ctrl + Shift + /", "description": "渲染工作区域" },
+            { "keys": "Enter", "description": "开始渲染" },
+            { "keys": "Esc", "description": "停止渲染" },
+            { "keys": "Ctrl + Shift + S", "description": "保存帧" },
+            { "keys": "Ctrl + Alt + S", "description": "收集文件" },
+            { "keys": "Ctrl + Alt + Shift + S", "description": "减少项目" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建合成" },
+            { "keys": "Cmd + O", "description": "打开项目" },
+            { "keys": "Cmd + S", "description": "保存项目" },
+            { "keys": "Cmd + Option + S", "description": "另存为" },
+            { "keys": "Cmd + W", "description": "关闭项目" },
+            { "keys": "Cmd + Q", "description": "退出" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Shift + Z", "description": "重做" },
+            { "keys": "Cmd + I", "description": "导入文件" },
+            { "keys": "Cmd + Option + I", "description": "导入多个文件" }
+          ]
+        },
+        {
+          "category": "播放控制",
+          "items": [
+            { "keys": "Space", "description": "播放/暂停" },
+            { "keys": "Cmd + Space", "description": "预览" },
+            { "keys": "Shift + Space", "description": "仅音频预览" },
+            { "keys": ".", "description": "仅视频预览" },
+            { "keys": "Option + .", "description": "音频预览" },
+            { "keys": "Page Down", "description": "前进一帧" },
+            { "keys": "Page Up", "description": "后退一帧" },
+            { "keys": "Shift + Page Down", "description": "前进10帧" },
+            { "keys": "Shift + Page Up", "description": "后退10帧" },
+            { "keys": "Home", "description": "转到开头" },
+            { "keys": "End", "description": "转到结尾" },
+            { "keys": "Cmd + Home", "description": "转到工作区域开头" },
+            { "keys": "Cmd + End", "description": "转到工作区域结尾" }
+          ]
+        },
+        {
+          "category": "图层操作",
+          "items": [
+            { "keys": "Cmd + Y", "description": "新建纯色图层" },
+            { "keys": "Cmd + Option + Y", "description": "新建调整图层" },
+            { "keys": "Cmd + Shift + Y", "description": "新建文本图层" },
+            { "keys": "Cmd + Option + Shift + Y", "description": "新建摄像机图层" },
+            { "keys": "Cmd + Option + Shift + L", "description": "新建灯光图层" },
+            { "keys": "Cmd + Shift + C", "description": "预合成" },
+            { "keys": "Cmd + D", "description": "复制图层" },
+            { "keys": "Cmd + Shift + D", "description": "分割图层" },
+            { "keys": "Delete", "description": "删除图层" },
+            { "keys": "Cmd + L", "description": "锁定/解锁图层" },
+            { "keys": "Cmd + Shift + V", "description": "粘贴" },
+            { "keys": "Cmd + Option + V", "description": "选择性粘贴" }
+          ]
+        },
+        {
+          "category": "关键帧动画",
+          "items": [
+            { "keys": "Option + Shift + P", "description": "添加位置关键帧" },
+            { "keys": "Option + Shift + R", "description": "添加旋转关键帧" },
+            { "keys": "Option + Shift + S", "description": "添加缩放关键帧" },
+            { "keys": "Option + Shift + T", "description": "添加不透明度关键帧" },
+            { "keys": "Option + Shift + A", "description": "添加锚点关键帧" },
+            { "keys": "J", "description": "转到上一个关键帧" },
+            { "keys": "K", "description": "转到下一个关键帧" },
+            { "keys": "F9", "description": "缓动关键帧" },
+            { "keys": "Cmd + Option + H", "description": "自动关键帧" },
+            { "keys": "U", "description": "显示修改的属性" },
+            { "keys": "UU", "description": "显示所有修改的属性" }
+          ]
+        },
+        {
+          "category": "变换工具",
+          "items": [
+            { "keys": "V", "description": "选择工具" },
+            { "keys": "W", "description": "旋转工具" },
+            { "keys": "Y", "description": "平移工具" },
+            { "keys": "G", "description": "钢笔工具" },
+            { "keys": "Q", "description": "形状工具" },
+            { "keys": "Cmd + T", "description": "文字工具" },
+            { "keys": "H", "description": "手形工具" },
+            { "keys": "Z", "description": "缩放工具" },
+            { "keys": "C", "description": "摄像机工具" },
+            { "keys": "Cmd + Option + Shift + T", "description": "自由变换点" }
+          ]
+        },
+        {
+          "category": "视图操作",
+          "items": [
+            { "keys": "Cmd + 0", "description": "适合合成窗口" },
+            { "keys": "Option + /", "description": "适合时间轴窗口" },
+            { "keys": "Shift + /", "description": "适合所有图层到时间轴" },
+            { "keys": ".", "description": "放大" },
+            { "keys": ",", "description": "缩小" },
+            { "keys": "Cmd + Option + F", "description": "全屏预览" },
+            { "keys": "Caps Lock", "description": "切换分辨率" },
+            { "keys": "Cmd + Shift + ;", "description": "显示网格" },
+            { "keys": "Cmd + '", "description": "显示标尺" },
+            { "keys": "Cmd + ;", "description": "显示参考线" },
+            { "keys": "Cmd + Shift + H", "description": "显示图层控制" }
+          ]
+        },
+        {
+          "category": "效果和预设",
+          "items": [
+            { "keys": "Cmd + Shift + E", "description": "应用上次效果" },
+            { "keys": "Cmd + Option + Shift + E", "description": "应用上次效果设置" },
+            { "keys": "Delete", "description": "删除效果" },
+            { "keys": "Cmd + Shift + T", "description": "应用动态模糊" },
+            { "keys": "Cmd + Shift + X", "description": "时间重映射" },
+            { "keys": "Cmd + Shift + Y", "description": "应用表达式" },
+            { "keys": "Option + Click", "description": "添加表达式" },
+            { "keys": "Cmd + Return", "description": "添加到渲染队列" }
+          ]
+        },
+        {
+          "category": "面板和工作区",
+          "items": [
+            { "keys": "Cmd + 1", "description": "项目面板" },
+            { "keys": "Cmd + 2", "description": "合成面板" },
+            { "keys": "Cmd + 3", "description": "时间轴面板" },
+            { "keys": "Cmd + 4", "description": "效果控制面板" },
+            { "keys": "Cmd + 5", "description": "音频面板" },
+            { "keys": "Cmd + 6", "description": "信息面板" },
+            { "keys": "Cmd + 7", "description": "预览面板" },
+            { "keys": "Cmd + 8", "description": "绘画面板" },
+            { "keys": "Cmd + 9", "description": "笔刷面板" },
+            { "keys": "F1", "description": "标准工作区" },
+            { "keys": "F2", "description": "文本工作区" },
+            { "keys": "F3", "description": "绘画工作区" }
+          ]
+        },
+        {
+          "category": "渲染和输出",
+          "items": [
+            { "keys": "Cmd + M", "description": "添加到渲染队列" },
+            { "keys": "Cmd + Option + M", "description": "添加到Adobe Media Encoder队列" },
+            { "keys": "Cmd + Shift + /", "description": "渲染工作区域" },
+            { "keys": "Return", "description": "开始渲染" },
+            { "keys": "Esc", "description": "停止渲染" },
+            { "keys": "Cmd + Shift + S", "description": "保存帧" },
+            { "keys": "Cmd + Option + S", "description": "收集文件" },
+            { "keys": "Cmd + Option + Shift + S", "description": "减少项目" }
+          ]
+        }
+      ]
+    }
+  }
+}

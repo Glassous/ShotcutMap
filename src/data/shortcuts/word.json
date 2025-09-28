@@ -1,0 +1,209 @@
+{
+  "name": "Microsoft Word",
+  "icon": "/word-1.svg",
+  "description": "微软文字处理软件",
+  "category": "办公软件",
+  "officialDocs": "https://support.microsoft.com/zh-cn/office/word-%E4%B8%AD%E7%9A%84%E9%94%AE%E7%9B%98%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F-95ef89dd-7142-4b50-afb2-f762f663ceb2",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建文档" },
+            { "keys": "Ctrl + O", "description": "打开文档" },
+            { "keys": "Ctrl + S", "description": "保存文档" },
+            { "keys": "Ctrl + P", "description": "打印文档" },
+            { "keys": "Ctrl + W", "description": "关闭文档" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Y", "description": "重做" },
+            { "keys": "F12", "description": "另存为" },
+            { "keys": "Ctrl + F12", "description": "打开文档" },
+            { "keys": "Alt + F4", "description": "退出Word" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + X", "description": "剪切" },
+            { "keys": "Ctrl + A", "description": "全选" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + H", "description": "替换" },
+            { "keys": "Ctrl + G", "description": "转到" },
+            { "keys": "F5", "description": "转到" },
+            { "keys": "Ctrl + Shift + F", "description": "更改字体" },
+            { "keys": "Delete", "description": "删除右侧字符" },
+            { "keys": "Backspace", "description": "删除左侧字符" }
+          ]
+        },
+        {
+          "category": "格式设置",
+          "items": [
+            { "keys": "Ctrl + B", "description": "粗体" },
+            { "keys": "Ctrl + I", "description": "斜体" },
+            { "keys": "Ctrl + U", "description": "下划线" },
+            { "keys": "Ctrl + Shift + D", "description": "双下划线" },
+            { "keys": "Ctrl + Shift + W", "description": "只给单词加下划线" },
+            { "keys": "Ctrl + Shift + K", "description": "小型大写字母" },
+            { "keys": "Ctrl + =", "description": "下标" },
+            { "keys": "Ctrl + Shift + =", "description": "上标" },
+            { "keys": "Ctrl + Shift + A", "description": "全部大写" },
+            { "keys": "Shift + F3", "description": "更改大小写" }
+          ]
+        },
+        {
+          "category": "段落格式",
+          "items": [
+            { "keys": "Ctrl + E", "description": "居中对齐" },
+            { "keys": "Ctrl + L", "description": "左对齐" },
+            { "keys": "Ctrl + R", "description": "右对齐" },
+            { "keys": "Ctrl + J", "description": "两端对齐" },
+            { "keys": "Ctrl + M", "description": "增加段落缩进" },
+            { "keys": "Ctrl + Shift + M", "description": "减少段落缩进" },
+            { "keys": "Ctrl + T", "description": "创建悬挂缩进" },
+            { "keys": "Ctrl + Shift + T", "description": "减少悬挂缩进" },
+            { "keys": "Ctrl + 1", "description": "单倍行距" },
+            { "keys": "Ctrl + 2", "description": "双倍行距" },
+            { "keys": "Ctrl + 5", "description": "1.5倍行距" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Ctrl + Home", "description": "转到文档开头" },
+            { "keys": "Ctrl + End", "description": "转到文档结尾" },
+            { "keys": "Ctrl + ←", "description": "向左移动一个单词" },
+            { "keys": "Ctrl + →", "description": "向右移动一个单词" },
+            { "keys": "Ctrl + ↑", "description": "向上移动一个段落" },
+            { "keys": "Ctrl + ↓", "description": "向下移动一个段落" },
+            { "keys": "Page Up", "description": "向上翻页" },
+            { "keys": "Page Down", "description": "向下翻页" },
+            { "keys": "Ctrl + Page Up", "description": "转到上一页顶部" },
+            { "keys": "Ctrl + Page Down", "description": "转到下一页顶部" }
+          ]
+        },
+        {
+          "category": "选择文本",
+          "items": [
+            { "keys": "Shift + ←", "description": "向左选择一个字符" },
+            { "keys": "Shift + →", "description": "向右选择一个字符" },
+            { "keys": "Ctrl + Shift + ←", "description": "向左选择一个单词" },
+            { "keys": "Ctrl + Shift + →", "description": "向右选择一个单词" },
+            { "keys": "Shift + ↑", "description": "向上选择一行" },
+            { "keys": "Shift + ↓", "description": "向下选择一行" },
+            { "keys": "Ctrl + Shift + Home", "description": "选择到文档开头" },
+            { "keys": "Ctrl + Shift + End", "description": "选择到文档结尾" },
+            { "keys": "Shift + Page Up", "description": "向上选择一屏" },
+            { "keys": "Shift + Page Down", "description": "向下选择一屏" }
+          ]
+        },
+        {
+          "category": "表格操作",
+          "items": [
+            { "keys": "Tab", "description": "移到下一个单元格" },
+            { "keys": "Shift + Tab", "description": "移到上一个单元格" },
+            { "keys": "Alt + Home", "description": "移到行中第一个单元格" },
+            { "keys": "Alt + End", "description": "移到行中最后一个单元格" },
+            { "keys": "Alt + Page Up", "description": "移到列中第一个单元格" },
+            { "keys": "Alt + Page Down", "description": "移到列中最后一个单元格" },
+            { "keys": "Alt + Shift + ↑", "description": "选择上方单元格" },
+            { "keys": "Alt + Shift + ↓", "description": "选择下方单元格" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "基本操作",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建文档" },
+            { "keys": "Cmd + O", "description": "打开文档" },
+            { "keys": "Cmd + S", "description": "保存文档" },
+            { "keys": "Cmd + P", "description": "打印文档" },
+            { "keys": "Cmd + W", "description": "关闭文档" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Cmd + Y", "description": "重做" },
+            { "keys": "Cmd + Shift + S", "description": "另存为" },
+            { "keys": "Cmd + Q", "description": "退出Word" }
+          ]
+        },
+        {
+          "category": "编辑操作",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + X", "description": "剪切" },
+            { "keys": "Cmd + A", "description": "全选" },
+            { "keys": "Cmd + F", "description": "查找" },
+            { "keys": "Cmd + Option + F", "description": "替换" },
+            { "keys": "Cmd + G", "description": "查找下一个" },
+            { "keys": "Cmd + Shift + G", "description": "查找上一个" },
+            { "keys": "Delete", "description": "删除右侧字符" },
+            { "keys": "Fn + Delete", "description": "删除左侧字符" }
+          ]
+        },
+        {
+          "category": "格式设置",
+          "items": [
+            { "keys": "Cmd + B", "description": "粗体" },
+            { "keys": "Cmd + I", "description": "斜体" },
+            { "keys": "Cmd + U", "description": "下划线" },
+            { "keys": "Cmd + Shift + D", "description": "双下划线" },
+            { "keys": "Cmd + Shift + W", "description": "只给单词加下划线" },
+            { "keys": "Cmd + Shift + K", "description": "小型大写字母" },
+            { "keys": "Cmd + =", "description": "下标" },
+            { "keys": "Cmd + Shift + =", "description": "上标" },
+            { "keys": "Cmd + Shift + A", "description": "全部大写" }
+          ]
+        },
+        {
+          "category": "段落格式",
+          "items": [
+            { "keys": "Cmd + E", "description": "居中对齐" },
+            { "keys": "Cmd + L", "description": "左对齐" },
+            { "keys": "Cmd + R", "description": "右对齐" },
+            { "keys": "Cmd + J", "description": "两端对齐" },
+            { "keys": "Cmd + M", "description": "增加段落缩进" },
+            { "keys": "Cmd + Shift + M", "description": "减少段落缩进" },
+            { "keys": "Cmd + T", "description": "创建悬挂缩进" },
+            { "keys": "Cmd + Shift + T", "description": "减少悬挂缩进" },
+            { "keys": "Cmd + 1", "description": "单倍行距" },
+            { "keys": "Cmd + 2", "description": "双倍行距" },
+            { "keys": "Cmd + 5", "description": "1.5倍行距" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Cmd + Home", "description": "转到文档开头" },
+            { "keys": "Cmd + End", "description": "转到文档结尾" },
+            { "keys": "Option + ←", "description": "向左移动一个单词" },
+            { "keys": "Option + →", "description": "向右移动一个单词" },
+            { "keys": "Cmd + ↑", "description": "向上移动一个段落" },
+            { "keys": "Cmd + ↓", "description": "向下移动一个段落" },
+            { "keys": "Page Up", "description": "向上翻页" },
+            { "keys": "Page Down", "description": "向下翻页" }
+          ]
+        },
+        {
+          "category": "选择文本",
+          "items": [
+            { "keys": "Shift + ←", "description": "向左选择一个字符" },
+            { "keys": "Shift + →", "description": "向右选择一个字符" },
+            { "keys": "Option + Shift + ←", "description": "向左选择一个单词" },
+            { "keys": "Option + Shift + →", "description": "向右选择一个单词" },
+            { "keys": "Shift + ↑", "description": "向上选择一行" },
+            { "keys": "Shift + ↓", "description": "向下选择一行" },
+            { "keys": "Cmd + Shift + Home", "description": "选择到文档开头" },
+            { "keys": "Cmd + Shift + End", "description": "选择到文档结尾" }
+          ]
+        }
+      ]
+    }
+  }
+}

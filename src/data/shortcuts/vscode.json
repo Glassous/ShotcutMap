@@ -1,7 +1,8 @@
 {
   "name": "Visual Studio Code",
-  "icon": "📝",
-  "description": "轻量级代码编辑器",
+  "icon": "/visual-studio-code-1.svg",
+  "description": "微软代码编辑器",
+  "category": "开发类",
   "officialDocs": "https://code.visualstudio.com/docs/getstarted/keybindings",
   "systems": {
     "windows": {
