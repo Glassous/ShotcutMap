@@ -13,7 +13,13 @@
         @click="$emit('selectSoftware', software.id)"
       >
         <div class="card-body items-center text-center">
-          <div class="text-6xl mb-4">{{ software.icon }}</div>
+          <div class="mb-4">
+            <img 
+              :src="getSoftwareIcon(software.id)" 
+              :alt="software.name" 
+              class="w-16 h-16 object-contain"
+            />
+          </div>
           <h3 class="card-title text-xl text-base-content">{{ software.name }}</h3>
           <p class="text-base-content/70 text-sm mb-4">{{ software.description }}</p>
           
@@ -56,6 +62,16 @@ defineEmits(['selectSoftware'])
 
 // 获取软件列表
 const softwareList = getSoftwareList()
+
+// 获取软件图标路径
+const getSoftwareIcon = (softwareId) => {
+  const iconMap = {
+    'idea': '/intellij-idea-1.svg',
+    'vscode': '/visual-studio-code-1.svg',
+    'chrome': '/chrome-modern-.svg'
+  }
+  return iconMap[softwareId] || '/ShortcutMap.png'
+}
 </script>
 
 <style scoped>

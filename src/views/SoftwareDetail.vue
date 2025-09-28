@@ -31,7 +31,9 @@
     <div v-if="software" class="container mx-auto px-4 py-8 pt-24">
       <!-- 软件信息头部 -->
       <div class="text-center mb-8">
-        <div class="text-8xl mb-4">{{ software.icon }}</div>
+        <div class="mb-4">
+          <img :src="getSoftwareIcon(route.params.id)" :alt="software.name" class="w-32 h-32 mx-auto object-contain">
+        </div>
         <h1 class="text-4xl font-bold text-base-content mb-2">{{ software.name }}</h1>
         <p class="text-base-content/70 text-lg mb-4">{{ software.description }}</p>
         
@@ -132,6 +134,16 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getSoftwareById } from '../data/shortcuts.js'
+
+// 获取软件图标路径
+const getSoftwareIcon = (softwareId) => {
+  const iconMap = {
+    'idea': '/intellij-idea-1.svg',
+    'vscode': '/visual-studio-code-1.svg',
+    'chrome': '/chrome-modern-.svg'
+  }
+  return iconMap[softwareId] || '/ShortcutMap.png'
+}
 
 const route = useRoute()
 const router = useRouter()
