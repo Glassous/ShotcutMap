@@ -1,0 +1,268 @@
+{
+  "name": "Visual Studio Code",
+  "icon": "📝",
+  "description": "轻量级代码编辑器",
+  "officialDocs": "https://code.visualstudio.com/docs/getstarted/keybindings",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "编辑",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制行/选择" },
+            { "keys": "Ctrl + X", "description": "剪切行/选择" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Y", "description": "重做" },
+            { "keys": "Shift + Alt + ↓", "description": "向下复制行" },
+            { "keys": "Shift + Alt + ↑", "description": "向上复制行" },
+            { "keys": "Alt + ↓", "description": "向下移动行" },
+            { "keys": "Alt + ↑", "description": "向上移动行" },
+            { "keys": "Ctrl + Shift + K", "description": "删除行" },
+            { "keys": "Ctrl + Enter", "description": "在下方插入行" },
+            { "keys": "Ctrl + Shift + Enter", "description": "在上方插入行" },
+            { "keys": "Ctrl + ]", "description": "增加缩进" },
+            { "keys": "Ctrl + [", "description": "减少缩进" },
+            { "keys": "Ctrl + /", "description": "切换行注释" },
+            { "keys": "Shift + Alt + A", "description": "切换块注释" },
+            { "keys": "Ctrl + K Ctrl + F", "description": "格式化选择" },
+            { "keys": "Shift + Alt + F", "description": "格式化文档" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Ctrl + P", "description": "快速打开文件" },
+            { "keys": "Ctrl + Shift + P", "description": "命令面板" },
+            { "keys": "Ctrl + G", "description": "跳转到行" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + H", "description": "替换" },
+            { "keys": "Ctrl + Shift + F", "description": "全局查找" },
+            { "keys": "Ctrl + Shift + H", "description": "全局替换" },
+            { "keys": "F12", "description": "跳转到定义" },
+            { "keys": "Alt + F12", "description": "查看定义" },
+            { "keys": "Shift + F12", "description": "查找所有引用" },
+            { "keys": "Ctrl + T", "description": "显示所有符号" },
+            { "keys": "Ctrl + Shift + O", "description": "跳转到符号" },
+            { "keys": "Alt + ←", "description": "后退" },
+            { "keys": "Alt + →", "description": "前进" },
+            { "keys": "Ctrl + M", "description": "切换Tab键移动焦点" }
+          ]
+        },
+        {
+          "category": "窗口管理",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建文件" },
+            { "keys": "Ctrl + O", "description": "打开文件" },
+            { "keys": "Ctrl + S", "description": "保存" },
+            { "keys": "Ctrl + Shift + S", "description": "另存为" },
+            { "keys": "Ctrl + K S", "description": "保存所有" },
+            { "keys": "Ctrl + W", "description": "关闭编辑器" },
+            { "keys": "Ctrl + K Ctrl + W", "description": "关闭所有编辑器" },
+            { "keys": "Ctrl + Shift + T", "description": "重新打开关闭的编辑器" },
+            { "keys": "Ctrl + Tab", "description": "切换编辑器" },
+            { "keys": "Ctrl + \\", "description": "拆分编辑器" },
+            { "keys": "Ctrl + 1", "description": "聚焦第一个编辑器组" },
+            { "keys": "Ctrl + 2", "description": "聚焦第二个编辑器组" },
+            { "keys": "Ctrl + 3", "description": "聚焦第三个编辑器组" }
+          ]
+        },
+        {
+          "category": "调试",
+          "items": [
+            { "keys": "F5", "description": "开始调试" },
+            { "keys": "Ctrl + F5", "description": "运行而不调试" },
+            { "keys": "F9", "description": "切换断点" },
+            { "keys": "F10", "description": "单步跳过" },
+            { "keys": "F11", "description": "单步进入" },
+            { "keys": "Shift + F11", "description": "单步跳出" },
+            { "keys": "Shift + F5", "description": "停止调试" }
+          ]
+        },
+        {
+          "category": "集成终端",
+          "items": [
+            { "keys": "Ctrl + `", "description": "显示集成终端" },
+            { "keys": "Ctrl + Shift + `", "description": "创建新终端" },
+            { "keys": "Ctrl + Shift + C", "description": "复制终端选择" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴到活动终端" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "编辑",
+          "items": [
+            { "keys": "Cmd + C", "description": "复制行/选择" },
+            { "keys": "Cmd + X", "description": "剪切行/选择" },
+            { "keys": "Cmd + V", "description": "粘贴" },
+            { "keys": "Cmd + Z", "description": "撤销" },
+            { "keys": "Shift + Cmd + Z", "description": "重做" },
+            { "keys": "Shift + Option + ↓", "description": "向下复制行" },
+            { "keys": "Shift + Option + ↑", "description": "向上复制行" },
+            { "keys": "Option + ↓", "description": "向下移动行" },
+            { "keys": "Option + ↑", "description": "向上移动行" },
+            { "keys": "Shift + Cmd + K", "description": "删除行" },
+            { "keys": "Cmd + Enter", "description": "在下方插入行" },
+            { "keys": "Shift + Cmd + Enter", "description": "在上方插入行" },
+            { "keys": "Cmd + ]", "description": "增加缩进" },
+            { "keys": "Cmd + [", "description": "减少缩进" },
+            { "keys": "Cmd + /", "description": "切换行注释" },
+            { "keys": "Shift + Option + A", "description": "切换块注释" },
+            { "keys": "Cmd + K Cmd + F", "description": "格式化选择" },
+            { "keys": "Shift + Option + F", "description": "格式化文档" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Cmd + P", "description": "快速打开文件" },
+            { "keys": "Shift + Cmd + P", "description": "命令面板" },
+            { "keys": "Ctrl + G", "description": "跳转到行" },
+            { "keys": "Cmd + F", "description": "查找" },
+            { "keys": "Option + Cmd + F", "description": "替换" },
+            { "keys": "Shift + Cmd + F", "description": "全局查找" },
+            { "keys": "Shift + Cmd + H", "description": "全局替换" },
+            { "keys": "F12", "description": "跳转到定义" },
+            { "keys": "Option + F12", "description": "查看定义" },
+            { "keys": "Shift + F12", "description": "查找所有引用" },
+            { "keys": "Cmd + T", "description": "显示所有符号" },
+            { "keys": "Shift + Cmd + O", "description": "跳转到符号" },
+            { "keys": "Ctrl + -", "description": "后退" },
+            { "keys": "Ctrl + Shift + -", "description": "前进" }
+          ]
+        },
+        {
+          "category": "窗口管理",
+          "items": [
+            { "keys": "Cmd + N", "description": "新建文件" },
+            { "keys": "Cmd + O", "description": "打开文件" },
+            { "keys": "Cmd + S", "description": "保存" },
+            { "keys": "Shift + Cmd + S", "description": "另存为" },
+            { "keys": "Option + Cmd + S", "description": "保存所有" },
+            { "keys": "Cmd + W", "description": "关闭编辑器" },
+            { "keys": "Cmd + K Cmd + W", "description": "关闭所有编辑器" },
+            { "keys": "Shift + Cmd + T", "description": "重新打开关闭的编辑器" },
+            { "keys": "Ctrl + Tab", "description": "切换编辑器" },
+            { "keys": "Cmd + \\", "description": "拆分编辑器" },
+            { "keys": "Cmd + 1", "description": "聚焦第一个编辑器组" },
+            { "keys": "Cmd + 2", "description": "聚焦第二个编辑器组" },
+            { "keys": "Cmd + 3", "description": "聚焦第三个编辑器组" }
+          ]
+        },
+        {
+          "category": "调试",
+          "items": [
+            { "keys": "F5", "description": "开始调试" },
+            { "keys": "Cmd + F5", "description": "运行而不调试" },
+            { "keys": "F9", "description": "切换断点" },
+            { "keys": "F10", "description": "单步跳过" },
+            { "keys": "F11", "description": "单步进入" },
+            { "keys": "Shift + F11", "description": "单步跳出" },
+            { "keys": "Shift + F5", "description": "停止调试" }
+          ]
+        },
+        {
+          "category": "集成终端",
+          "items": [
+            { "keys": "Ctrl + `", "description": "显示集成终端" },
+            { "keys": "Ctrl + Shift + `", "description": "创建新终端" },
+            { "keys": "Cmd + C", "description": "复制终端选择" },
+            { "keys": "Cmd + V", "description": "粘贴到活动终端" }
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "name": "Linux",
+      "shortcuts": [
+        {
+          "category": "编辑",
+          "items": [
+            { "keys": "Ctrl + C", "description": "复制行/选择" },
+            { "keys": "Ctrl + X", "description": "剪切行/选择" },
+            { "keys": "Ctrl + V", "description": "粘贴" },
+            { "keys": "Ctrl + Z", "description": "撤销" },
+            { "keys": "Ctrl + Y", "description": "重做" },
+            { "keys": "Shift + Alt + ↓", "description": "向下复制行" },
+            { "keys": "Shift + Alt + ↑", "description": "向上复制行" },
+            { "keys": "Alt + ↓", "description": "向下移动行" },
+            { "keys": "Alt + ↑", "description": "向上移动行" },
+            { "keys": "Ctrl + Shift + K", "description": "删除行" },
+            { "keys": "Ctrl + Enter", "description": "在下方插入行" },
+            { "keys": "Ctrl + Shift + Enter", "description": "在上方插入行" },
+            { "keys": "Ctrl + ]", "description": "增加缩进" },
+            { "keys": "Ctrl + [", "description": "减少缩进" },
+            { "keys": "Ctrl + /", "description": "切换行注释" },
+            { "keys": "Shift + Alt + A", "description": "切换块注释" },
+            { "keys": "Ctrl + K Ctrl + F", "description": "格式化选择" },
+            { "keys": "Shift + Alt + F", "description": "格式化文档" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Ctrl + P", "description": "快速打开文件" },
+            { "keys": "Ctrl + Shift + P", "description": "命令面板" },
+            { "keys": "Ctrl + G", "description": "跳转到行" },
+            { "keys": "Ctrl + F", "description": "查找" },
+            { "keys": "Ctrl + H", "description": "替换" },
+            { "keys": "Ctrl + Shift + F", "description": "全局查找" },
+            { "keys": "Ctrl + Shift + H", "description": "全局替换" },
+            { "keys": "F12", "description": "跳转到定义" },
+            { "keys": "Alt + F12", "description": "查看定义" },
+            { "keys": "Shift + F12", "description": "查找所有引用" },
+            { "keys": "Ctrl + T", "description": "显示所有符号" },
+            { "keys": "Ctrl + Shift + O", "description": "跳转到符号" },
+            { "keys": "Alt + ←", "description": "后退" },
+            { "keys": "Alt + →", "description": "前进" },
+            { "keys": "Ctrl + M", "description": "切换Tab键移动焦点" }
+          ]
+        },
+        {
+          "category": "窗口管理",
+          "items": [
+            { "keys": "Ctrl + N", "description": "新建文件" },
+            { "keys": "Ctrl + O", "description": "打开文件" },
+            { "keys": "Ctrl + S", "description": "保存" },
+            { "keys": "Ctrl + Shift + S", "description": "另存为" },
+            { "keys": "Ctrl + K S", "description": "保存所有" },
+            { "keys": "Ctrl + W", "description": "关闭编辑器" },
+            { "keys": "Ctrl + K Ctrl + W", "description": "关闭所有编辑器" },
+            { "keys": "Ctrl + Shift + T", "description": "重新打开关闭的编辑器" },
+            { "keys": "Ctrl + Tab", "description": "切换编辑器" },
+            { "keys": "Ctrl + \\", "description": "拆分编辑器" },
+            { "keys": "Ctrl + 1", "description": "聚焦第一个编辑器组" },
+            { "keys": "Ctrl + 2", "description": "聚焦第二个编辑器组" },
+            { "keys": "Ctrl + 3", "description": "聚焦第三个编辑器组" }
+          ]
+        },
+        {
+          "category": "调试",
+          "items": [
+            { "keys": "F5", "description": "开始调试" },
+            { "keys": "Ctrl + F5", "description": "运行而不调试" },
+            { "keys": "F9", "description": "切换断点" },
+            { "keys": "F10", "description": "单步跳过" },
+            { "keys": "F11", "description": "单步进入" },
+            { "keys": "Shift + F11", "description": "单步跳出" },
+            { "keys": "Shift + F5", "description": "停止调试" }
+          ]
+        },
+        {
+          "category": "集成终端",
+          "items": [
+            { "keys": "Ctrl + `", "description": "显示集成终端" },
+            { "keys": "Ctrl + Shift + `", "description": "创建新终端" },
+            { "keys": "Ctrl + Shift + C", "description": "复制终端选择" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴到活动终端" }
+          ]
+        }
+      ]
+    }
+  }
+}

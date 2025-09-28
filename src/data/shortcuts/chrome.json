@@ -1,0 +1,231 @@
+{
+  "name": "Google Chrome",
+  "icon": "🌐",
+  "description": "谷歌浏览器",
+  "officialDocs": "https://support.google.com/chrome/answer/157179",
+  "systems": {
+    "windows": {
+      "name": "Windows",
+      "shortcuts": [
+        {
+          "category": "标签页和窗口",
+          "items": [
+            { "keys": "Ctrl + T", "description": "打开新标签页" },
+            { "keys": "Ctrl + Shift + T", "description": "重新打开最近关闭的标签页" },
+            { "keys": "Ctrl + W", "description": "关闭当前标签页" },
+            { "keys": "Ctrl + Shift + W", "description": "关闭当前窗口" },
+            { "keys": "Ctrl + N", "description": "打开新窗口" },
+            { "keys": "Ctrl + Shift + N", "description": "打开新的无痕窗口" },
+            { "keys": "Ctrl + Tab", "description": "切换到下一个标签页" },
+            { "keys": "Ctrl + Shift + Tab", "description": "切换到上一个标签页" },
+            { "keys": "Ctrl + 1-8", "description": "切换到指定位置的标签页" },
+            { "keys": "Ctrl + 9", "description": "切换到最后一个标签页" },
+            { "keys": "Alt + F4", "description": "关闭Chrome" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Alt + ←", "description": "后退" },
+            { "keys": "Alt + →", "description": "前进" },
+            { "keys": "F5", "description": "重新加载页面" },
+            { "keys": "Ctrl + F5", "description": "强制重新加载页面" },
+            { "keys": "Ctrl + R", "description": "重新加载页面" },
+            { "keys": "Ctrl + Shift + R", "description": "强制重新加载页面" },
+            { "keys": "Ctrl + D", "description": "将当前页面加为书签" },
+            { "keys": "Ctrl + Shift + D", "description": "将所有打开的标签页加为书签" },
+            { "keys": "Ctrl + L", "description": "跳转到地址栏" },
+            { "keys": "Alt + D", "description": "跳转到地址栏" },
+            { "keys": "Ctrl + K", "description": "从地址栏搜索" },
+            { "keys": "Ctrl + E", "description": "从地址栏搜索" }
+          ]
+        },
+        {
+          "category": "页面功能",
+          "items": [
+            { "keys": "Ctrl + F", "description": "在页面中查找" },
+            { "keys": "Ctrl + G", "description": "查找下一个" },
+            { "keys": "Ctrl + Shift + G", "description": "查找上一个" },
+            { "keys": "F3", "description": "查找下一个" },
+            { "keys": "Shift + F3", "description": "查找上一个" },
+            { "keys": "Ctrl + H", "description": "打开历史记录页面" },
+            { "keys": "Ctrl + J", "description": "打开下载页面" },
+            { "keys": "Ctrl + Shift + Delete", "description": "打开清除浏览数据选项" },
+            { "keys": "Ctrl + Shift + B", "description": "显示或隐藏书签栏" },
+            { "keys": "Ctrl + Shift + O", "description": "打开书签管理器" },
+            { "keys": "Ctrl + U", "description": "查看页面源代码" },
+            { "keys": "F12", "description": "打开开发者工具" },
+            { "keys": "Ctrl + Shift + I", "description": "打开开发者工具" },
+            { "keys": "Ctrl + Shift + J", "description": "打开开发者工具" }
+          ]
+        },
+        {
+          "category": "缩放",
+          "items": [
+            { "keys": "Ctrl + +", "description": "放大页面" },
+            { "keys": "Ctrl + -", "description": "缩小页面" },
+            { "keys": "Ctrl + 0", "description": "恢复默认缩放级别" },
+            { "keys": "F11", "description": "开启全屏模式" }
+          ]
+        },
+        {
+          "category": "其他",
+          "items": [
+            { "keys": "Ctrl + P", "description": "打印当前页面" },
+            { "keys": "Ctrl + S", "description": "保存当前页面" },
+            { "keys": "Ctrl + Shift + Esc", "description": "打开Chrome任务管理器" },
+            { "keys": "Shift + Esc", "description": "打开Chrome任务管理器" },
+            { "keys": "Ctrl + Shift + C", "description": "选择要检查的页面元素" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴为纯文本" }
+          ]
+        }
+      ]
+    },
+    "mac": {
+      "name": "macOS",
+      "shortcuts": [
+        {
+          "category": "标签页和窗口",
+          "items": [
+            { "keys": "Cmd + T", "description": "打开新标签页" },
+            { "keys": "Cmd + Shift + T", "description": "重新打开最近关闭的标签页" },
+            { "keys": "Cmd + W", "description": "关闭当前标签页" },
+            { "keys": "Cmd + Shift + W", "description": "关闭当前窗口" },
+            { "keys": "Cmd + N", "description": "打开新窗口" },
+            { "keys": "Cmd + Shift + N", "description": "打开新的无痕窗口" },
+            { "keys": "Cmd + Option + →", "description": "切换到下一个标签页" },
+            { "keys": "Cmd + Option + ←", "description": "切换到上一个标签页" },
+            { "keys": "Cmd + 1-8", "description": "切换到指定位置的标签页" },
+            { "keys": "Cmd + 9", "description": "切换到最后一个标签页" },
+            { "keys": "Cmd + Q", "description": "退出Chrome" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Cmd + ←", "description": "后退" },
+            { "keys": "Cmd + →", "description": "前进" },
+            { "keys": "Cmd + R", "description": "重新加载页面" },
+            { "keys": "Cmd + Shift + R", "description": "强制重新加载页面" },
+            { "keys": "Cmd + D", "description": "将当前页面加为书签" },
+            { "keys": "Cmd + Shift + D", "description": "将所有打开的标签页加为书签" },
+            { "keys": "Cmd + L", "description": "跳转到地址栏" },
+            { "keys": "Cmd + K", "description": "从地址栏搜索" },
+            { "keys": "Cmd + E", "description": "从地址栏搜索" }
+          ]
+        },
+        {
+          "category": "页面功能",
+          "items": [
+            { "keys": "Cmd + F", "description": "在页面中查找" },
+            { "keys": "Cmd + G", "description": "查找下一个" },
+            { "keys": "Cmd + Shift + G", "description": "查找上一个" },
+            { "keys": "Cmd + Y", "description": "打开历史记录页面" },
+            { "keys": "Cmd + Shift + J", "description": "打开下载页面" },
+            { "keys": "Cmd + Shift + Delete", "description": "打开清除浏览数据选项" },
+            { "keys": "Cmd + Shift + B", "description": "显示或隐藏书签栏" },
+            { "keys": "Cmd + Option + B", "description": "打开书签管理器" },
+            { "keys": "Cmd + Option + U", "description": "查看页面源代码" },
+            { "keys": "Cmd + Option + I", "description": "打开开发者工具" },
+            { "keys": "Cmd + Option + J", "description": "打开JavaScript控制台" }
+          ]
+        },
+        {
+          "category": "缩放",
+          "items": [
+            { "keys": "Cmd + +", "description": "放大页面" },
+            { "keys": "Cmd + -", "description": "缩小页面" },
+            { "keys": "Cmd + 0", "description": "恢复默认缩放级别" },
+            { "keys": "Cmd + Ctrl + F", "description": "开启全屏模式" }
+          ]
+        },
+        {
+          "category": "其他",
+          "items": [
+            { "keys": "Cmd + P", "description": "打印当前页面" },
+            { "keys": "Cmd + S", "description": "保存当前页面" },
+            { "keys": "Cmd + Shift + C", "description": "选择要检查的页面元素" },
+            { "keys": "Cmd + Shift + V", "description": "粘贴为纯文本" }
+          ]
+        }
+      ]
+    },
+    "linux": {
+      "name": "Linux",
+      "shortcuts": [
+        {
+          "category": "标签页和窗口",
+          "items": [
+            { "keys": "Ctrl + T", "description": "打开新标签页" },
+            { "keys": "Ctrl + Shift + T", "description": "重新打开最近关闭的标签页" },
+            { "keys": "Ctrl + W", "description": "关闭当前标签页" },
+            { "keys": "Ctrl + Shift + W", "description": "关闭当前窗口" },
+            { "keys": "Ctrl + N", "description": "打开新窗口" },
+            { "keys": "Ctrl + Shift + N", "description": "打开新的无痕窗口" },
+            { "keys": "Ctrl + Tab", "description": "切换到下一个标签页" },
+            { "keys": "Ctrl + Shift + Tab", "description": "切换到上一个标签页" },
+            { "keys": "Ctrl + 1-8", "description": "切换到指定位置的标签页" },
+            { "keys": "Ctrl + 9", "description": "切换到最后一个标签页" },
+            { "keys": "Ctrl + Q", "description": "退出Chrome" }
+          ]
+        },
+        {
+          "category": "导航",
+          "items": [
+            { "keys": "Alt + ←", "description": "后退" },
+            { "keys": "Alt + →", "description": "前进" },
+            { "keys": "F5", "description": "重新加载页面" },
+            { "keys": "Ctrl + F5", "description": "强制重新加载页面" },
+            { "keys": "Ctrl + R", "description": "重新加载页面" },
+            { "keys": "Ctrl + Shift + R", "description": "强制重新加载页面" },
+            { "keys": "Ctrl + D", "description": "将当前页面加为书签" },
+            { "keys": "Ctrl + Shift + D", "description": "将所有打开的标签页加为书签" },
+            { "keys": "Ctrl + L", "description": "跳转到地址栏" },
+            { "keys": "Alt + D", "description": "跳转到地址栏" },
+            { "keys": "Ctrl + K", "description": "从地址栏搜索" },
+            { "keys": "Ctrl + E", "description": "从地址栏搜索" }
+          ]
+        },
+        {
+          "category": "页面功能",
+          "items": [
+            { "keys": "Ctrl + F", "description": "在页面中查找" },
+            { "keys": "Ctrl + G", "description": "查找下一个" },
+            { "keys": "Ctrl + Shift + G", "description": "查找上一个" },
+            { "keys": "F3", "description": "查找下一个" },
+            { "keys": "Shift + F3", "description": "查找上一个" },
+            { "keys": "Ctrl + H", "description": "打开历史记录页面" },
+            { "keys": "Ctrl + J", "description": "打开下载页面" },
+            { "keys": "Ctrl + Shift + Delete", "description": "打开清除浏览数据选项" },
+            { "keys": "Ctrl + Shift + B", "description": "显示或隐藏书签栏" },
+            { "keys": "Ctrl + Shift + O", "description": "打开书签管理器" },
+            { "keys": "Ctrl + U", "description": "查看页面源代码" },
+            { "keys": "F12", "description": "打开开发者工具" },
+            { "keys": "Ctrl + Shift + I", "description": "打开开发者工具" },
+            { "keys": "Ctrl + Shift + J", "description": "打开开发者工具" }
+          ]
+        },
+        {
+          "category": "缩放",
+          "items": [
+            { "keys": "Ctrl + +", "description": "放大页面" },
+            { "keys": "Ctrl + -", "description": "缩小页面" },
+            { "keys": "Ctrl + 0", "description": "恢复默认缩放级别" },
+            { "keys": "F11", "description": "开启全屏模式" }
+          ]
+        },
+        {
+          "category": "其他",
+          "items": [
+            { "keys": "Ctrl + P", "description": "打印当前页面" },
+            { "keys": "Ctrl + S", "description": "保存当前页面" },
+            { "keys": "Ctrl + Shift + Esc", "description": "打开Chrome任务管理器" },
+            { "keys": "Shift + Esc", "description": "打开Chrome任务管理器" },
+            { "keys": "Ctrl + Shift + C", "description": "选择要检查的页面元素" },
+            { "keys": "Ctrl + Shift + V", "description": "粘贴为纯文本" }
+          ]
+        }
+      ]
+    }
+  }
+}
