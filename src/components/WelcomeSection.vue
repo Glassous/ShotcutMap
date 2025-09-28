@@ -10,13 +10,11 @@
           <div class="stat">
             <div class="stat-title">软件数量</div>
             <div class="stat-value text-primary">{{ softwareCount }}</div>
-            <div class="stat-desc">持续更新中</div>
           </div>
           
           <div class="stat">
             <div class="stat-title">快捷键总数</div>
             <div class="stat-value text-secondary">{{ shortcutCount }}+</div>
-            <div class="stat-desc">覆盖主流软件</div>
           </div>
         </div>
       </div>

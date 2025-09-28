@@ -35,6 +35,9 @@
     <!-- 软件网格 -->
     <SoftwareGrid @select-software="handleSoftwareSelect" />
     
+    <!-- 意见反馈表单 -->
+    <FeedbackForm />
+    
     <!-- 页脚 -->
     <footer class="footer footer-center p-10 bg-base-200 text-base-content">
       <aside>
@@ -54,6 +57,7 @@ import { ref, onMounted, onBeforeUnmount } from 'vue'
 import { useRouter } from 'vue-router'
 import WelcomeSection from '../components/WelcomeSection.vue'
 import SoftwareGrid from '../components/SoftwareGrid.vue'
+import FeedbackForm from '../components/FeedbackForm.vue'
 
 const router = useRouter()
 
