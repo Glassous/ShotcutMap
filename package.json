@@ -3,16 +3,11 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "electron/main.cjs",
   "homepage": "./",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "electron": "electron .",
-    "electron-dev": "concurrently \"npm run dev\" \"wait-on http://localhost:5173 && electron .\"",
-    "electron-pack": "npm run build && electron-builder",
-    "dist": "npm run build && electron-builder --publish=never"
+    "preview": "vite preview"
   },
   "dependencies": {
     "autoprefixer": "^10.4.21",
@@ -24,40 +19,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^6.0.1",
-    "vite": "^7.1.7",
-    "electron": "^33.2.1",
-    "electron-builder": "^25.1.8",
     "concurrently": "^9.1.0",
+    "vite": "^7.1.7",
     "wait-on": "^8.0.1"
-  },
-  "build": {
-  "appId": "com.shortcutmap.app",
-  "productName": "ShortcutMap",
-  "npmRebuild": false,
-  "electronDownload": {
-    "mirror": "https://npmmirror.com/mirrors/electron/"
-  },
-  "directories": {
-    "output": "dist-electron"
-  },
-  "files": [
-    "dist/**/*",
-    "electron/**/*",
-    "node_modules/**/*",
-    "src/**/*"
-  ],
-  "mac": {
-    "icon": "src/assets/icons/ShortcutMap.png",
-    "category": "public.app-category.productivity"
-  },
-  "win": {
-    "icon": "src/assets/icons/ShortcutMap.png",
-    "target": "nsis"
-  },
-  "linux": {
-    "icon": "src/assets/icons/ShortcutMap.png",
-    "target": "AppImage"
   }
-}
-
 }

@@ -14,7 +14,7 @@ jspm_packages/
 # Build outputs
 dist/
 dist-ssr/
-dist-electron/
+
 build/
 out/
 
@@ -104,17 +104,7 @@ build/Release
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
-# Electron specific
-app/dist/
-release/
-*.dmg
-*.pkg
-*.deb
-*.rpm
-*.tar.gz
-*.zip
-*.exe
-*.msi
+
 
 # macOS
 .DS_Store
