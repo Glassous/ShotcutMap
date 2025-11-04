@@ -17,6 +17,7 @@ import pycharmData from "./shortcuts/pycharm.json";
 import terminalData from "./shortcuts/terminal.json";
 import gitData from "./shortcuts/git.json";
 import dockerData from "./shortcuts/docker.json";
+import zedData from "./shortcuts/zed.json";
 
 // 使用 import.meta.glob 动态导入所有图标
 const icons = import.meta.glob("../assets/icons/*.svg", {
@@ -33,6 +34,7 @@ Object.assign(icons, pngIcons);
 export const shortcutsData = {
   idea: ideaData,
   vscode: vscodeData,
+  zed: zedData,
   chrome: chromeData,
   system: systemData,
   word: wordData,
